@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#737d8c"/>
     <meta
-      name="description"
+      name="Oregon Smash Bros Ultimate Tournaments"
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="logo192.png" />
@@ -24,20 +24,53 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>HoneyBranch</title>
+	<link rel="stylesheet" type="text/css" href="../src/index.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+		<!--
+		  This HTML file is a template.
+		  If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+		  You can add webfonts, meta tags, or analytics to this file.
+		  The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+		  To begin the development, run `npm start` or `yarn start`.
+		  To create a production bundle, use `npm run build` or `yarn build`.
+		-->
+		<nav>
+			<img src="img/oregon.png">
+			<ul>
+				<li onclick="loadDiv(0)">Home</li>
+				<li onclick="loadDiv(1)">Getting Started</li>
+				<li onclick="changeNav(1)"> Tournaments</li>
+				<li onclick="loadDiv(5)">Rankings</li>
+			</ul>
+		</nav>
+			
+		<h1>Your Oregon Smash Forecast &#127783;</h1>
+			<h2>Next tournament: <a href="index.html">Tournament Name</a> @ Date Time, <a href="index.html">Location</a>
+		</h2>
+		<p>
+			Upcoming Tournaments (this is a dummy calendar)<br>
+			<a href="https://blog.ouseful.info/2008/12/04/displaying-events-from-multiple-google-calendars-in-a-single-embedded-calendar-view/">You can combine calandars by using '&src=CALENDAR_ID' in the URL.</a><br>
+			<iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles
+				&src=ZW4uanVkYWlzbSNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ
+				&src=https://calendar.google.com/calendar/embed?src=ZW4uY2hyaXN0aWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t" allowfullscreen="">
+				Google Calandar unable to load.
+			</iframe>
+		</p>
+			
+		<footer>
+		<a onclick="changeTheme('#262626','white','#737d8c')">&#9729;</a>
+		<a href="index.html"><img src="img/facebook.png"></a>
+		<a href="index.html"><img src="img/discord.png"></a>
+		This website currently only lists Ultimate tournaments.
+		</footer>
+		<!-- <img id="backgroundImage" src="tile.jpg"> -->
+	</div>
   </body>
+  <script src="../src/index.js"></script>
 </html>
