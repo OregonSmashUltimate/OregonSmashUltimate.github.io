@@ -23,6 +23,24 @@
   color: #61dafb;
 }
 
+.Navigation-Bar{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: top;
+  width: 100%;
+  height: 10%;
+}
+.navbar-nav{
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.nav-li{
+  padding: 5;
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
