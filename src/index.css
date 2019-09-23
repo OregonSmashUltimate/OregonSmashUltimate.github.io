@@ -1,6 +1,6 @@
 :root{
-	--primaryColor: white;
-	--secondaryColor: black;
+	--primaryColor: #262626;
+	--secondaryColor: white;
 	--tertiaryColor: #737d8c;
 }
 
@@ -17,8 +17,8 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	background-color: var(--tertiaryColor);
-	font-family: "Calibri Light";
-	font-size: 16pt;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20pt;
 }
 
 code{
