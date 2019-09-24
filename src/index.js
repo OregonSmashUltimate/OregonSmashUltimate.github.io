@@ -1,123 +1,252 @@
-/*original code that I'm clueless on
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var root = document.getElementById('root');
+ReactDOM.render(<App />, root);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-*/
 
-var title = document.getElementsByTagName("h1")[0];
-var subtitle = document.getElementsByTagName("h2")[0];
-var description = document.getElementsByTagName("p")[0];
-var root = document.documentElement;
-//if I put .innerhtml here then changes aren't saved, assumibly because I pass by value and there would be no dereferences without it
-
-/*will not work in offline testing
-const axios = require('axios');
-const cheerio = require('cheerio');
-*/
-
-var titleData = 
-[title.innerHTML,
-"Never been to a tournament before but want to try it out?",
- 
-"Something Related To or Witty About Oregon Locals",
- 
-"Something Related To or Witty About Oregon Regionals",
- 
-"Something Related To or Witty About Oregon Majors, Maybe Them Just Not Existing?",
- 
-"Rankings"];
-
-var subtitleData = 
-[subtitle.innerHTML,
- 
-"Try going to a local.",
- 
-"Next local: <a href='index.html'>Tournament Name</a> @ Date Time, <a href='index.html'>Location</a>",
- 
-"Next regional: <a href='index.html'>Tournament Name</a> @ Date Time, <a href='index.html'>Location</a>",
- 
-"Next major (nearby to Oregon): <a href='index.html'>Tournament Name</a> @ Date Time, <a href='index.html'>Location</a>",
- 
-"If you have to fight any of these people in bracket you may be in trouble."];
-
-var descriptionData = 
-[description.innerHTML,
- 
-"A local is a small tournament where you can meet people from your area in a less competitive (and potentionally expensive) environment. You might not see any top players there, but because of the smaller size it's much easier to ask questions as you get introduced to things. <a onclick='loadDiv(2)'>See locals by clicking or tapping here.</a>",
-
-"Locals Description<br>"
-+ "Upcoming Tournaments (this is a dummy calendar):<br>"
-+ "<iframe src='https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles'>",
- 
-"Regionals Description<br>"
-+ "Upcoming Tournaments (this is a dummy calendar):<br>"
-+ "<iframe src='https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles'>",
- 
-"Majors Description<br>"
-+ "Upcoming Tournaments (this is a dummy calendar):<br>"
-+ "<iframe src='https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles'>",
-
-"Rankings Description<br>"
-+ "Doesn't a different website do this? Should I just link it here? Should I scrape it and put it into custom css?<br>"
-
-/* + "<div id='number1'>"
- + "	<img src='brokeImage.png' alt='character image'>"
- + "	<h3>Player Name</h3>"
- + "	<p>Social Media</p>"
- + "</div>"
- + "<div id='number2'>"
- + "	<img src='brokeImage.png' alt='character image'>"
- + "	<p>Player Name</p>"
- + "	<p>Social Media</p>"
- + "</div>"
- + "<div id='number3'>"
- + "	<img src='brokeImage.png' alt='character image'>"
- + "	<p>Player Name</p>"
- + "	<p><a href='index.html' target='_blank'>Social Media</p>"
- + "</div>"*/];
- 
-function loadDiv(i){
-	if(i < 0 || i > titleData.length) i = 0;
-	title.innerHTML = titleData[i];
-	subtitle.innerHTML = subtitleData[i];
-	description.innerHTML = descriptionData[i];
+function Page(props){
+	return (
+		<div>
+			<Nav />
+			{props.children}
+			<Footer />
+		</div>
+	);
 }
 
-var nav = document.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0];
-var navListData = 
-[nav.innerHTML,
-"<li onclick='changeNav(0)'><</li>" +
-"<li onclick='loadDiv(2)'>Locals</li>" + 
-"<li onclick='loadDiv(3)'>Regionals</li>" + 
-"<li onclick='loadDiv(4)'>Majors</li>"];
-
-function changeNav(i){
-	if(i < 0 || i > navListData.length) i = 0;
-	nav.innerHTML = navListData[i];
-}
-
-var root = document.documentElement;
-var themeChanger = document.getElementById("themeChanger");
-function changeTheme(){
-	if(themeChanger.innerHTML == "☁"){
-		root.style.setProperty('--primaryColor', 'white');
-		root.style.setProperty('--secondaryColor', '#262626');
-		themeChanger.innerHTML = "☀";
+class Nav extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {};
+		this.handleClick = this.handleClick.bind(this);
 	}
-	else{
-		root.style.setProperty('--primaryColor', '#262626');
-		root.style.setProperty('--secondaryColor', 'white');
-		themeChanger.innerHTML = "☁";
+	handleClick(){
+		console.log("Nav item clicked");
+	}
+	render(){
+		return (	
+      <nav>
+        <ul>
+          <li onClick="">Getting Started</li>
+          <li onClick="">Calendars</li>
+          <li onClick="">Rankings</li>
+        </ul>
+      </nav>
+		);
 	}
 }
 
-console.log("Javascript load successful.");
+class Footer extends React.Component{
+	constructor(props){
+		super(props);
+	}
+	handleClick(){
+		console.log("Footer item clicked");
+	}
+	render(){
+		return (	
+			<footer>
+				<ul>
+				  <ThemeChanger />
+					<li onClick="handleClick">
+						<img src="icon/facebook.svg" alt="facebook" height="25pt" />
+					</li>
+					<li onClick="handleClick">
+						<img src="icon/discord.svg" alt="Discord" height="25pt" />
+					</li>
+				</ul>
+			</footer>
+		);
+	}
+}
+
+
+class ThemeChanger extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {theme: 1};
+		this.changeTheme = this.changeTheme.bind(this);
+	}
+	changeTheme(){
+		var textColor, linkColor, fgColor, bgColor;
+		switch(this.state.theme){
+			case 0: //dark
+        this.setState(state => ({theme: 1}));
+				textColor = "#f2f2f2"; linkColor = "#b6b6b6";
+				fgColor = "#232d3c"; bgColor = "#131d2c";
+				break;
+			case 1: //light
+        this.setState(state => ({theme: 2}));
+				textColor = "#1a1a1a"; linkColor = "#000000";
+				fgColor = "#ffffff"; bgColor = "#d9d9d9";
+				break;
+			case 2: //halloween
+        this.setState(state => ({theme: 3}));
+				textColor = "#232323"; linkColor = "#000000";
+				fgColor = "#ff3300"; bgColor = "#434343";
+				break;
+			case 3: //cake
+        this.setState(state => ({theme: 4}));
+				textColor = "#cc00ff";	linkColor = "#520066";
+				fgColor = "#f5ccff"; bgColor = "#ffffff";
+				break;
+			default: //hacker
+        this.setState(state => ({theme: 0}));
+				textColor = "#00ff00";	linkColor = "#0000ff";
+				fgColor = "#000000"; bgColor = "#000000";
+				break;
+		}
+		var cssRoot = document.documentElement;
+		cssRoot.style.setProperty('--textColor', textColor);
+		cssRoot.style.setProperty('--linkColor', linkColor);
+		cssRoot.style.setProperty('--fgColor', fgColor);
+		cssRoot.style.setProperty('--bgColor', bgColor);
+	}
+	render(){
+		return (	
+					<li onClick={this.changeTheme}><button>Swap Pallete</button></li>
+		);
+	}
+}
+
+/*
+class ThemeChanger extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {theme: 9729};
+		this.changeTheme = this.changeTheme.bind(this);
+	}
+	changeTheme(){
+		var textColor, linkColor, fgColor, bgColor;
+		switch(this.state.theme){
+			case 129299: //dark
+        this.setState(state => ({theme: 9729}));
+				textColor = "#f2f2f2"; linkColor = "#b6b6b6";
+				fgColor = "#232d3c"; bgColor = "#131d2c";
+				break;
+			case 9729: //light
+        this.setState(state => ({theme: 9728}));
+				textColor = "#1a1a1a"; linkColor = "#000000";
+				fgColor = "#ffffff"; bgColor = "#d9d9d9";
+				break;
+			case 9728: //halloween
+        this.setState(state => ({theme: 9760}));
+				textColor = "#131313"; linkColor = "#000000";
+				fgColor = "#ff3300"; bgColor = "#001a00";
+				break;
+			case 9760: //cake
+        this.setState(state => ({theme: 9829}));
+				textColor = "#cc00ff";	linkColor = "#520066";
+				fgColor = "#f5ccff"; bgColor = "#ffffff";
+				break;
+			default: //hacker
+        this.setState(state => ({theme: 129299}));
+				textColor = "#00ff00";	linkColor = "#0000ff";
+				fgColor = "#000000"; bgColor = "#000000";
+				break;
+		}
+		var cssRoot = document.documentElement;
+		cssRoot.style.setProperty('--textColor', textColor);
+		cssRoot.style.setProperty('--linkColor', linkColor);
+		cssRoot.style.setProperty('--fgColor', fgColor);
+		cssRoot.style.setProperty('--bgColor', bgColor);
+	}
+	render(){
+		return (	
+					<li onClick={this.changeTheme}>&#{this.state.theme};</li>
+		);
+	}
+}
+
+class Popup extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {display: true};
+		this.handleClick = this.handleClick.bind(this);
+	}
+	handleClick(){
+		this.setState(state => ({display: false})); //I'll make it more effiecient later
+	}
+	render(){
+		return (
+		<div class={this.state.display ? "outerDiv" : "zombie"}>
+			<div class="header">
+				{this.props.title}
+				<a onClick={this.handleClick}>&#10006;</a>
+			</div>
+			{this.props.children}
+		</div>
+		);
+	}
+}
+
+class Popup extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {display: true};
+		this.handleClick = this.handleClick.bind(this);
+	}
+  componentWillUnmount(){
+    this.style.animation
+  }
+	handleClick(){
+		ReactDOM.render(<Page />, root);
+	}
+	render(){
+		return (
+		<div class="outerDiv">
+			<div class="header">
+				{this.props.title}
+				<a onClick={this.handleClick}>&#10006;</a>
+			</div>
+			{this.props.children}
+		</div>
+		);
+	}
+}
+*/
+
+function Popup(props){
+	function handleClick(e){
+		ReactDOM.render(<Page />, root);
+	}
+	return (
+		<div class="popup">
+			<div class="header">
+				{props.title}
+				<a onClick={handleClick}>&#10006;</a>
+			</div>
+			{props.children}
+		</div>
+	);
+}
+
+function SocialMedia(props){
+	return (
+		<div class="SocialMedia">
+			<img id="profileImg" src={props.profileImg} alt="Unable to load profile picture." />
+			<a href={props.url} target="_blank">{props.username}</a>
+		</div>
+	);
+}
+
+const twitter = 
+<SocialMedia
+	title="Twitter"
+	profileImg="https://pbs.twimg.com/profile_images/967808988879482880/tCuE8jn9_400x400.jpg"
+	url="https://twitter.com/michelleobama"
+	username="@michellobama"
+/>
+
+const popup = <Popup title="Twitter" children={twitter} />
+const page = <Page children={popup} />
+
+ReactDOM.render(page, root);
