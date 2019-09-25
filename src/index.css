@@ -1,28 +1,8 @@
 :root{
-	--textColor: #f2f2f2;
+	--bgColor: #131d2c;
+	--fgColor: #232d3c;
 	--linkColor: #b6b6b6;
-	--fgColor: #232d3c; /*short for backgroundColor*/
-	--bgColor: #131d2c; /*short for foregroundColor*/
-}
-
-button{
-  font: inherit;
-  font-size: inherit;
-  background-color: var(--bgColor);
-  border-radius: .5em;
-  color: var(--linkColor);
-  border: 0px;
-}
-
-button:hover{
-  font: inherit;
-  font-size: inherit;
-  color: var(--textColor);
-}
-
-hr{
-	color: var(--textColor);
-	margin: 0;
+	--textColor: #f2f2f2;
 }
 
 a{
@@ -34,67 +14,31 @@ a:hover{
 	color: var(--textColor);
 }
 
-.popup{
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--fgColor);
-	border-radius: .5em;
-	color: var(--textColor);
-	margin: auto;
-	max-width: calc(100% - 40px);
-	min-width: 200px;
-	padding: 20px;
-	width: 700px;
-}
-
-.SocialMedia a{
-	text-align: center;
-	display: block;
-}
-
-.SocialMedia img{
-	margin: auto;
-	margin-bottom: 10px;
-	width: 50%;
-	border-radius: 50%;
-	display: block;
-	overflow: hidden;
-}
-
-.header{
-	background-color: var(--fgColor);
-	text-align: center;
-	font-size: 1.5em;
-	border-bottom: 1px solid var(--textColor);
-	margin-bottom: 20px;
-	position: sticky;
-	top: 0;
-}
-
-.header a{
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-/*.zombie{
-	display: none;
-}*/
-
 body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-  font-family: 'Big Shoulders Text', cursive; 
-	/*font-family: "Times New Roman", Times, serif;*/
+	background-attachment: fixed;
+	background-color: var(--linkColor);
+	background-image: url("../src/placeholder.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	font-family: 'Big Shoulders Text', cursive;
 	font-size: 20pt;
-  background-color: var(--linkColor);
-  background-image: url("../src/placeholder.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% auto;
+}
+
+button{
+	background-color: var(--bgColor);
+	border: 0px;
+	border-radius: .5em;
+	color: var(--linkColor);
+	font: inherit;
+	font-size: inherit;
+}
+
+button:hover{
+	color: var(--textColor);
+	font: inherit;
+	font-size: inherit;
 }
 
 code{
@@ -103,30 +47,23 @@ code{
 
 footer{
 	background-color: var(--fgColor);
-	position: fixed;
-	width: 100%;
-	z-index: 100;
 	bottom: 0;
 	left: 0;
 	padding: .25em;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+hr{
+	color: var(--textColor);
+	margin: 0;
 }
 
 iframe{
 	height: 15em;
 	overflow: scroll;
 	width: 100%;
-}
-
-nav{
-	background-color: var(--bgColor);
-  position: fixed;
-  left: 0;
-  top: 50%;
-  height: calc(50% - 20px);
-  width: 100%;
-  padding-top: 20px;
-  font-size: 1.5em;
-  z-index: 1;
 }
 
 li{
@@ -140,6 +77,36 @@ li:hover{
 	cursor: pointer;
 }
 
+nav{
+	background-color: var(--bgColor);
+	color: var(--textColor);
+	font-size: 1.5em;
+	height: calc(50% - 20px);
+	left: 0;
+	opacity: .95;
+	overflow-y: auto;
+	position: fixed;
+	top: 50%;
+	width: 100%;
+	z-index: 1;
+}
+
+nav div{
+	margin: auto;
+	max-width: calc(100% - 40px);
+	min-width: 200px;
+	padding: 20px;
+	width: 900px;
+}
+
+nav ul{
+	background-color: var(--bgColor);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	position: sticky;
+	top: 0;
+}
+
 ul{
 	display: block;
 	margin: 0;
@@ -147,5 +114,57 @@ ul{
 	text-align: center;
 }
 
-#root{
+.SocialMedia a{
+	display: block;
+	overflow-y: auto;
+	text-align: center;
+}
+
+.SocialMedia img{
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 50%;
+}
+
+.header{
+	background-color: var(--fgColor);
+	border-bottom: 1px solid var(--textColor);
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 20px;
+	position: sticky;
+	text-align: center;
+	top: 0;
+}
+
+.header a{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.popup{
+	background-color: var(--fgColor);
+	border-radius: .5em;
+	color: var(--textColor);
+	left: 50%;
+	margin: auto;
+	max-height: 100%;
+	max-width: calc(100% - 40px);
+	min-width: 200px;
+	overflow: auto;
+	padding: 20px;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	z-index: 2;
+}
+
+#tall{
+	height: 100%;
+	top: 0%;
 }
