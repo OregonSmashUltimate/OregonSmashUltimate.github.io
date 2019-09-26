@@ -17,11 +17,7 @@ a:hover{
 body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-attachment: fixed;
 	background-color: var(--linkColor);
-	background-image: url("../src/orsmash.svg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 	font-family: 'Big Shoulders Text', cursive;
 	font-size: 16pt;
 }
@@ -139,6 +135,29 @@ ul{
 	width: 30%;
 }
 
+.icon{
+	background-color: var(--linkColor);
+	height: 1em;
+	mask-size: 100% 100%;
+	width: 1em;
+}
+
+.icon:hover{
+	background-color: var(--textColor);
+}
+
+#discord{
+	mask-image: url(icon/discord.svg);
+}
+
+#facebook{
+	mask-image: url(icon/facebook.svg);
+}
+
+#github{
+	mask-image: url(icon/github.svg);
+}
+
 #header{
 	background-color: var(--fgColor);
 	border-bottom: 1px solid var(--textColor);
@@ -158,6 +177,17 @@ ul{
 
 #invisible{
 	display: none;
+}
+
+#logo{
+	background-color: var(--textColor);
+	height: 100%;
+	left: 0;
+	mask-image: url(../src/icon/orsmash.svg);
+	mask-size: 100% 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 #popup{
@@ -181,4 +211,8 @@ ul{
 #tall{
 	height: 100%;
 	top: 0%;
+}
+
+#twitter{
+	mask-image: url(icon/twitter.svg);
 }

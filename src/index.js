@@ -18,6 +18,7 @@ function Page(props){
 			<Nav />
 			{props.children}
 			<Footer />
+      <div id="logo"></div>
 		</div>
 	);
 }
@@ -36,7 +37,7 @@ class Nav extends React.Component{
       <nav id={this.state.tall ? "tall" : ""}>
         <ul>
           <li onClick={this.handleClick}>Getting Started</li>
-          <li onClick={this.handleClick}>Calendars</li>
+          <li onClick={this.handleClick}>Events</li>
           <li onClick={this.handleClick}>Rankings</li>
         </ul>
         {this.state.content}
@@ -58,18 +59,10 @@ class Footer extends React.Component{
 			<footer>
 				<ul>
 				  <ThemeChanger />
-					<li onClick={this.handleClick}>
-						<img src="icon/facebook.svg" alt="facebook" height="25pt" />
-					</li>
-					<li onClick={this.handleClick}>
-						<img src="icon/twitter.svg" alt="Twitter" height="25pt" />
-					</li>
-					<li onClick={this.handleClick}>
-						<img src="icon/github.svg" alt="GitHub" height="25pt" />
-					</li>
-					<li onClick={this.handleClick}>
-						<img src="icon/discord.svg" alt="Discord" height="25pt" />
-					</li>
+					<li onClick={this.handleClick} class="icon" id="facebook"></li>
+					<li onClick={this.handleClick} class="icon" id="twitter"></li>
+					<li onClick={this.handleClick} class="icon" id="github"></li>
+					<li onClick={this.handleClick} class="icon" id="discord"></li>
 				</ul>
 			</footer>
 		);
@@ -157,35 +150,45 @@ ReactDOM.render(<Page />, root);
 //===============================================================================================
 const gettingStarted = 
 <div>
-  <h1>Welcome!</h1>
-  <h2>Rulesets</h2>
-  <p>Rulesets are a per-tournament, self-imposed set of rules to promote competition and fairness. Usually Smash tournaments rulesets restrict the following.</p>
+<h1>Welcome!</h1>
+<h2>Rulesets</h2>
+<p>Rulesets are a per-tournament, self-imposed set of rules to promote competition and fairness. Usually Smash tournaments rulesets restrict the following.</p>
 
-  <p>Stages you can pick<br />
-  Many stages have walkoffs which lead to degenerate play, and some platform and shapes can mess with moves and recoveries. For example, many characters with telelporting recoveries will have their recovery send them in the wrong direction because of a slant under the stage, when they otherwise would have made it back.</p>
+<p>Stages you can pick<br />
+Many stages have walkoffs which lead to degenerate play, and some platform and shapes can mess with moves and recoveries. For example, many characters with telelporting recoveries will have their recovery send them in the wrong direction because of a slant under the stage, when they otherwise would have made it back.</p>
 
-  <p>The order you can pick stages<br />
-  Even if we restrict the stages we can play, there's bound to be stages that favor some characters over others. In the spirit of fair competition, stage selection should not determine who wins. Many rulesets will not let the winner pick the next stage to prevent snowballing.</p>
+<p>The order you can pick stages<br />
+Even if we restrict the stages we can play, there's bound to be stages that favor some characters over others. In the spirit of fair competition, stage selection should not determine who wins. Many rulesets will not let the winner pick the next stage to prevent snowballing.</p>
 
-  <p>Stock count (usually three stocks)<br />
-  Between the many stocks of Melee due to its fast pace, and the few stocks of Smash Bros. for Wii U due to its slow pace, competetors have decided to settle in the middle for Smash Ultimate. Using stocks instead of time makes the playing field more level between characters who kill fast and characters who play slow, increasing the variety of characters viable for competition.</p>
+<p>Stock count (usually three stocks)<br />
+Between the many stocks of Melee due to its fast pace, and the few stocks of Smash Bros. for Wii U due to its slow pace, competetors have decided to settle in the middle for Smash Ultimate. Using stocks instead of time makes the playing field more level between characters who kill fast and characters who play slow, increasing the variety of characters viable for competition.</p>
 
-  <p>Items<br />
-  Items easily lead to snowballing.</p>
+<p>Items<br />
+Items easily lead to snowballing.</p>
 
-  <h2>Code of Conduct</h2>
-  <p>Tournaments usually have an entry fee which pays for the building, the staffing, and the winners' prizes. If you're clean, aren't an ass, and bring your own contoller and you'll usually be fine. While matches are going on, if you're planning on using that free set up over there, ask first, as it's probably reserved for an upcoming match. Usually the tournament staff you can ask questions and report the results of matches to are on a computer or walking around announcing the next match. At the end of every match, one person needs to tell the staff the match results. Your safest bet is the one on the computer.</p>
+<h2>Code of Conduct</h2>
+<p>Tournaments usually have an entry fee which pays for the building, the staffing, and the winners' prizes. If you're clean, aren't an ass, and bring your own contoller and you'll usually be fine. While matches are going on, if you're planning on using that free set up over there, ask first, as it's probably reserved for an upcoming match. Usually the tournament staff you can ask questions and report the results of matches to are on a computer or walking around announcing the next match. At the end of every match, one person needs to tell the staff the match results. Your safest bet is the one on the computer.</p>
 
-  <h2>Enterring a tournament!</h2>
-  <p>If you've never played competitive smash before and want to try it out, try going to a 'local'! A local is the smallest type of the tournament that registers on leaderboards. Because of their small size, at locals it's easier to make friends, they're usually less expensive, and they're shorter. Go to 'Calandars' to find a local right for you!</p>
+<h2>Enterring a tournament!</h2>
+<p>If you've never played competitive smash before and want to try it out, try going to a 'local'! A local is the smallest type of the tournament that registers on leaderboards. Because of their small size, at locals it's easier to make friends, they're usually less expensive, and they're shorter. Go to 'Events' to find a local right for you!</p>
 </div>
 
-const calandar = 
+const events = 
 <div>
-  <h1>Welcome!</h1>
-  <h2>Rulesets</h2>
-    <p>Stages you can pick<br />
-    Many stages have walkoffs which lead to degenerate play, and some platform and shapes can mess with moves and recoveries. For example, many characters with telelporting recoveries will have their recovery send them in the wrong direction because of a slant under the stage, when they otherwise would have made it back.</p>
+<h1>Right Now</h1>
+<iframe src="foo">I am a placeholder for a Twitch steam of a tournament going on right now. I know I am going on right now because the Google Calandar says so, and I know what stream to show because they put it in the description. If there are no Google Calandar events going on right now, I will tell the user there are no tournaments happing right now.</iframe>
+
+<h1>Next</h1>
+<iframe src="foo">I am a placeholder for our Google Calandar. By having a Google Calandar instead of a database to know upcoming tournaments, tournament hosts promoting their tournaments don't need any keys or knowlege on our website, and we don't need to do any mainteinance or changes to the website for them.</iframe>
+
+<p>How do I put my tournament on here?<br />
+Ask our project manager for access (see footer for social media links). They will fill you in on our format and guidelines.</p>
+</div>
+
+const rankings =
+<div>
+<h1>Rankings are kept track of on <a href="https://smash.gg/rankings/" target="_blank">smash.gg</a></h1>
+<p>When looking up rankings, keep in mind they are separated by season, so they are not always up to date. Rankings are decided by points earned from tournament placings.</p>
 </div>
 
 const twitter = 
