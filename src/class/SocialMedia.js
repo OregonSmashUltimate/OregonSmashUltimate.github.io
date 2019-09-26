@@ -1,0 +1,16 @@
+import React from 'react';
+
+function SocialMedia(props){
+	return (
+		<div class="SocialMedia">
+			<img id="profileImg" src={props.profileImg} alt="Unable to load profile picture." />
+      <p>
+        {props.role}
+        &nbsp;|&nbsp;
+			  <a href={props.url} target="_blank" rel="noopener noreferrer">{props.username}</a>
+      </p>
+		</div>
+	);
+}
+
+export default SocialMedia;
