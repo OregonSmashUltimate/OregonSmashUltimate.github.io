@@ -13,7 +13,7 @@ function Popup(props){
 		<div id="popup">
 			<div id="header">
 				{props.title}
-				<a onClick={handleClick}>&#10006;</a>
+				<a href="" onClick={handleClick}>&#10006;</a>
 			</div>
 			{props.children}
 		</div>
