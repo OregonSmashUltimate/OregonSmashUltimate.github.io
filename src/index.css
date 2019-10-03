@@ -86,12 +86,12 @@ nav{
 	background-color: var(--bgColor);
 	color: var(--textColor);
 	font-size: 1.5em;
-	height: calc(50% - 20px);
+	height: calc(55% - 20px);
 	left: 0;
 	opacity: .95;
 	overflow-y: auto;
 	position: fixed;
-	top: 50%;
+	top: 45%;
 	width: 100%;
 	z-index: 1;
 }
@@ -150,12 +150,24 @@ ul{
 	mask-image: url(icon/discord.svg);
 }
 
+/*#palette{
+	mask-image: url(icon/palette.svg);
+}*/
+
 #facebook{
 	mask-image: url(icon/facebook.svg);
 }
 
 #github{
 	mask-image: url(icon/github.svg);
+}
+
+/*#home{
+	mask-image: url(icon/home.svg);
+}*/
+
+#home{
+  text-align: center;
 }
 
 #header{
@@ -215,4 +227,9 @@ ul{
 
 #twitter{
 	mask-image: url(icon/twitter.svg);
+}
+
+.strikethrough{
+  text-decoration: line-through;
+  color: var(--textColor);
 }

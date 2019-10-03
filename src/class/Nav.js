@@ -1,5 +1,6 @@
 import React from 'react';
 
+import home from '../content/home.js';
 import gettingStarted from '../content/gettingStarted.js';
 import events from '../content/events.js';
 import rankings from '../content/rankings.js';
@@ -7,11 +8,15 @@ import rankings from '../content/rankings.js';
 class Nav extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {content: "", tall: false};
+		this.state = {content: home, tall: false};
+    this.contentHome = this.contentHome.bind(this);
 		this.contentGettingStarted = this.contentGettingStarted.bind(this);
 		this.contentEvents = this.contentEvents.bind(this);
 		this.contentRankings = this.contentRankings.bind(this);
 	}
+	contentHome(){
+    this.setState(state => ({content: home, tall: false}));
+  }
 	contentGettingStarted(){
     this.setState(state => ({content: gettingStarted, tall: true}));
   }
@@ -27,6 +32,7 @@ class Nav extends React.Component{
 		return (	
       <nav id={this.state.tall ? "tall" : ""}>
         <ul>
+          <li onClick={this.contentHome}>Home</li>
           <li onClick={this.contentGettingStarted}>Getting Started</li>
           <li onClick={this.contentEvents}>Events</li>
           <li onClick={this.contentRankings}>Rankings</li>
@@ -37,4 +43,5 @@ class Nav extends React.Component{
 	}
 }
 
+//<li class="icon" id="home" alt="Icon kindly provided by fontawesome.">Home</li>
 export default Nav;
