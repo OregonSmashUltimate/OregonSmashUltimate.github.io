@@ -140,6 +140,10 @@ ul{
 	height: 1em;
 	mask-size: 100% 100%;
 	width: 1em;
+	padding-left: .5em;
+	padding-right: .5em;
+  margin-left: .1em;
+  margin-right: .1em;
 }
 
 .icon:hover{
@@ -229,7 +233,14 @@ ul{
 	mask-image: url(icon/twitter.svg);
 }
 
-.strikethrough{
-  text-decoration: line-through;
-  color: var(--textColor);
+.dead{
+  display: none;
+}
+
+#generic{
+	mask-image: url(icon/www.svg);
+}
+
+#twitch{
+	mask-image: url(icon/twitch.svg);
 }
