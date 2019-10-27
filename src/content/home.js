@@ -10,7 +10,7 @@ const home =
   Join us on&nbsp;
   <a href="https://discord.gg/K8nv9pt" target="_blank" rel="noopener noreferrer">Discord</a>
   &nbsp;and&nbsp;
-  <a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer">facebook</a>
+  <a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer">Facebook</a>
   !</p>
 </div>
 

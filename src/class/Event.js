@@ -3,7 +3,7 @@ import React from 'react';
 function Event(props){
   return(
     <div>
-      <h2>{props.name}</h2>
+      <h3>{props.name}</h3>
       <hr />
       <p>
         <a href={props.streamURL !== "" && props.streamURL}

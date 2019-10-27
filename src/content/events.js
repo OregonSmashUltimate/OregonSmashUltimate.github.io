@@ -5,9 +5,10 @@ import Event from '../class/Event.js';
 const events = 
 <div>
 <p>Pay fees in cash. If the event has a set end time, be out <em>by</em> then.</p>
-<h1>Weekly</h1>
+<h1>Weeklies</h1>
+<hr></hr>
 <Event
-  name="Dropzone by Team Solid"
+  name="Dropzone"
   time="Sundays from 12:00pm-6:00pm"
   mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
   location="CCG House, Vancouver, WA"
@@ -16,9 +17,9 @@ const events =
   facebookURL=""
   twitterURL="https://twitter.com/dropzone_ts"
   venueFee="5"
-  entryFee="5"
-  schedule="Doubles: 12:30pm | Singles: 2:00pm"
-  notes="Singles and doubles! Entry fee is per bracket; if you want to enter bracket for doubles and singles, your bracket fee will be $10 total."/>
+  entryFee="5 per bracket"
+  schedule="Doors Open @ 12:00 PM | Doubles @ 12:30pm | Singles @ 2:00pm"
+  notes="Spectate and play friendlies for free!"/>
 <Event
   name="Topdeck Tuesdays"
   time="Tuesdays from 5:30pm-9:00pm"
@@ -30,34 +31,34 @@ const events =
   twitterURL="https://twitter.com/ORchapter6"
   venueFee="5"
   entryFee="5"
-  schedule="Singles: 6:00pm"
-  notes=""/>
+  schedule="Singles @ 6:00pm"
+  notes="Spectate and play friendlies for free!"/>
 <Event
-  name="Cascade Weekly"
+  name="Cascade"
   time="Wednesdays starting 6:00pm"
   mapURL="https://g.page/Gongaii?share"
   location="Gongaii Games, Inc., Beaverton, OR"
   streamURL=""
   websiteURL="https://twitch.tv/pdxcascade"
   facebookURL=""
-  twitterURL="https://twitter.com/ICantSayPing"
+  twitterURL="https://twitter.com/PDXCascade"
   venueFee="5"
   entryFee="5"
-  schedule="Singles: 6:00pm"
-  notes="Singles only."/>
+  schedule="Singles @ 6:00pm"
+  notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
 <Event
-  name="Sacred Sactuary"
-  time="Fridays starting 3:00pm"
+  name="Sacred Sanctuary"
+  time="Fridays from  3:00pm - 9:00pm"
   mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
-  location="Room SS 121 in PCC Sylvania Campus, Portland, OR"
+  location="Room SS 121, PCC Sylvania Campus, Portland, OR"
   streamURL="https://twitch.tv/UnitySmash"
   websiteURL=""
   facebookURL=""
   twitterURL="https://twitter.com/TeziiMewtwo"
-  venueFee=""
-  entryFee=""
-  schedule="Doubles: 3:30pm | Singles: 5:00pm"
-  notes="Singles and doubles!"/>
+  venueFee="5"
+  entryFee="5 per bracket"
+  schedule="Doors Open @ 3:00pm | Doubles @ 3:30pm | Singles @ 5:00pm"
+  notes="Spectate and play friendlies for free!"/>
 <Event
   name="Salem Smashfest"
   time="Saturdays starting 1:00pm"
@@ -72,7 +73,7 @@ const events =
   schedule="Singles: 1:00pm"
   notes="Singles only. Also has SSBM (Super Smash Brothers Melee), PM (Project Melee, a heavily modded version of Super Smash Brothers Brawl), DBFZ (Dragonball Fighter Z), and Guilty Gear."/>
 
-<h1>Other</h1>
+<h1>Bi-Weeklies & Monthlies</h1>
 <Event
   name="Unity Station by Unity Smash"
   time="Biweekly Saturdays from 12:00pm-10:00pm"
