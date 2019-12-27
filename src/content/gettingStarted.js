@@ -20,6 +20,12 @@ const gettingStarted =
     <p>Tournaments usually have an entry fee which pays for the building, staffing, and winners' prizes. So long as you follow the venue rules and treat everyone with respect,
         you should be fine! Organizers usually ask individuals to also let bracket matches be played before friendly matches, so please be courteous.
     </p>
+
+    <u><h4>Improving!</h4></u>
+    <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on postively and effectively figuring out your goals
+        in the smash community!
+    </p>
+    <iframe width="1903" height="768" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 export default gettingStarted;
