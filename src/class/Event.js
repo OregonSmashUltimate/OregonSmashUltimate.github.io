@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactDropdown from 'react-dropdown';
 
 function Event(props){
   return(
     <div>
-      <h3>{props.name}</h3>
+      <h4>{props.name}</h4>
       <hr />
       <p>
         <a href={props.streamURL !== "" && props.streamURL}
@@ -35,8 +36,8 @@ function Event(props){
 
         {props.time}<br />
         <a href={props.mapURL}
-           target="_blank"
-           rel="noopener noreferrer">{props.location}</a><br />
+            target="_blank"
+            rel="noopener noreferrer">{props.location}</a><br />
 
         {props.venueFee === "" && "Venue: Free" || props.venueFee !== "" && "Venue: $" + props.venueFee}
 
