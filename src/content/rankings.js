@@ -2,8 +2,8 @@ import React from 'react';
 
 const rankings = 
 <div>
-<h1>Rankings are kept track of on <a href="https://smash.gg/rankings/" target="_blank" rel="noopener noreferrer">smash.gg</a></h1>
-<p>When looking up rankings, keep in mind they are separated by season, so they are not always up to date. Rankings are decided by points earned from tournament placings.</p>
+<h3>Rankings are kept track of on <a href="https://smash.gg/rankings/super-smash-bros-ultimate/series/oregon" target="_blank" rel="noopener noreferrer">smash.gg</a></h3>
+<p>Power Rankings are created every 3 months by a panel made up of members in the community. You can find out more about rankings on our Discord and Facebook pages!</p>
 </div>
 
 export default rankings;

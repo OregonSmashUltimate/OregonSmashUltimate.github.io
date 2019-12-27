@@ -9,7 +9,7 @@ const events =
 <div>
   <hr></hr>
       <Event
-        name="Dropzone"
+        name="Dropzone(Sundays)"
         time="Sundays from 12:00pm-6:00pm"
         mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
         location="CCG House, Vancouver, WA"
@@ -20,9 +20,9 @@ const events =
         venueFee="5"
         entryFee="5 per bracket"
         schedule="Doors Open @ 12:00 PM | Doubles @ 12:30pm | Singles @ 2:00pm"
-        notes="Spectate and play friendlies for free!"/>,
+        notes="Spectate and play friendlies for free!"/>
       <Event
-        name="Topdeck Tuesdays"
+        name="Topdeck Tuesdays(Tuesdays)"
         time="Tuesdays from 5:30pm-9:00pm"
         mapURL="https://goo.gl/maps/A6SzTLTsPdc1rrzu8"
         location="The Yugioh Outlet, Gresham, OR"
@@ -35,7 +35,7 @@ const events =
         schedule="Singles @ 6:00pm"
         notes="Spectate and play friendlies for free!"/>
       <Event
-        name="Cascade"
+        name="Cascade(Wednesdays)"
         time="Wednesdays starting 6:00pm"
         mapURL="https://g.page/Gongaii?share"
         location="Gongaii Games, Inc., Beaverton, OR"
@@ -48,7 +48,7 @@ const events =
         schedule="Singles @ 6:00pm"
         notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
       <Event
-        name="Sacred Sanctuary"
+        name="Sacred Sanctuary(Fridays)"
         time="Fridays from  3:00pm - 9:00pm"
         mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
         location="Room SS 121, PCC Sylvania Campus, Portland, OR"
@@ -91,6 +91,19 @@ const events =
       entryFee=""
       schedule="Doubles: 12:30pm | Singles: 1:30pm"
       notes="Singles and doubles! Currently scheduled for Oct 19th, Nov 2nd, 16th, 30th, Dec 28th."/>
+      <Event
+        name="Rose City Unification by Epic Gaming"
+        time="Biweekly Saturdays from 12:00pm-10:00pm"
+        mapURL="https://goo.gl/maps/R37UWCbbxwsCFQJG6"
+        location="Lucky Lab in Multnomah Village, Portland, OR"
+        streamURL=""
+        websiteURL="https://twitch.tv/UnitySmash"
+        facebookURL=""
+        twitterURL="https://twitter.com/UnitySmash"
+        venueFee=""
+        entryFee=""
+        schedule="Doubles: 12:30pm | Singles: 1:30pm"
+        notes="Singles and doubles! Currently scheduled for Oct 19th, Nov 2nd, 16th, 30th, Dec 28th."/>
     <Event
       name="UO Smash Club"
       time="2nd and 4th Fridays starting 5:30pm"
@@ -117,6 +130,13 @@ const events =
       entryFee="3"
       schedule="Loose"
       notes="Singles and doubles!"/>
+  </div>
+</Collapsible>
+<Collapsible title="Regionals">
+  <div>
+    <p>Regionals are larger scale events that usually take place every other month or so. If you want to experience larger competition and play players from Outlet
+      of your region, these are the events to go to! To stay updated on upcoming regionals, be sure to check our Discord and Facebook pages!
+    </p>
   </div>
 </Collapsible>
 </div>
