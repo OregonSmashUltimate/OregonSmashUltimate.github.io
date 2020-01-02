@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaPlusSquare } from 'react-icons/fa';
-import { FaMinusSquare} from 'react-icons/fa';
+import { FaPlusSquare, FaMinusSquare } from 'react-icons/fa';
 
 class Collapsible extends React.Component{
     constructor(props){
@@ -22,14 +21,14 @@ class Collapsible extends React.Component{
             
             {this.state.open ? (
                 <div onClick={(e)=>this.togglePanel(e)} className='header'>
-                    <u>{this.props.title}&nbsp;<FaMinusSquare /></u>  
+                    <u>{this.props.title}</u> &nbsp;<FaMinusSquare /> 
                     <div className='content'>
                         {this.props.children}
                     </div>
                 </div>  
                 ) : (
                 <div onClick={(e)=>this.togglePanel(e)} className='header'>
-                    <u>{this.props.title}&nbsp;<FaPlusSquare /></u>  
+                    <u>{this.props.title}</u>&nbsp;<FaPlusSquare />  
                 </div>)}
         </div>
       );
