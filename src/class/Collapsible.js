@@ -21,7 +21,7 @@ class Collapsible extends React.Component{
             
             {this.state.open ? (
                 <div onClick={(e)=>this.togglePanel(e)} className='header'>
-                    <u>{this.props.title}</u> &nbsp;<FaMinusSquare /> 
+                    <u>{this.props.title}</u>&nbsp;<FaMinusSquare /> 
                     <div className='content'>
                         {this.props.children}
                     </div>
