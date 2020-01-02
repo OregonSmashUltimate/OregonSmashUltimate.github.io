@@ -3,6 +3,7 @@ import Collapsible from './Collapsible';
 
 function Event(props){
   return(
+    <Collapsible title={props.name}>
       <div style={{paddingBottom : '0px', paddingTop : '0px'}}>
         <h4>{props.name}</h4>
         <p><small>
@@ -48,6 +49,7 @@ function Event(props){
           </small></p>
           <hr />
       </div>
+    </Collapsible>
   );
 }
 
