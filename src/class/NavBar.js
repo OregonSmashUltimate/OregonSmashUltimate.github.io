@@ -4,6 +4,7 @@ import home from '../content/home.js';
 import gettingStarted from '../content/gettingStarted.js';
 import events from '../content/events.js';
 import rankings from '../content/rankings.js';
+import { Navbar } from 'react-bootstrap';
 
 class Nav extends React.Component{
 	constructor(props){

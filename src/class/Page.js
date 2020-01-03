@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Nav from './Nav.js';
+import Nav from './NavBar.js';
 import Footer from './Footer.js';
 
 function Page(props){
