@@ -1,6 +1,8 @@
 import React from 'react';
 import Collapsible from './Collapsible';
 
+//Event Class to encapsulate information for Smash tournaments and view on page
+//Collapsible used to be more compact with display of multiple events on webpage
 function Event(props){
   return(
     <Collapsible title={props.name}>

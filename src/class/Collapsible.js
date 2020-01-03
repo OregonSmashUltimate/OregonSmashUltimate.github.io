@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaPlusSquare, FaMinusSquare } from 'react-icons/fa';
 
+//Custom Collapsible class for expanding/collapsing text on webpage
+
 class Collapsible extends React.Component{
     constructor(props){
         super(props);
@@ -32,6 +34,7 @@ class Collapsible extends React.Component{
                 </div>)}
         </div>
       );
+      // Cursor reference: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
     }
 }   
 export default Collapsible;
