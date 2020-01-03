@@ -78,9 +78,9 @@ const events =
 <Collapsible title="Bi-Weeklies & Monthlies">
 <div>
   <hr></hr>
-    <Event
+  <Event
       name="Unity Station by Unity Smash"
-      time="Biweekly Saturdays from 12:00pm-10:00pm"
+      time="Monthly Saturdays"
       mapURL="https://goo.gl/maps/R37UWCbbxwsCFQJG6"
       location="Lucky Lab in Multnomah Village, Portland, OR"
       streamURL=""
@@ -90,20 +90,20 @@ const events =
       venueFee=""
       entryFee=""
       schedule="Doubles: 12:30pm | Singles: 1:30pm"
-      notes="Singles and doubles! Currently scheduled for Oct 19th, Nov 2nd, 16th, 30th, Dec 28th."/>
-      <Event
-        name="Rose City Unification by Epic Gaming"
-        time="Biweekly Saturdays from 12:00pm-10:00pm"
-        mapURL="https://goo.gl/maps/R37UWCbbxwsCFQJG6"
-        location="Lucky Lab in Multnomah Village, Portland, OR"
-        streamURL=""
-        websiteURL="https://twitch.tv/UnitySmash"
-        facebookURL=""
-        twitterURL="https://twitter.com/UnitySmash"
-        venueFee=""
-        entryFee=""
-        schedule="Doubles: 12:30pm | Singles: 1:30pm"
-        notes="Singles and doubles! Currently scheduled for Oct 19th, Nov 2nd, 16th, 30th, Dec 28th."/>
+      notes="CURRENTLY ON HIATUS"/>
+    <Event
+      name="Rose City Unification by Epic Gaming"
+      time="Saturday Monthly from 12:00pm-End"
+      mapURL="https://goo.gl/maps/JUMV64GYZaKchVHXA"
+      location="Epic Gaming, Milwaukie, OR"
+      streamURL="https://www.youtube.com/channel/UCaGyt3cYgeNpOnZJnMh7lPQ"
+      websiteURL="http://epicgaming.tcgplayerpro.com/"
+      facebookURL="https://www.facebook.com/epicgamingpdx/"
+      twitterURL="https://twitter.com/epicgamingpdx"
+      venueFee="10 ($5 off for bringing a setup)"
+      entryFee="5 per bracket"
+      schedule="Doubles: 12:30pm | Singles: 1:30pm"
+      notes="Dates announced on Facebook and Discord"/>
     <Event
       name="UO Smash Club"
       time="2nd and 4th Fridays starting 5:30pm"
