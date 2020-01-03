@@ -6,73 +6,73 @@ import Collapsible from '../class/Collapsible';
 const events = 
 <div>
 <Collapsible title="Weeklies">
-<div>
-  <hr></hr>
-      <Event
-        name="Dropzone(Sundays)"
-        time="Sundays from 12:00pm-6:00pm"
-        mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
-        location="CCG House, Vancouver, WA"
-        streamURL="https://twitch.tv/teamsolidarity"
-        websiteURL="https://www.teamsolidarity.info/dropzone"
-        facebookURL=""
-        twitterURL="https://twitter.com/dropzone_ts"
-        venueFee="5"
-        entryFee="5 per bracket"
-        schedule="Doors Open @ 12:00 PM | Doubles @ 12:30pm | Singles @ 2:00pm"
-        notes="Spectate and play friendlies for free!"/>
-      <Event
-        name="Topdeck Tuesdays(Tuesdays)"
-        time="Tuesdays from 5:30pm-9:00pm"
-        mapURL="https://goo.gl/maps/A6SzTLTsPdc1rrzu8"
-        location="The Yugioh Outlet, Gresham, OR"
-        streamURL=""
-        websiteURL=""
-        facebookURL=""
-        twitterURL="https://twitter.com/ORchapter6"
-        venueFee="5"
-        entryFee="5"
-        schedule="Singles @ 6:00pm"
-        notes="Spectate and play friendlies for free!"/>
-      <Event
-        name="Cascade(Wednesdays)"
-        time="Wednesdays starting 6:00pm"
-        mapURL="https://g.page/Gongaii?share"
-        location="Gongaii Games, Inc., Beaverton, OR"
-        streamURL=""
-        websiteURL="https://twitch.tv/pdxcascade"
-        facebookURL=""
-        twitterURL="https://twitter.com/PDXCascade"
-        venueFee="5"
-        entryFee="5"
-        schedule="Singles @ 6:00pm"
-        notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
-      <Event
-        name="Sacred Sanctuary(Fridays)"
-        time="Fridays from  3:00pm - 9:00pm"
-        mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
-        location="Room SS 121, PCC Sylvania Campus, Portland, OR"
-        streamURL="https://twitch.tv/UnitySmash"
-        websiteURL=""
-        facebookURL=""
-        twitterURL="https://twitter.com/TeziiMewtwo"
-        venueFee="5"
-        entryFee="5 per bracket"
-        schedule="Doors Open @ 3:00pm | Doubles @ 3:30pm | Singles @ 5:00pm"
-        notes="Spectate and play friendlies for free!"/>
-      <Event
-        name="Salem Smashfest"
-        time="Saturdays starting 1:00pm"
-        mapURL="https://goo.gl/maps/Mmi5SMQqvDZQ2P82A"
-        location="Premiere Academy of Performing Arts, Salem, OR"
-        streamURL="https://twitch.tv/salemsmashfests"
-        websiteURL=""
-        facebookURL="https://www.facebook.com/groups/SalemSmashfests/"
-        twitterURL="https://twitter.com/SalemSmashfests"
-        venueFee=""
-        entryFee=""
-        schedule="Singles: 1:00pm"
-        notes="Singles only. Also has SSBM (Super Smash Brothers Melee), PM (Project Melee, a heavily modded version of Super Smash Brothers Brawl), DBFZ (Dragonball Fighter Z), and Guilty Gear."/>
+  <div>
+    <hr></hr>
+        <Event
+          name="Dropzone(Sundays)"
+          time="Sundays from 12:00pm-6:00pm"
+          mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
+          location="CCG House, Vancouver, WA"
+          streamURL="https://twitch.tv/teamsolidarity"
+          websiteURL="https://www.teamsolidarity.info/dropzone"
+          facebookURL=""
+          twitterURL="https://twitter.com/dropzone_ts"
+          venueFee="5"
+          entryFee="5 per bracket"
+          schedule="Doors Open @ 12:00 PM | Doubles @ 12:30pm | Singles @ 2:00pm"
+          notes="Spectate and play friendlies for free!"/>
+        <Event
+          name="Topdeck Tuesdays(Tuesdays)"
+          time="Tuesdays from 5:30pm-9:00pm"
+          mapURL="https://goo.gl/maps/A6SzTLTsPdc1rrzu8"
+          location="The Yugioh Outlet, Gresham, OR"
+          streamURL=""
+          websiteURL=""
+          facebookURL=""
+          twitterURL="https://twitter.com/ORchapter6"
+          venueFee="5"
+          entryFee="5"
+          schedule="Singles @ 6:00pm"
+          notes="Spectate and play friendlies for free!"/>
+        <Event
+          name="Cascade(Wednesdays)"
+          time="Wednesdays starting 6:00pm"
+          mapURL="https://g.page/Gongaii?share"
+          location="Gongaii Games, Inc., Beaverton, OR"
+          streamURL=""
+          websiteURL="https://twitch.tv/pdxcascade"
+          facebookURL=""
+          twitterURL="https://twitter.com/PDXCascade"
+          venueFee="5"
+          entryFee="5"
+          schedule="Singles @ 6:00pm"
+          notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
+        <Event
+          name="Sacred Sanctuary(Fridays)"
+          time="Fridays from  3:00pm - 9:00pm"
+          mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
+          location="Room SS 121, PCC Sylvania Campus, Portland, OR"
+          streamURL="https://twitch.tv/UnitySmash"
+          websiteURL=""
+          facebookURL=""
+          twitterURL="https://twitter.com/TeziiMewtwo"
+          venueFee="5"
+          entryFee="5 per bracket"
+          schedule="Doors Open @ 3:00pm | Doubles @ 3:30pm | Singles @ 5:00pm"
+          notes="Spectate and play friendlies for free!"/>
+        <Event
+          name="Salem Smashfest"
+          time="Saturdays starting 1:00pm"
+          mapURL="https://goo.gl/maps/Mmi5SMQqvDZQ2P82A"
+          location="Premiere Academy of Performing Arts, Salem, OR"
+          streamURL="https://twitch.tv/salemsmashfests"
+          websiteURL=""
+          facebookURL="https://www.facebook.com/groups/SalemSmashfests/"
+          twitterURL="https://twitter.com/SalemSmashfests"
+          venueFee=""
+          entryFee=""
+          schedule="Singles: 1:00pm"
+          notes="Singles only. Also has SSBM (Super Smash Brothers Melee), PM (Project Melee, a heavily modded version of Super Smash Brothers Brawl), DBFZ (Dragonball Fighter Z), and Guilty Gear."/>
   </div>
 </Collapsible>
 <Collapsible title="Bi-Weeklies & Monthlies">
