@@ -4,6 +4,13 @@ import SocialMedia from '../class/SocialMedia.js';
 
 const facebook = 
 <Popup title="facebook" children={
-<p>The lead developer is doesn't use facebook and the others are all shy and didn't link their facebook accounts to their Discord profiles. uwu</p>}/>
+<div>
+<SocialMedia
+	profileImg="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png"
+	role="Community"
+	url="https://www.facebook.com/groups/499672353506994/"
+	username="Oregon Ultimate Facebook Group"
+/>
+</div>}/>
 
 export default facebook;
