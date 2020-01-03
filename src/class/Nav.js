@@ -30,7 +30,7 @@ class Nav extends React.Component{
   
 	render(){
 		return (	
-      <nav id={this.state.tall ? "tall" : ""}>
+      <nav id={this.state.tall ? "tall" : ""} >
         <ul>
           <li onClick={this.contentHome}>Home</li>
           <li onClick={this.contentGettingStarted}>Getting Started</li>
