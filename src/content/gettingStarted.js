@@ -19,13 +19,6 @@ const gettingStarted =
     - <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
     <br></br>
     - <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
-
-    <u><h4>Code of Conduct</h4></u>
-    <small>
-    <p>Tournaments usually have an entry fee which pays for the building, staffing, and winners' prizes. So long as you follow the venue rules and treat everyone with respect,
-        you should be fine! Organizers usually ask individuals to also let bracket matches be played before friendly matches, so please be courteous.
-    </p>
-    </small>
     
     <u><h4>Improving!</h4></u>
     <small>
