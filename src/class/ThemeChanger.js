@@ -43,8 +43,8 @@ class ThemeChanger extends React.Component{
 	}
 	render(){
 		return (	
-					<li onClick={this.changeTheme}><button>Swap Palette</button></li>
-					//<li onClick={this.changeTheme} class="icon" id="palette" alt="Icon kindly provided by fontawesome."></li>
+      <li onClick={this.changeTheme}><button>Swap Palette</button></li>
+      //<li onClick={this.changeTheme} class="icon" id="palette" alt="Icon kindly provided by fontawesome."></li>
 		);
 	}
 }

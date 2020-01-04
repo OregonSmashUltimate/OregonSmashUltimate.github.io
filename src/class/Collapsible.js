@@ -1,40 +1,28 @@
 import React from 'react';
-import { FaPlusSquare, FaMinusSquare } from 'react-icons/fa';
-
-//Custom Collapsible class for expanding/collapsing text on webpage
 
 class Collapsible extends React.Component{
-    constructor(props){
-        super(props);
-        this.state ={
-            open:false
-        }
-        this.togglePanel = this.togglePanel.bind(this)
-    }
-    
-    togglePanel(e){
-        this.setState({open: !this.state.open})
-    }
-
-    render() {
-        
-      return (
-        <div>
-            
-            {this.state.open ? (
-                <div className='header'>
-                    <u style={{cursor : 'pointer'}} onClick={(e)=>this.togglePanel(e)}>{this.props.title} <FaMinusSquare /></u>
-                    <div className='content'>
-                        {this.props.children}
-                    </div>
-                </div>  
-                ) : (
-                <div className='header'>
-                    <u style={{cursor : 'pointer'}} onClick={(e)=>this.togglePanel(e)}>{this.props.title} <FaPlusSquare /></u>  
-                </div>)}
+	constructor(props){
+		super(props);
+		this.state = {open: 1};
+	}
+  togglePanel(){this.setState({open: !this.state.open})}
+	render(){
+		return (	
+      <div>
+        <div onClick={this.togglePanel} style='cursor: pointer'>
+          <li class={this.state.open === 0 && "icon plus" ||
+                     this.state.open === 1 && "icon minus"}
+              alt="Icon kindly provided by fontawesome.com"></li>
+          <h2>{this.props.title}</h2>
         </div>
-      );
-      // Cursor reference: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
-    }
-}   
+
+        <div style={this.state.open === 0 && "display: none" ||
+                    this.state.open === 1 && "display: block"}>
+          {this.props.children}
+        </div>
+      </div>
+		);
+	}
+}
+
 export default Collapsible;

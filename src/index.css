@@ -51,6 +51,15 @@ footer{
 	z-index: 100;
 }
 
+h1{
+
+}
+
+h2{
+  font-size: 1em;
+  margin-bottom: -1em;
+}
+
 hr{
 	color: var(--textColor);
 	margin: 0;
@@ -119,6 +128,14 @@ ul{
 	margin: 0;
 	padding: 0;
 	text-align: center;
+}
+
+.plus{
+	mask-image: url(icon/plus.svg);
+}
+
+.minus{
+	mask-image: url(icon/minus.svg);
 }
 
 .SocialMedia{

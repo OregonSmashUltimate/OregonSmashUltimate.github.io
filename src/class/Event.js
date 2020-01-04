@@ -1,14 +1,14 @@
 import React from 'react';
-import Collapsible from './Collapsible';
+import Collapsible from './Collapsible.js';
 
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
 function Event(props){
   return(
     <Collapsible title={props.name}>
-      <div style={{paddingBottom : '0px', paddingTop : '0px'}}>
-        <h4>{props.name}</h4>
-        <p><small>
+      <div>
+        <h2>{props.name}</h2>
+        <p>
           <a href={props.streamURL !== "" && props.streamURL}
             class={props.streamURL === "" && "dead" || props.streamURL !== "" && "icon"}
             id="twitch"
@@ -33,23 +33,26 @@ function Event(props){
             class={props.twitterURL === "" && "dead" || props.twitterURL !== "" && "icon"}
             id="twitter"
             target="_blank"
-            rel="noopener noreferrer"></a>
-          <br />
+            rel="noopener noreferrer"></a><br/>
 
-          <u>Dates</u>: {props.time}<br />
-          <u>Location:</u>
+          Date(s): {props.time}
+
+          Location:
           <a href={props.mapURL}
-              target="_blank"
-              rel="noopener noreferrer"> {props.location}</a><br />
+                   target="_blank"
+                   rel="noopener noreferrer">
+            {props.location}
+          </a>
 
-          <u>Fees:</u> {props.venueFee === "" && "Venue: Free" || props.venueFee !== "" && "Venue: $" + props.venueFee}
+          Fees: {props.venueFee === "" && "Venue: Free" ||
+                 props.venueFee !== "" && "Venue: $" + props.venueFee}
+                {props.entryFee === "" && " | Entry: Free" ||
+                 props.entryFee !== "" && " | Entry: $" + props.entryFee}<br/>
 
-          {props.entryFee === "" && " | Entry: Free" || props.entryFee !== "" && " | Entry: $" + props.entryFee}
-          <br />
-          <u>Schedule:</u> {props.schedule}<br />
-          <u>Notes:</u> {props.notes}
-          </small></p>
-          <hr />
+          Schedule: {props.schedule}<br/>
+
+          Notes: {props.notes}</p>
+          <hr/>
       </div>
     </Collapsible>
   );
