@@ -4,11 +4,15 @@ import Collapsible from './Collapsible.js';
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
 function Event(props){
+  const close = {
+    marginTop: '0',
+    paddingTop: '0'
+  };
+  //<h2>{props.name}</h2>
   return(
     <Collapsible title={props.name}>
-      <div>
-        <h2>{props.name}</h2>
-        <p>
+      <div style={close}>
+        <p style={close}>
           <a href={props.streamURL !== "" && props.streamURL}
             class={props.streamURL === "" && "dead" || props.streamURL !== "" && "icon"}
             id="twitch"
@@ -35,14 +39,14 @@ function Event(props){
             target="_blank"
             rel="noopener noreferrer"></a><br/>
 
-          Date(s): {props.time}
+          Date(s): {props.time}<br/>
 
-          Location:
+          Location:&nbsp;
           <a href={props.mapURL}
                    target="_blank"
                    rel="noopener noreferrer">
             {props.location}
-          </a>
+          </a><br/>
 
           Fees: {props.venueFee === "" && "Venue: Free" ||
                  props.venueFee !== "" && "Venue: $" + props.venueFee}
