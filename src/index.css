@@ -138,6 +138,14 @@ ul{
 	mask-image: url(icon/minus.svg);
 }
 
+#mobile{
+	mask-image: url(icon/mobile.svg);
+}
+
+#desktop{
+	mask-image: url(icon/desktop.svg);
+}
+
 .SocialMedia{
 	margin-top: 25px;
 	overflow-y: auto;
