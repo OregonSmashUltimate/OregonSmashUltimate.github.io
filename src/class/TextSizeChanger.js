@@ -8,7 +8,6 @@ class TextSizeChanger extends React.Component{
 	}
   componentDidMount(){
     //read localStorage to see their setting from last time
-    console.log(localStorage.getItem("mobile"));
     if(localStorage.getItem("mobile") != "1") return;
     this.setState({mobile: 0});
     document.body.style.fontSize = '12pt';
