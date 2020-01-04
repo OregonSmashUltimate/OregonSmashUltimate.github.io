@@ -5,7 +5,7 @@ import SocialMedia from '../class/SocialMedia.js';
 const discord = 
 <Popup title="Discord" children={
 <div>
-<p>Right-click to open the images they aren't working.</p>
+<p>Right-click to open the images that aren't displaying properly.</p>
 <SocialMedia
 	profileImg="https://cdn.discordapp.com/avatars/194312605941104640/817e8a5e5a0139076775833c44e16a9b.png"
   role="Project Manager"
