@@ -15,18 +15,10 @@ class Nav extends React.Component{
 		this.contentEvents = this.contentEvents.bind(this);
 		this.contentRankings = this.contentRankings.bind(this);
 	}
-	contentHome(){
-    this.setState(state => ({content: home, tall: false}));
-  }
-	contentGettingStarted(){
-    this.setState(state => ({content: gettingStarted, tall: true}));
-  }
-	contentEvents(){
-    this.setState(state => ({content: events, tall: true}));
-  }
-	contentRankings(){
-    this.setState(state => ({content: rankings, tall: true}));
-  }
+	contentHome(){          this.setState(state => ({content: home,           tall: false}));}
+	contentGettingStarted(){this.setState(state => ({content: gettingStarted, tall: true}));}
+	contentEvents(){        this.setState(state => ({content: events,         tall: true}));}
+	contentRankings(){      this.setState(state => ({content: rankings,       tall: true}));}
   //these functions are a temporary dumb solution for tag values not working correctly in React, thus an inablity to pass arguments to an onClick function without inefficient rerenderring
   
 	render(){

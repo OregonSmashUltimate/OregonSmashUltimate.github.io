@@ -3,8 +3,9 @@ import React from 'react';
 class ThemeChanger extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {theme: 1};
+		this.state = {theme: Number(localStorage.getItem('theme'))};
 		this.changeTheme = this.changeTheme.bind(this);
+    this.changeTheme();
 	}
 	changeTheme(){
 		var textColor, linkColor, fgColor, bgColor;
@@ -40,11 +41,14 @@ class ThemeChanger extends React.Component{
 		cssRoot.style.setProperty('--linkColor', linkColor);
 		cssRoot.style.setProperty('--fgColor', fgColor);
 		cssRoot.style.setProperty('--bgColor', bgColor);
+    localStorage.setItem('theme', String(this.state.theme));
+    //console.log(String(this.state.theme));
+    //console.log(localStorage.getItem("theme"));
 	}
 	render(){
 		return (	
-					<li onClick={this.changeTheme}><button>Swap Palette</button></li>
-					//<li onClick={this.changeTheme} class="icon" id="palette" alt="Icon kindly provided by fontawesome."></li>
+      <li onClick={this.changeTheme}><button>Swap Palette</button></li>
+      //<li onClick={this.changeTheme} class="icon" id="palette" alt="Icon kindly provided by fontawesome."></li>
 		);
 	}
 }

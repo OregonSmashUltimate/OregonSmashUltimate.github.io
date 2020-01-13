@@ -7,9 +7,9 @@ const events =
 <div>
 <Collapsible title="Weeklies">
   <div>
-    <hr></hr>
+    <hr/>
         <Event
-          name="Dropzone(Sundays)"
+          name="Dropzone"
           time="Sundays from 12:00pm-6:00pm"
           mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
           location="CCG House, Vancouver, WA"
@@ -19,10 +19,10 @@ const events =
           twitterURL="https://twitter.com/dropzone_ts"
           venueFee="5"
           entryFee="5 per bracket"
-          schedule="Doors Open @ 12:00 PM | Doubles @ 12:30pm | Singles @ 2:00pm"
+          schedule="Doors Open @ 12:00pm | Doubles @ 12:30pm | Singles @ 2:00pm"
           notes="Spectate and play friendlies for free!"/>
         <Event
-          name="Topdeck Tuesdays(Tuesdays)"
+          name="Topdeck Tuesdays"
           time="Tuesdays from 5:30pm-9:00pm"
           mapURL="https://goo.gl/maps/A6SzTLTsPdc1rrzu8"
           location="The Yugioh Outlet, Gresham, OR"
@@ -35,12 +35,12 @@ const events =
           schedule="Singles @ 6:00pm"
           notes="Spectate and play friendlies for free!"/>
         <Event
-          name="Cascade(Wednesdays)"
+          name="Cascade"
           time="Wednesdays starting 6:00pm"
           mapURL="https://g.page/Gongaii?share"
           location="Gongaii Games, Inc., Beaverton, OR"
-          streamURL=""
-          websiteURL="https://twitch.tv/pdxcascade"
+          streamURL="https://twitch.tv/pdxcascade"
+          websiteURL=""
           facebookURL=""
           twitterURL="https://twitter.com/PDXCascade"
           venueFee="5"
@@ -48,8 +48,8 @@ const events =
           schedule="Singles @ 6:00pm"
           notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
         <Event
-          name="Sacred Sanctuary(Fridays)"
-          time="Fridays from  3:00pm - 9:00pm"
+          name="Sacred Sanctuary"
+          time="Fridays from 3:00pm-9:00pm"
           mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
           location="Room SS 121, PCC Sylvania Campus, Portland, OR"
           streamURL="https://twitch.tv/UnitySmash"
@@ -83,8 +83,8 @@ const events =
       time="Monthly Saturdays"
       mapURL="https://goo.gl/maps/R37UWCbbxwsCFQJG6"
       location="Lucky Lab in Multnomah Village, Portland, OR"
-      streamURL=""
-      websiteURL="https://twitch.tv/UnitySmash"
+      streamURL="https://twitch.tv/UnitySmash"
+      websiteURL=""
       facebookURL=""
       twitterURL="https://twitter.com/UnitySmash"
       venueFee=""
@@ -133,11 +133,8 @@ const events =
   </div>
 </Collapsible>
 <Collapsible title="Regionals">
-  <div>
-    <p>Regionals are larger scale events that usually take place every other month or so. If you want to experience larger competition and play players from Outlet
-      of your region, these are the events to go to! To stay updated on upcoming regionals, be sure to check our Discord and Facebook pages!
-    </p>
-  </div>
+  <p>Regionals are larger scale events that usually take place every other month or so. If you want to experience larger competition and play players from outside of your region, these are the events to go to! To stay updated on upcoming regionals, be sure to check our Discord and Facebook pages!
+  </p>
 </Collapsible>
 </div>
 //for embedded maps do to share in Google Maps

@@ -11,12 +11,6 @@ const twitter =
 	url="https://twitter.com/niraj_everest"
 	username="@niraj_everest"
 />
-<SocialMedia
-	profileImg="https://pbs.twimg.com/profile_images/1180645054819340289/5ud1R5EV_400x400.jpg"//https://pbs.twimg.com/profile_images/1120052132776796160/nbK9A9G7_400x400.jpg"
-  	role="Lead Developer"
-	url="https://twitter.com/CeruleanAoi?s=09"
-	username="@CeruleanAoi"
-/>
 </div>
 }/>
 
