@@ -7,8 +7,14 @@ const discord =
 <div>
 <p>Right-click to open the images that aren't displaying properly.</p>
 <SocialMedia
+	profileImg="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
+	role="Community"
+	url="https://discord.gg/K8nv9pt"
+	username="Oregon Discord"
+/>
+<SocialMedia
 	profileImg="https://cdn.discordapp.com/avatars/194312605941104640/817e8a5e5a0139076775833c44e16a9b.png"
-  role="Project Manager"
+  	role="Project Manager"
 	url="https://discordapp.com/"
 	username="UNITY | Everest#1614" />
 
