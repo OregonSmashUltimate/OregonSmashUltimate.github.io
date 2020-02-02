@@ -49,7 +49,7 @@ const events =
           notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
         <Event
           name="Sacred Sanctuary"
-          time="Fridays from 3:00pm-9:00pm"
+          time="Fridays from 5:30pm-9:00pm"
           mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
           location="Room SS 121, PCC Sylvania Campus, Portland, OR"
           streamURL="https://twitch.tv/UnitySmash"
@@ -58,21 +58,21 @@ const events =
           twitterURL="https://twitter.com/TeziiMewtwo"
           venueFee="5"
           entryFee="5 per bracket"
-          schedule="Doors Open @ 3:00pm | Doubles @ 3:30pm | Singles @ 5:00pm"
+          schedule="Singles @ 6:00pm"
           notes="Spectate and play friendlies for free!"/>
         <Event
           name="Salem Smashfest"
-          time="Saturdays starting 1:00pm"
-          mapURL="https://goo.gl/maps/Mmi5SMQqvDZQ2P82A"
-          location="Premiere Academy of Performing Arts, Salem, OR"
+          time="Saturdays starting 11:30pm"
+          mapURL="https://goo.gl/maps/N6gJ79SQAyKNqBLEA"
+          location="Corban University, Salem, OR 97317"
           streamURL="https://twitch.tv/salemsmashfests"
           websiteURL=""
           facebookURL="https://www.facebook.com/groups/SalemSmashfests/"
           twitterURL="https://twitter.com/SalemSmashfests"
-          venueFee=""
-          entryFee=""
-          schedule="Singles: 1:00pm"
-          notes="Singles only. Also has SSBM (Super Smash Brothers Melee), PM (Project Melee, a heavily modded version of Super Smash Brothers Brawl), DBFZ (Dragonball Fighter Z), and Guilty Gear."/>
+          venueFee="5"
+          entryFee="5 for Singles, $2 for Doubles"
+          schedule="Singles @ 1:30pm, Doubles @ 4:30pm"
+          notes="Free brackets for fighting games, such as BlazBlue Cross-Tag Battle, Tekken 7, and Guilty Gear Xrd -Rev2-"/>
   </div>
 </Collapsible>
 <Collapsible title="Bi-Weeklies & Monthlies">
