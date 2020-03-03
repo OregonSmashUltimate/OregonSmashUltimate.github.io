@@ -46,6 +46,7 @@ class Nav extends React.Component{
 	render(){
 		return (	
 			<Router>
+				
 				<nav id="tall">
 				<ul>
 					<li>

@@ -5,12 +5,13 @@ import Footer from './Footer.js';
 
 function Page(props){
 	return (
+		
 		<div>
 			<Nav />
 			{props.children}
 			<Footer />
       <div id="logo">
-		  
+
 	  </div>
 		</div>
 	);
