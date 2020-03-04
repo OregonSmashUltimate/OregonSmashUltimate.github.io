@@ -18,15 +18,7 @@ class Nav extends React.Component{
 		super(props);
 		this.state = {content: home, tall: false};
 		this.Rankings = this.Rankings.bind(this);
-    // 	this.contentHome = this.contentHome.bind(this);
-	// 	this.contentGettingStarted = this.contentGettingStarted.bind(this);
-	// 	this.contentEvents = this.contentEvents.bind(this);
-	// 	this.contentRankings = this.contentRankings.bind(this);
 	}
-	// contentHome(){          this.setState(state => ({content: home,           tall: false}));}
-	// contentGettingStarted(){this.setState(state => ({content: gettingStarted, tall: true}));}
-	// contentEvents(){        this.setState(state => ({content: events,         tall: true}));}
-	// contentRankings(){      this.setState(state => ({content: rankings,       tall: true}));}
 	Home(){
 		return home;
 	}
@@ -47,7 +39,7 @@ class Nav extends React.Component{
 		return (	
 			<Router>
 				
-				<nav id="tall">
+				<nav id="tall" style={{width: '100%'}}>
 				<ul>
 					<li>
 						<Link to="/">Home</Link>
