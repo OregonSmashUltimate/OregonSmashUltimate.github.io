@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SocialMedia from '../class/SocialMedia.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Carousel from 'react-bootstrap/Carousel';
 import OregonWinter2019PR from '../pictures/OregonWinter2019PR.jpg';
@@ -18,14 +17,16 @@ const home =
       &nbsp;and&nbsp;
       <u><a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer">Facebook</a></u>
     !</p>
-    <Carousel wrap='true' interval='4000'>
-      <Carousel.Item>
-        <img className="img-fluid" src={OregonWinter2019PR} alt="Oregon Winter 2019 PR" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="img-fluid" src={BTBSample} alt="Buff the bluff"/>
-      </Carousel.Item>
-    </Carousel>
+    <div class="bootstrap-iso">
+      <Carousel wrap='true' interval='4000'>
+        <Carousel.Item>
+          <img className="img-fluid" src={OregonWinter2019PR} alt="Oregon Winter 2019 PR" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="img-fluid" src={BTBSample} alt="Buff the bluff"/>
+        </Carousel.Item>
+      </Carousel>
+    </div>
 </div>
 
 export default home;
