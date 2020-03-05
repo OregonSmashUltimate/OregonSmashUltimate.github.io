@@ -17,15 +17,16 @@ const home =
       &nbsp;and&nbsp;
       <u><a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer">Facebook</a></u>
     !</p>
-    <div class="bootstrap-iso" style={{width: '200%'}}>
-      <Carousel wrap='true' interval='4000' touch='true'>
+    <div>
+      {/* Commented out due to aspect ratio issues */}
+      {/* <Carousel id="carouselHome" wrap='true' interval='4000' touch='true'>
         <Carousel.Item>
           <img className='img-fluid' src={OregonWinter2019PR} alt="Oregon Winter 2019 PR" />
         </Carousel.Item>
         <Carousel.Item>
           <img className='img-fluid' src={BTBSample } alt="Oregon Winter 2019 PR"/>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </div>
 </div>
 
