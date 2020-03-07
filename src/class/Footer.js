@@ -24,10 +24,10 @@ function Footer(props){
       <ul>
         <TextSizeChanger/>
         <ThemeChanger/>
-        <li class="icon" id="facebook" onClick={popupFacebook}/>
-        <li class="icon" id="twitter" onClick={popupTwitter}/>
-        <li class="icon" id="github" onClick={popupGithub}/>
-        <li class="icon" id="discord" onClick={popupDiscord}/>
+        <li className="icon" id="facebook" onClick={popupFacebook}/>
+        <li className="icon" id="twitter" onClick={popupTwitter}/>
+        <li className="icon" id="github" onClick={popupGithub}/>
+        <li className="icon" id="discord" onClick={popupDiscord}/>
       </ul>
     </footer>
   );

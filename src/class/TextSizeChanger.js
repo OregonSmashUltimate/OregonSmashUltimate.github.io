@@ -26,7 +26,7 @@ class TextSizeChanger extends React.Component{
   }
   render(){
     return(
-      <li class="icon"
+      <li className="icon"
           id={!this.state.mobile && "desktop" ||
                this.state.mobile && "mobile"}
           onClick={this.changeTextSize}
