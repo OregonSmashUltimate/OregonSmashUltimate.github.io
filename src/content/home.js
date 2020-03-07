@@ -18,15 +18,18 @@ const home =
       <u><a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer">Facebook</a></u>
     !</p>
     <div>
-      {/* Commented out due to aspect ratio issues */}
-      {/* <Carousel id="carouselHome" wrap='true' interval='4000' touch='true'>
+      <Carousel id="carouselHome" wrap='true' interval='4000' touch='true' slide='true'>
         <Carousel.Item>
-          <img className='img-fluid' src={OregonWinter2019PR} alt="Oregon Winter 2019 PR" />
+          <img className='img-fluid' src={OregonWinter2019PR} alt="Oregon Winter 2019 PR" vspace='100' />
+          <Carousel.Caption>
+          Hello
+          </Carousel.Caption>
         </Carousel.Item>
+        
         <Carousel.Item>
-          <img className='img-fluid' src={BTBSample } alt="Oregon Winter 2019 PR"/>
+          <img className='img-fluid' src={BTBSample } alt="Oregon Winter 2019 PR" vspace='38.5'/>
         </Carousel.Item>
-      </Carousel> */}
+      </Carousel>
     </div>
 </div>
 
