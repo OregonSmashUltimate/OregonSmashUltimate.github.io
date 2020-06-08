@@ -10,7 +10,7 @@ class Nav extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {content: home, tall: false};
-    this.contentHome = this.contentHome.bind(this);
+    	this.contentHome = this.contentHome.bind(this);
 		this.contentGettingStarted = this.contentGettingStarted.bind(this);
 		this.contentEvents = this.contentEvents.bind(this);
 		this.contentRankings = this.contentRankings.bind(this);
