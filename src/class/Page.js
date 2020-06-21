@@ -7,9 +7,11 @@ function Page(props){
 	return (
 		<div>
 			<Nav />
-			{props.children}
+			
 			<Footer />
-      <div id="logo"></div>
+      		<div id="logo">
+
+			</div>
 		</div>
 	);
 }
