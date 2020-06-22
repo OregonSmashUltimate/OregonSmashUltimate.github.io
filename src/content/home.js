@@ -6,9 +6,9 @@ import Card from 'react-bootstrap/Card';
 export default function Home(){ 
   return(
     <div>
-      <Card style={{ width: '22rem' }} className="text-center" bg="info">
-        <Card.Header as="h3">
-          Looking to compete in Oregon's Smash Ultimate scene?
+      <Card style={{ width: '25%' }} className="text-center" bg="info">
+        <Card.Header as="h4">
+          Looking to join the Oregon Smash Ultimate Community?
         </Card.Header>
         <Card.Body>
           <Card.Text>
