@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GettingStarted(){
     return(
-        <div>
+        <div id="gettingStartedDiv">
             <h2>Welcome!</h2>
 
             <u><h4>Find & Enter Events!</h4></u>
@@ -22,11 +22,11 @@ export default function GettingStarted(){
             
             <u><h4>Improving!</h4></u>
             <small>
-            <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on postively and effectively figuring out your goals
+            <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
                 in the smash community!
             </p>
             </small>
-            <iframe width="1903" height="768" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     );
 }

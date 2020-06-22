@@ -179,6 +179,12 @@ ul{
 	mask-image: url(icon/facebook.svg);
 }
 
+#gettingStartedDiv{
+	background-color: var(--textColor);
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 20%;
+}
 #github{
 	mask-image: url(icon/github.svg);
 }
