@@ -5,7 +5,7 @@ import Collapsible from '../class/Collapsible';
 
 export default function Events(){
   return(
-    <div id="eventsDiv">
+    <div id="events-div">
       <Collapsible title="Weeklies">
         <div>
           <hr/>

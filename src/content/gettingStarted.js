@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GettingStarted(){
     return(
-        <div id="gettingStartedDiv">
+        <div id="getting-started-div">
             <h2>Welcome!</h2>
 
             <u><h4>Find & Enter Events!</h4></u>

@@ -3,6 +3,7 @@
 	--fgColor: #232d3c;
 	--linkColor: #b6b6b6;
 	--textColor: #f2f2f2;
+	--pageColor: #f2f2f2;
 }
 
 a{
@@ -175,8 +176,8 @@ ul{
 	mask-image: url(icon/palette.svg);
 }*/
 
-#eventsDiv{
-	background-color: var(--textColor);
+#events-div{
+	background-color: var(--pageColor);
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
@@ -186,8 +187,8 @@ ul{
 	mask-image: url(icon/facebook.svg);
 }
 
-#gettingStartedDiv{
-	background-color: var(--textColor);
+#getting-started-div{
+	background-color: var(--pageColor);
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
@@ -258,6 +259,13 @@ ul{
 	transform: translateX(-50%);
 	width: 500px;
 	z-index: 2;
+}
+
+#rankings-div{
+	background-color: var(--pageColor);
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 20%;
 }
 
 #tall{
