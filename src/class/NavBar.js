@@ -1,10 +1,10 @@
 import React from 'react';
 
-import home from '../content/home.js';
-import gettingStarted from '../content/gettingStarted.js';
-import events from '../content/events.js';
-import rankings from '../content/rankings.js';
-import { Navbar } from 'react-bootstrap';
+import Home from '../content/home.js';
+import GettingStarted from '../content/gettingStarted.js';
+import Events from '../content/events.js';
+import Rankings from '../content/rankings.js';
+
 import{
 	BrowserRouter as Router,
 	Switch,
@@ -12,16 +12,13 @@ import{
 	Link
 } from "react-router-dom";
 
-class Nav extends React.Component{
-	constructor(){
-		super();
-	}
-	render(){
+export default function Nav(){
+	
 		return (
 			<div>
 				<Router>
 					<div>
-						<nav>
+						<nav id="tall">
 							<ul>
 								<li>
 									<Link to="/">Home</Link>
@@ -37,34 +34,23 @@ class Nav extends React.Component{
 								</li>
 							</ul>
 						</nav>
+						<hr/>
 						<Switch>
-							<Route path="/">
+							<Route exact path="/">
 								<Home />
 							</Route>
 							<Route path="/gettingstarted">
-								<GettingStarted/>
+								<GettingStarted />
 							</Route>
 							<Route path="/events">
-								<contentEvents/>
+								<Events />
 							</Route>
 							<Route path="/rankings">
-								<contentRankings/>
+								<Rankings />
 							</Route>
 						</Switch>
 					</div>
 				</Router>
 			</div>
 		);
-	}
 }
-
-//<li class="icon" id="home" alt="Icon kindly provided by fontawesome.">Home</li>
-function Home(){
-	return home;
-}
-
-function GettingStarted(){
-	return gettingStarted;
-}
-
-export default Nav;

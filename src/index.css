@@ -85,23 +85,8 @@ li:hover{
 nav{
 	background-color: var(--bgColor);
 	color: var(--textColor);
-	font-size: 1.5em;
-	height: calc(55% - 20px);
 	left: 0;
-	opacity: .95;
-	overflow-y: auto;
-	position: fixed;
-	top: 45%;
-	width: 100%;
-	z-index: 1;
-}
-
-nav div{
-	margin: auto;
-	max-width: calc(100% - 40px);
-	min-width: 200px;
-	padding: 20px;
-	width: 900px;
+	opacity: .90;
 }
 
 nav ul{
@@ -110,7 +95,7 @@ nav ul{
 	padding-bottom: 20px;
 	padding-top: 20px;
 	position: sticky;
-  z-index: 1;
+  	/* z-index: 1; */
 	top: 0;
 }
 
@@ -216,9 +201,11 @@ ul{
 	background-color: var(--textColor);
 	height: 100%;
 	left: 0;
-	mask-image: url(../src/icon/orsmash.svg);
-	mask-size: 100% 100%;
+	background-image: url(../src/icon/orsmash.svg);
+	background-attachment: fixed;
+  	background-size: 100% 100%;
 	position: fixed;
+	opacity: .9;
 	top: 0;
 	width: 100%;
 }

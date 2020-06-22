@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import Page from './class/Page.js';
 
 var root = document.getElementById('root');
-ReactDOM.render(<App />, root);
+// ReactDOM.render(<App />, root);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
