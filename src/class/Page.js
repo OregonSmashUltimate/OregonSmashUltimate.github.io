@@ -6,12 +6,10 @@ import Footer from './Footer.js';
 function Page(props){
 	return (
 		<div>
-      		<div id="logo">
-
+			<div>
+				<Nav />
+				<Footer />
 			</div>
-			<Nav />
-			
-			<Footer />
 		</div>
 	);
 }

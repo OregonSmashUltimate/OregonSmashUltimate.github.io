@@ -5,6 +5,7 @@ import GettingStarted from '../content/gettingStarted.js';
 import Events from '../content/events.js';
 import Rankings from '../content/rankings.js';
 
+
 import{
 	BrowserRouter as Router,
 	Switch,
@@ -18,7 +19,7 @@ export default function Nav(){
 			<div>
 				<Router>
 					<div>
-						<nav id="tall">
+						<nav>
 							<ul>
 								<li>
 									<Link to="/">Home</Link>
@@ -34,7 +35,7 @@ export default function Nav(){
 								</li>
 							</ul>
 						</nav>
-						<hr/>
+						
 						<Switch>
 							<Route exact path="/">
 								<Home />

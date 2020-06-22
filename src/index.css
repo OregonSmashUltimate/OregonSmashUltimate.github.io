@@ -17,7 +17,10 @@ a:hover{
 body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-color: var(--linkColor);
+	background-color: var(--textColor);
+	background-image: url(../src/icon/orsmash.svg);
+	background-attachment: fixed;
+  	background-size: 100% 100%;
 	font-family: 'Big Shoulders Text', cursive;
 	font-size: 16pt;
 }
@@ -152,8 +155,20 @@ ul{
 	background-color: var(--textColor);
 }
 
+/* Card imported from bootstrap */
+.card{
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+	margin-bottom: 10px; /* Added */
+}
+
 #discord{
 	mask-image: url(icon/discord.svg);
+}
+
+#discord-link-img{
+	max-width: 17%;
+	max-height: 17%;
 }
 
 /*#palette{
@@ -174,6 +189,9 @@ ul{
 
 #home{
   text-align: center;
+  background-color: var(--bgColor);
+  background-size: 0px;
+  opacity: .90;
 }
 
 #header{
@@ -208,6 +226,7 @@ ul{
 	opacity: .9;
 	top: 0;
 	width: 100%;
+	z-index: 0;
 }
 
 #popup{
