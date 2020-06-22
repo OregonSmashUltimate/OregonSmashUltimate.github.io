@@ -4,6 +4,7 @@ import Home from '../content/home.js';
 import GettingStarted from '../content/gettingStarted.js';
 import Events from '../content/events.js';
 import Rankings from '../content/rankings.js';
+import logo from '../icon/orsmash.svg';
 
 
 import{
@@ -26,6 +27,9 @@ export default function Nav(){
 								</li>
 								<li>
 									<Link to="/gettingstarted">Getting Started</Link>
+								</li>
+								<li line-width="1em">
+									<Link to="/"><img src={logo} id="logo-nav"></img></Link>
 								</li>
 								<li>
 									<Link to="/events">Events</Link>

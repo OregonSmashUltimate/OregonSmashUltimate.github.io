@@ -87,17 +87,18 @@ li:hover{
 }
 
 nav{
-	background-color: var(--bgColor);
 	color: var(--textColor);
 	left: 0;
-	opacity: .90;
+	opacity: .95;
 }
 
 nav ul{
-	background-color: var(--bgColor);
+	background-color: var(--fgColor);
 	font-size: 1.5em;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
 	position: sticky;
   	/* z-index: 1; */
 	top: 0;
@@ -148,8 +149,8 @@ ul{
 	width: 1em;
 	padding-left: .5em;
 	padding-right: .5em;
-  margin-left: .1em;
-  margin-right: .1em;
+	margin-left: .1em;
+	margin-right: .1em;
 }
 
 .icon:hover{
@@ -160,7 +161,8 @@ ul{
 .card{
 	margin: 0 auto; /* Added */
 	float: none; /* Added */
-	margin-bottom: 10px; /* Added */
+	margin-bottom: 10%; /* Added */
+	margin-top: 7%;
 }
 
 #discord{
@@ -168,8 +170,8 @@ ul{
 }
 
 #discord-link-img{
-	max-width: 17%;
-	max-height: 17%;
+	max-width: 48px;
+	max-height: 48px;
 }
 
 /*#palette{
@@ -233,7 +235,7 @@ ul{
 	background-color: var(--textColor);
 	height: 100%;
 	left: 0;
-	background-image: url(../src/icon/orsmash.svg);
+	background-image: url(./icon/orsmash.svg);
 	background-attachment: fixed;
   	background-size: 100% 100%;
 	position: fixed;
@@ -241,6 +243,12 @@ ul{
 	top: 0;
 	width: 100%;
 	z-index: 0;
+}
+
+#logo-nav{
+	max-width: 80px;
+	opacity: 1.0;
+	padding-left: 0px;
 }
 
 #popup{
