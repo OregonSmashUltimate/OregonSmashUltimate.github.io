@@ -1,4 +1,7 @@
 import React from 'react';
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 class Collapsible extends React.Component{
 	constructor(props){
@@ -30,17 +33,25 @@ class Collapsible extends React.Component{
 
 		return(	
       <div style={close}>
-        <div onClick={this.toggle} style={pointer}>
-          <li class={!this.state.open && "icon plus" ||
-                      this.state.open && "icon minus"}
-              alt="Icon kindly provided by fontawesome.com"/>
-          <h2 style={inline}>{this.props.title}</h2>
-        </div>
-
-        <div style={!this.state.open && none ||
-                     this.state.open && block}>
-          {this.props.children}
-        </div>
+        <Accordion>
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+              <div onClick={this.toggle} style={pointer} class="text-dark">
+                <li class={!this.state.open && "icon plus" ||
+                            this.state.open && "icon minus"}
+                    alt="Icon kindly provided by fontawesome.com"/>
+                <h2 style={inline}>{this.props.title}</h2>
+              </div>
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                {this.props.children}
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </div>
 		);
 	}
