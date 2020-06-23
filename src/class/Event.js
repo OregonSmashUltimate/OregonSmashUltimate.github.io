@@ -18,26 +18,26 @@ function Event(props){
             id="twitch"
             target="_blank"
             rel="noopener noreferrer"
-            alt="Icon kindly provided by fontawesome.com"></a>
+            alt="Icon kindly provided by fontawesome.com"> </a>
 
           <a href={props.websiteURL !== "" && props.websiteURL} 
             class={(props.websiteURL === "" && "dead") || (props.websiteURL !== "" && "icon")}
             id="generic"
             target="_blank"
             rel="noopener noreferrer"
-            alt="Icon kindly provided by fontawesome.com"></a>
+            alt="Icon kindly provided by fontawesome.com"> </a>
 
           <a href={props.facebookURL !== "" && props.facebookURL}
             class={(props.facebookURL === "" && "dead") || (props.facebookURL !== "" && "icon")}
             id="facebook"
             target="_blank"
-            rel="noopener noreferrer"></a>
+            rel="noopener noreferrer"> </a>
 
           <a href={props.twitterURL !== "" && props.twitterURL}
             class={(props.twitterURL === "" && "dead") || (props.twitterURL !== "" && "icon")}
             id="twitter"
             target="_blank"
-            rel="noopener noreferrer"></a><br/>
+            rel="noopener noreferrer"> </a><br/>
 
           Date(s): {props.time}<br/>
 

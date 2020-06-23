@@ -13,7 +13,9 @@ function Popup(props){
 		<div id="popup">
 			<div id="header">
 				{props.title}
-				<a onClick={handleClick}>&#10006;</a>
+				<p onClick={handleClick}>&#10006;</p>
+				{/* Originall <a> tags, but wanted to take care of warning
+				need to fix later */}
 			</div>
 			{props.children}
 		</div>
