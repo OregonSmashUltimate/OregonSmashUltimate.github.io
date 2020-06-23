@@ -29,7 +29,7 @@ export default function Nav(){
 									<Link to="/gettingstarted">Getting Started</Link>
 								</li>
 								<li line-width="1em">
-									<Link to="/"><img src={logo} id="logo-nav"></img></Link>
+									<Link to="/"><img alt="Not found" src={logo} id="logo-nav"></img></Link>
 								</li>
 								<li>
 									<Link to="/events">Events</Link>

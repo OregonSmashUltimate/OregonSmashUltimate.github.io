@@ -24,12 +24,6 @@ class Collapsible extends React.Component{
     const inline = {
       display: 'inline'
     };
-    const block = {
-      display: 'block'
-    };
-    const none = {
-      display: 'none'
-    };
 
 		return(	
       <div style={close}>
@@ -38,8 +32,8 @@ class Collapsible extends React.Component{
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
               <div onClick={this.toggle} style={pointer} class="text-dark">
-                <li class={!this.state.open && "icon plus" ||
-                            this.state.open && "icon minus"}
+                <li class={(!this.state.open && "icon plus") ||
+                            (this.state.open && "icon minus")}
                     alt="Icon kindly provided by fontawesome.com"/>
                 <h2 style={inline}>{this.props.title}</h2>
               </div>
@@ -56,14 +50,5 @@ class Collapsible extends React.Component{
 		);
 	}
 }
-
-/*
-        <div onClick={this.toggle} style="cursor: pointer">
-
-
-        <div style={!this.state.open && "display: none" ||
-                     this.state.open && "display: block"}>
-
-*/
 
 export default Collapsible;

@@ -43,7 +43,7 @@ export default function GettingStarted(){
                         in the smash community!
                     </p>
                     </small>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Card>
             </div>
         </div>
