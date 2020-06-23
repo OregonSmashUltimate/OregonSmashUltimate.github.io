@@ -8,7 +8,7 @@ export default function GettingStarted(){
     });
     return(
         <div id="getting-started-div">
-            <div id="getting-started-item" className="text-center center" data-aos="fade-bottom">
+            <div id="getting-started-item" className="text-center center" data-aos="slide-down">
                 <h2>Welcome!</h2>
             </div>
             
@@ -22,7 +22,7 @@ export default function GettingStarted(){
                 </Card>
             </div>
             
-            <div class="getting-started-item" className="text-center center" data-aos="fade-left">
+            <div class="getting-started-item" className="text-center center" data-aos="fade-right">
                 <Card>
                 <u><h4>Rulesets</h4></u>
                 <small>
@@ -35,7 +35,7 @@ export default function GettingStarted(){
                 </Card>
             </div>
 
-            <div class="getting-started-item" className="text-center center" data-aos="fade-left">
+            <div class="getting-started-item" className="text-center center" data-aos="slide-up">
                 <Card>
                     <u><h4>Improving!</h4></u>
                     <small>
