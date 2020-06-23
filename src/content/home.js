@@ -2,6 +2,7 @@ import React from 'react';
 
 import SocialMedia from '../class/SocialMedia.js';
 import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function Home(){ 
   return(
@@ -25,9 +26,7 @@ export default function Home(){
           
         </Card.Body>
       </Card>
-      <style>
 
-      </style>
     </div>
   );
 }

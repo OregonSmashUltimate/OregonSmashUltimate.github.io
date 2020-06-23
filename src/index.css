@@ -104,6 +104,13 @@ nav ul{
 	top: 0;
 }
 
+/* Specifically for Nav Bar; If changed, make sure to change this for the nav bar specifically */
+ul li a{
+	color: var(--textColor);
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 24pt;
+}
+
 ul{
 	display: block;
 	margin: 0;
@@ -111,6 +118,26 @@ ul{
 	text-align: center;
 }
 
+/* Bootstrap Carousel */
+.carousel{
+	height:450px;
+	width: 720px;
+	background-color: black;
+	position: center;
+}
+
+.carousel-caption{
+	right: 5%;
+    text-align: right;
+    background-color: black;
+    max-width: 300px;
+    left: auto;
+    padding:5px;
+}
+
+#fallPR2020{
+	height: 400px;
+}
 .plus{
 	mask-image: url(icon/plus.svg);
 }
@@ -161,8 +188,6 @@ ul{
 .card{
 	margin: 0 auto; /* Added */
 	float: none; /* Added */
-	margin-bottom: 10%; /* Added */
-	margin-top: 7%;
 }
 
 #discord{
@@ -179,7 +204,7 @@ ul{
 }*/
 
 #events-div{
-	background-color: var(--pageColor);
+	background: rgba(242, 242, 242, 1.0);
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
