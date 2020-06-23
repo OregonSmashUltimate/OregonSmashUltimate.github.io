@@ -29,9 +29,9 @@ export default function GettingStarted(){
                 <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
                 </small>
 
-                - <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
+                <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
                 <br></br>
-                - <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
+                <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
                 </Card>
             </div>
 
