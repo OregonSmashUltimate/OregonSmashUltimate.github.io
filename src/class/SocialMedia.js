@@ -3,7 +3,7 @@ import React from 'react';
 function SocialMedia(props){
 	return (
 		<div class="SocialMedia">
-			<img id="profileImg" src={props.profileImg} alt="Unable to load profile picture." />
+			<img id="profileImg" src={props.profileImg} alt="Unable to load profile pic." />
       <p>
         {props.role}
         &nbsp;|&nbsp;
