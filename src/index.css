@@ -107,7 +107,7 @@ nav ul{
 /* Specifically for Nav Bar; If changed, make sure to change this for the nav bar specifically */
 ul li a{
 	color: var(--textColor);
-	font-family: 'Big Shoulders Text', cursive;
+	/* font-family: 'Big Shoulders Text', cursive; */
 	font-size: 24pt;
 }
 
