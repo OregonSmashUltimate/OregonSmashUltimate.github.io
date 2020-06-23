@@ -118,6 +118,13 @@ ul{
 	text-align: center;
 }
 
+/* Bootstrap Jumbotron */
+#jumbotron-home{
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 /* Bootstrap Carousel */
 .carousel{
 	height:450px;
@@ -195,8 +202,8 @@ ul{
 }
 
 #discord-link-img{
-	max-width: 48px;
-	max-height: 48px;
+	max-width: 60px;
+	max-height: 60px;
 }
 
 /*#palette{
@@ -212,6 +219,11 @@ ul{
 
 #facebook{
 	mask-image: url(icon/facebook.svg);
+}
+
+#facebook-link-img{
+	width: 55px;
+	height: 55px;
 }
 
 #getting-started-div{
