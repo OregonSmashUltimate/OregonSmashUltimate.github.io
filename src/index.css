@@ -124,7 +124,7 @@ ul{
 	margin-left: 25%;
 	margin-right: 25%;
 }
-
+  
 /* Bootstrap Carousel */
 .carousel{
 	height:450px;
@@ -197,6 +197,11 @@ ul{
 	float: none; /* Added */
 }
 
+#getting-started-item{
+	background-color: rgba(242, 242, 242, 0.8);
+	width: inherit;
+
+}
 #discord{
 	mask-image: url(icon/discord.svg);
 }
@@ -227,7 +232,7 @@ ul{
 }
 
 #getting-started-div{
-	background-color: var(--pageColor);
+	
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
