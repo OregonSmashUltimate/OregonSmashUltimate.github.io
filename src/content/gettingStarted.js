@@ -31,7 +31,6 @@ export default function GettingStarted(){
             <div id="getting-started-item1" className="text-center center">
                 <Jumbotron className="bg-dark text-light"
                     data-aos="fade-down"
-                    data-aos-mirror="true"
                     data-aos-delay="400"
                 >
                     <u><h1>Find & Enter Events!</h1></u>
