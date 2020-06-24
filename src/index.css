@@ -199,11 +199,21 @@ ul{
 	float: none; /* Added */
 }
 
-#getting-started-item{
-	background-color: rgba(242, 242, 242, 0.8);
-	width: inherit;
-
+#arrow-down{
+	max-width: 20%;
+	max-height: auto;
 }
+
+#button-down{
+	background-color: rgba(255, 255, 255, .0);
+	max-width: 30%;
+}
+
+#btb-crowd{
+	max-width:60%;
+    height:auto;
+}
+
 #discord{
 	mask-image: url(icon/discord.svg);
 }
@@ -233,8 +243,35 @@ ul{
 	height: 55px;
 }
 
+#getting-started-item{
+	background-color: rgba(0, 0, 0, 0.0);
+	width: fit-content;
+	margin-top: 1%;
+	margin-bottom: 50%;
+}
+
+#getting-started-item1{
+	background-color: rgba(0, 0, 0, 0.0);
+	width: fit-content;
+	margin-top: 1%;
+	margin-bottom: 50%;
+}
+
+#getting-started-item2{
+	background-color: rgba(0, 0, 0, 0.0);
+	width: fit-content;
+	margin-top: 1%;
+	margin-bottom: 50%;
+}
+
+#getting-started-item3{
+	background-color: rgba(0, 0, 0, 0.0);
+	width: fit-content;
+	margin-top: 1%;
+	margin-bottom: 50%;
+}
+
 #getting-started-div{
-	
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
