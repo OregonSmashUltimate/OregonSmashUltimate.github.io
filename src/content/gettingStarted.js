@@ -24,7 +24,7 @@ export default function GettingStarted(){
                     </p>
                     <img id="btb-crowd" alt="N/A" src={btb2Crowd}></img>
                     <hr></hr>
-                    <p>Photo Credit: Twitter: @jaa_noble35</p>
+                    <p>Photo Credit: @jaa_noble35</p>
                 </Jumbotron>
             </div>
             
@@ -104,27 +104,28 @@ export default function GettingStarted(){
             </div>
             
             <div id="getting-started-item2" className="text-center center" data-aos="fade-right">
-                <Card>
-                <u><h4>Rulesets</h4></u>
-                <small>
-                <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
-                </small>
-
-                <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
-                <br></br>
-                <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
-                </Card>
+                <Jumbotron class="float-md-center">
+                    <u><h4>Rulesets</h4></u>
+                    <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
+                    <p>If you're looking to compete, understanding the rules are key. But don't worry if you're not familiar, players
+                        and Tournament Organizers are happy to help you when you're still learning!
+                    </p>
+                    <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
+                    <br></br>
+                    <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
+                </Jumbotron>
             </div>
 
-            <div id="getting-started-item3" className="text-center center" data-aos="slide-up">
-                <Card>
+            <div id="getting-started-item3" className="text-center center">
+                <Card data-aos="fade-up">
                     <u><h4>Improving!</h4></u>
-                    <small>
                     <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
                         in the smash community!
                     </p>
-                    </small>
-                    <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="video-con"
+                    >
+                        <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </Card>
             </div>
         </div>
