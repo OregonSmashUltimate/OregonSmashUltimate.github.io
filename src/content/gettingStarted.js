@@ -102,7 +102,10 @@ export default function GettingStarted(){
                 
             </div>
             
-            <div id="getting-started-item2" className="text-center center" data-aos="fade-right">
+            <div id="getting-started-item2" className="text-center center" 
+                data-aos="fade-right"
+                data-aos-delay="300"
+            >
                 <Jumbotron class="float-md-center">
                     <u><h4>Rulesets</h4></u>
                     <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
@@ -116,7 +119,9 @@ export default function GettingStarted(){
             </div>
 
             <div id="getting-started-item3" className="text-center center">
-                <Card data-aos="fade-up">
+                <Card data-aos="fade-up"
+                    data-aos-delay="400"
+                >
                     <u><h4>Improving!</h4></u>
                     <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
                         in the smash community!
