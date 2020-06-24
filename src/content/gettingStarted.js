@@ -69,7 +69,7 @@ export default function GettingStarted(){
                         <Card.Text>
                             Wherever you're from, Oregon most likely has an event near you. Check
                             out the Events section for more information!
-
+                            <hr></hr>
                             Don't see something nearby? Try going to our Discord and Facebook to see
                             if there's anything not listed. You'll also find updates are Regionals, 
                             which are larger events and tend to be worth the drive!
@@ -88,7 +88,7 @@ export default function GettingStarted(){
                         <Card.Title>Competition</Card.Title>
                         <Card.Text>
                             Want to see how you stack up against others? We've got you!
-
+                            <hr></hr>
                             Some of the best players reside in Oregon; you just gotta know where to go!
                             Test your skills and train with others. The community is all about improving 
                             so if you're here for competition, we've got you covered! Check out the
