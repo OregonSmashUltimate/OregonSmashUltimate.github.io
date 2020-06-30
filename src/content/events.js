@@ -15,6 +15,7 @@ export default function Events(){
         <div>
           <hr/>
               <Event
+                uid="1"
                 name="Dropzone"
                 time="Sundays from 12:00pm-6:00pm"
                 mapURL="https://goo.gl/maps/ir4vbcYbpTB8aWPk8"
@@ -28,6 +29,7 @@ export default function Events(){
                 schedule="Doors Open @ 12:00pm | Doubles @ 12:30pm | Singles @ 2:00pm"
                 notes="Spectate and play friendlies for free!"/>
               <Event
+                uid="2"
                 name="Topdeck Tuesdays"
                 time="Tuesdays from 5:30pm-9:00pm"
                 mapURL="https://goo.gl/maps/A6SzTLTsPdc1rrzu8"
@@ -41,6 +43,7 @@ export default function Events(){
                 schedule="Singles @ 6:00pm"
                 notes="Spectate and play friendlies for free!"/>
               <Event
+                uid="3"
                 name="Cascade"
                 time="Wednesdays starting 6:00pm"
                 mapURL="https://g.page/Gongaii?share"
@@ -54,6 +57,7 @@ export default function Events(){
                 schedule="Singles @ 6:00pm"
                 notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>
               <Event
+                uid="4"
                 name="Sacred Sanctuary"
                 time="Fridays from 5:30pm-9:00pm"
                 mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
@@ -67,6 +71,7 @@ export default function Events(){
                 schedule="Singles @ 6:00pm"
                 notes="Spectate and play friendlies for free!"/>
               <Event
+                uid="5"
                 name="Salem Smashfest"
                 time="Saturdays starting 11:30pm"
                 mapURL="https://goo.gl/maps/N6gJ79SQAyKNqBLEA"
@@ -90,6 +95,7 @@ export default function Events(){
         <div>
           <hr></hr>
           <Event
+              uid="6"
               name="Unity Station by Unity Smash"
               time="Monthly Saturdays"
               mapURL="https://goo.gl/maps/R37UWCbbxwsCFQJG6"
@@ -102,7 +108,8 @@ export default function Events(){
               entryFee=""
               schedule="Doubles: 12:30pm | Singles: 1:30pm"
               notes="CURRENTLY ON HIATUS"/>
-            <Event
+            <Event 
+              uid="7"
               name="Rose City Unification by Epic Gaming"
               time="Saturday Monthly from 12:00pm-End"
               mapURL="https://goo.gl/maps/JUMV64GYZaKchVHXA"
@@ -116,6 +123,7 @@ export default function Events(){
               schedule="Doubles: 12:30pm | Singles: 1:30pm"
               notes="Dates announced on Facebook and Discord"/>
             <Event
+              uid="8"
               name="UO Smash Club"
               time="2nd and 4th Fridays starting 5:30pm"
               mapURL="https://goo.gl/maps/BBryhEMt5sPW4q2TA"
@@ -129,6 +137,7 @@ export default function Events(){
               schedule="Loose"
               notes=""/>
             <Event
+              uid="9"
               name="SmashVallis Saturdays"
               time="2nd and 4th Sundays starting 4:00pm"
               mapURL="https://goo.gl/maps/unXSowxVeeXZSPTg7"
