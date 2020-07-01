@@ -49,9 +49,6 @@ class Pin extends React.Component{
     const pinned = {
       color: 'var(--linkColor)'
     };
-    const pin = {
-      maskImage: 'url(icon/pin.svg)'
-    };
 
     return(
     <li onClick={this.toggle}

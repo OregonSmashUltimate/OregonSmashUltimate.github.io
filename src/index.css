@@ -21,7 +21,7 @@ body{
 	background-color: var(--textColor);
 	background-image: url(../src/icon/orsmash.svg);
 	background-attachment: fixed;
-  	background-size: 100% 100%;
+  background-size: 100% 100%;
 	/* font-family: 'Big Shoulders Text', cursive; */
 	/* font-size: 16pt; */
 }
@@ -147,8 +147,13 @@ ul{
 #rankingImg{
 	padding-top: auto;
 }
+
 .plus{
 	mask-image: url(icon/plus.svg);
+}
+
+.pin{
+  mask-image: url(icon/pin.svg);
 }
 
 .minus{
@@ -275,6 +280,7 @@ ul{
 	margin-right: 20%;
 	margin-bottom: 20%;
 }
+
 #github{
 	mask-image: url(icon/github.svg);
 }
@@ -317,7 +323,7 @@ ul{
 	left: 0;
 	background-image: url(./icon/orsmash.svg);
 	background-attachment: fixed;
-  	background-size: 100% 100%;
+  background-size: 100% 100%;
 	position: fixed;
 	opacity: .9;
 	top: 0;
