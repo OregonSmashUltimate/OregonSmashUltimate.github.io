@@ -1,5 +1,6 @@
 import React from 'react';
 import Collapsible from './Collapsible.js';
+import Pin from './Pin.js';
 
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
@@ -13,6 +14,8 @@ function Event(props){
     <Collapsible title={props.name}>
       <div style={close}>
         <p style={close}>
+          <Pin uid={props.uid}/>
+
           <a href={props.streamURL !== "" && props.streamURL}
             class={(props.streamURL === "" && "dead") || (props.streamURL !== "" && "icon")}
             id="twitch"
