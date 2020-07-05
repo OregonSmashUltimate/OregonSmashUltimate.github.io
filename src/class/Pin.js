@@ -11,7 +11,7 @@ class Pin extends React.Component{
     //initialize
     var isPinned = false;
     var i = -1;
-    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(" ");
+    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(",");
 
     //determine if this event is already pinned
     for(const uid of pinnedUIDs){
@@ -23,15 +23,15 @@ class Pin extends React.Component{
     }
 
     //create then set new uid array for localStorage
-    var pinnedUIDsConcatenated;
-    if(isPinned) pinnedUIDs.pop(this.props.uid);
-    else         pinnedUIDs.splice(i, 1);
+    var pinnedUIDsConcatenated = "";
+    if(isPinned) pinnedUIDs.splice(i, 1);
+    else         pinnedUIDs.push(this.props.uid);
 
-    for(const uid of pinnedUIDs){
-      pinnedUIDsConcatenated.concat(uid);
-      pinnedUIDsConcatenated.concat(" ");
-    }
-    localStorage.setItem('pinnedEventUIDs', this.props.uid);
+    for(const uid of pinnedUIDs)
+      if(uid != "")
+        pinnedUIDsConcatenated += uid + ",";
+
+    localStorage.setItem('pinnedEventUIDs', pinnedUIDsConcatenated);
 
     //reflect updated pin status graphically
     this.setState({pinned: !isPinned});
@@ -44,10 +44,10 @@ class Pin extends React.Component{
     //<h2>{props.name}</h2>
 
     const unpinned = {
-      color: 'var(--textColor)'
+      backgroundColor: 'var(--textColor)'
     };
     const pinned = {
-      color: 'var(--linkColor)'
+      backgroundColor: 'var(--linkColor)'
     };
 
     return(
