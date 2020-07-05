@@ -3,7 +3,7 @@ import React from 'react';
 class Pin extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {pinned: 0};
+		this.state = {pinned: false};
     this.toggle = this.toggle.bind(this);
 	}
 
@@ -33,8 +33,8 @@ class Pin extends React.Component{
 
     localStorage.setItem('pinnedEventUIDs', pinnedUIDsConcatenated);
 
-    //reflect updated pin status graphically
-    this.setState({pinned: !isPinned});
+    //update state
+    this.setState({pinned: isPinned});
   }
 
   //can initialize state based on local storage here
@@ -52,8 +52,10 @@ class Pin extends React.Component{
 
     return(
     <li onClick={this.toggle}
-      class={(!this.state.pinned && "icon pin unpinned") ||
-             (this.state.pinned && "icon pin pinned")}/>
+      class={"icon pin"}
+      style={(!this.state.pinned && unpinned) ||
+             (this.state.pinned && pinned)}
+    />
     );
   }
 }
