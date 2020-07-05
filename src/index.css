@@ -4,6 +4,8 @@
 	--linkColor: #b6b6b6;
 	--textColor: #f2f2f2;
 	--pageColor: #f2f2f2;
+  --unpinnedColor: #929292;
+  --pinnedColor: #323232;
 }
 
 a{

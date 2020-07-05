@@ -51,10 +51,10 @@ class Pin extends React.Component{
     //<h2>{props.name}</h2>
 
     const unpinned = {
-      backgroundColor: 'var(--bgColor)'
+      backgroundColor: 'var(--unpinnedColor)'
     };
     const pinned = {
-      backgroundColor: 'var(--fgColor)'
+      backgroundColor: 'var(--pinnedColor)'
     };
 
     return(
