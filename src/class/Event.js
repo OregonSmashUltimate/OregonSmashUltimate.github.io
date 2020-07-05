@@ -17,27 +17,27 @@ function Event(props){
           <Pin uid={props.uid}/>
 
           <a href={props.streamURL !== "" && props.streamURL}
-            class={(props.streamURL === "" && "dead") || (props.streamURL !== "" && "icon")}
+            class={props.streamURL === "" ? "dead" : "icon"}
             id="twitch"
             target="_blank"
             rel="noopener noreferrer"
             alt="Icon kindly provided by fontawesome.com"> </a>
 
           <a href={props.websiteURL !== "" && props.websiteURL} 
-            class={(props.websiteURL === "" && "dead") || (props.websiteURL !== "" && "icon")}
+            class={props.websiteURL === "" ? "dead" : "icon"}
             id="generic"
             target="_blank"
             rel="noopener noreferrer"
             alt="Icon kindly provided by fontawesome.com"> </a>
 
           <a href={props.facebookURL !== "" && props.facebookURL}
-            class={(props.facebookURL === "" && "dead") || (props.facebookURL !== "" && "icon")}
+            class={props.facebookURL === "" ? "dead" : "icon"}
             id="facebook"
             target="_blank"
             rel="noopener noreferrer"> </a>
 
           <a href={props.twitterURL !== "" && props.twitterURL}
-            class={(props.twitterURL === "" && "dead") || (props.twitterURL !== "" && "icon")}
+            class={props.twitterURL === "" ? "dead" : "icon"}
             id="twitter"
             target="_blank"
             rel="noopener noreferrer"> </a><br/>
@@ -51,10 +51,8 @@ function Event(props){
             {props.location}
           </a><br/>
 
-          Fees: {(props.venueFee === "" && "Venue: Free") ||
-                 (props.venueFee !== "" && "Venue: $" + props.venueFee)}
-                {(props.entryFee === "" && " | Entry: Free") ||
-                 (props.entryFee !== "" && " | Entry: $" + props.entryFee)}<br/>
+          Fees: {props.venueFee === "" ? "Venue: Free" : "Venue: $" + props.venueFee}
+                {props.entryFee === "" ? " | Entry: Free" : " | Entry: $" + props.entryFee}<br/>
 
           Schedule: {props.schedule}<br/>
 

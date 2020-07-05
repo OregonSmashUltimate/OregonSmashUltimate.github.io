@@ -60,8 +60,7 @@ class Pin extends React.Component{
     return(
     <li onClick={this.toggle}
       class={"icon pin"}
-      style={(!this.state.pinned && unpinned) ||
-             (this.state.pinned && pinned)}
+      style={this.state.pinned ? pinned : unpinned}
     />
     );
   }
