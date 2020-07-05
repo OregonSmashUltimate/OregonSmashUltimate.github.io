@@ -11,10 +11,9 @@ function Event(props){
   };
   //<h2>{props.name}</h2>
   return(
-    <Collapsible title={props.name}>
+    <Collapsible title={props.name} pin={<Pin uid={props.uid}/>}>
       <div style={close}>
         <p style={close}>
-          <Pin uid={props.uid}/>
 
           <a href={props.streamURL !== "" && props.streamURL}
             class={props.streamURL === "" ? "dead" : "icon"}

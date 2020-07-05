@@ -30,6 +30,7 @@ class Collapsible extends React.Component{
         <Accordion>
           <Card>
             <Card.Header>
+              {this.props.pin}
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
               <div onClick={this.toggle} style={pointer} class="text-dark">
                 <li class={this.state.open ? "icon plus" : "icon minus"}

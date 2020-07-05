@@ -154,6 +154,9 @@ ul{
 
 .pin{
   mask-image: url(icon/pin.svg);
+  position: absolute;
+  left: 1em;
+  top: 2.25em;
 }
 
 .minus{
