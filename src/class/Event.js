@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapsible from './Collapsible.js';
-import Pin from './Pin.js';
+import EventPin from './EventPin.js';
 
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
@@ -11,7 +11,7 @@ function Event(props){
   };
   //<h2>{props.name}</h2>
   return(
-    <Collapsible title={props.name} pin={<Pin uid={props.uid}/>}>
+    <Collapsible title={props.name} pin={<EventPin uid={props.uid}/>}>
       <div style={close}>
         <p style={close}>
 

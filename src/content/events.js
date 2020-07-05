@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Event from '../class/Event.js';
-import Collapsible from '../class/Collapsible';
+import EventFilter from '../class/EventFilter.js';
+import Collapsible from '../class/Collapsible.js';
 import Aos from 'aos';
 
 export default function Events(){
@@ -11,6 +12,8 @@ export default function Events(){
   return(
     <div id="events-div">
       <div data-aos="fade-up">
+      <EventFilter/>
+      <div style={{marginBottom: '2em'}}/>
       <Collapsible title="Weeklies">
         <div>
           <hr/>
