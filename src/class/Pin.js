@@ -5,13 +5,23 @@ class Pin extends React.Component{
 		super(props);
 		this.state = {pinned: false};
     this.toggle = this.toggle.bind(this);
+
+    //do something more effiecient in the future
+    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(',');
+
+    for(const uid of pinnedUIDs){
+      if(uid === this.props.uid){
+        this.state = {pinned: true};
+        break;
+      }
+    }
 	}
 
   toggle(){
     //initialize
     var isPinned = false;
     var i = -1;
-    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(",");
+    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(',');
 
     //determine if this event is already pinned
     for(const uid of pinnedUIDs){
@@ -34,20 +44,17 @@ class Pin extends React.Component{
     localStorage.setItem('pinnedEventUIDs', pinnedUIDsConcatenated);
 
     //update state
-    this.setState({pinned: isPinned});
+    this.setState({pinned: !isPinned});
   }
-
-  //can initialize state based on local storage here
-  //componentDidMount(){}
 
 	render(){
     //<h2>{props.name}</h2>
 
     const unpinned = {
-      backgroundColor: 'var(--textColor)'
+      backgroundColor: 'var(--bgColor)'
     };
     const pinned = {
-      backgroundColor: 'var(--linkColor)'
+      backgroundColor: 'var(--fgColor)'
     };
 
     return(
