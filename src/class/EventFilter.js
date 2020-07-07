@@ -1,15 +1,15 @@
-import React from 'react';
+import React       from 'react';
 import Collapsible from './Collapsible.js';
-import Form from 'react-bootstrap/Form';
+import Form        from 'react-bootstrap/Form';
+import Button      from 'react-bootstrap/Button';
+import Row         from 'react-bootstrap/Row';
+import Col         from 'react-bootstrap/Col';
 
 class EventFilter extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {onlyPinned: false};
-    //this.toggle = this.toggle.bind(this);
+		this.state = {pinnedEvents: "include"};
 	}
-
-  //toggle(){this.setState({open: !this.state.onlyPinned});}
 
   //will be more form groups later
 	render(){
@@ -18,22 +18,32 @@ class EventFilter extends React.Component{
       cursor: 'default'
     };
 
+    const handleSubmit = (event) =>{
+      const form = event.currentTarget;
+      console.log(form);
+    }
+
 		return(
       <Collapsible title={"Filter"}>
-        <Form>
-          <Form.Group controlId="filter.pinSelect">
-            <Form.Label>
-              <li class="icon pin"
-                style={pinned}/>
+        <Form onSubmit={handleSubmit} method="get">
+          <Form.Row>
+            <Form.Group as={Col} controlId="filter.pinnedEventsSelect">
+              <Form.Label column>
+                <li class="icon pin" style={pinned}/>
                 Pinned Events
-            </Form.Label>
-            <Form.Control as="select">
-              <option>Only</option>
-              <option>Include</option>
-              <option>Exclude</option>
-            </Form.Control> 
-          </Form.Group>
+              </Form.Label>
+              <Form.Control as="select" name="pinnedEvents">
+                <option value="only">Only</option>
+                <option value="include">Include</option>
+                <option value="exclude">Exclude</option>
+              </Form.Control> 
+            </Form.Group>
+          </Form.Row>
         
+          <Button type="submit">
+            Submit
+          </Button>
+
         </Form>
       </Collapsible>
 		);
