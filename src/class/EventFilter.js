@@ -8,8 +8,15 @@ import Col         from 'react-bootstrap/Col';
 class EventFilter extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {pinnedEvents: "include"};
+
+    this.state = {pinnedEvents: localStorage.getItem('pinnedEvents')};
+    this.handlePinnedEvents = this.handlePinnedEvents.bind(this);
 	}
+
+  handlePinnedEvents(event){
+    this.setState({pinnedEvents: event.target.value});
+    localStorage.setItem('pinnedEvents', event.target.value);
+  }
 
   //will be more form groups later
 	render(){
@@ -18,21 +25,19 @@ class EventFilter extends React.Component{
       cursor: 'default'
     };
 
-    const handleSubmit = (event) =>{
-      const form = event.currentTarget;
-      console.log(form);
-    }
-
 		return(
       <Collapsible title={"Filter"}>
-        <Form onSubmit={handleSubmit} method="get">
+        <Form>
+
           <Form.Row>
-            <Form.Group as={Col} controlId="filter.pinnedEventsSelect">
+            <Form.Group as={Col}>
               <Form.Label column>
                 <li class="icon pin" style={pinned}/>
                 Pinned Events
               </Form.Label>
-              <Form.Control as="select" name="pinnedEvents">
+              <Form.Control as="select"
+                value={this.state.pinnedEvents}
+                onChange={this.handlePinnedEvents}>
                 <option value="only">Only</option>
                 <option value="include">Include</option>
                 <option value="exclude">Exclude</option>

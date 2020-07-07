@@ -8,6 +8,8 @@ if(localStorage.getItem('pinnedEventUIDs') === null)
   localStorage.setItem('pinnedEventUIDs', "");
 if(localStorage.getItem('theme') === null)
   localStorage.setItem('theme', "0");
+if(localStorage.getItem('pinnedEvents') === null)
+  localStorage.setItem('pinnedEvents', "include");
 
 function Page(props){
 	return (
