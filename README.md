@@ -1,6 +1,6 @@
 ## License
 
-This work is licensed under a Creative Commons Attribution 4.0 International License.
+This work is licensed under "[The MIT License](https://opensource.org/licenses/MIT)".
 Please see the file 'LICENSE' in this distribution for license terms.
 
 ## Credit
