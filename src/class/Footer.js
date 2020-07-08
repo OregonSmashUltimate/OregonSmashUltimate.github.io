@@ -22,12 +22,22 @@ function Footer(props){
   return (	
     <footer>
       <ul>
-        <TextSizeChanger/>
         <ThemeChanger/>
+        <TextSizeChanger/>
         <li class="icon" id="facebook" onClick={popupFacebook}/>
         <li class="icon" id="twitter" onClick={popupTwitter}/>
         <li class="icon" id="github" onClick={popupGithub}/>
         <li class="icon" id="discord" onClick={popupDiscord}/>
+        <li onClick={popupDiscord}>
+        <a rel="license"
+          href="http://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img alt="Creative Commons License" 
+            style={{borderWidth: '0'}}
+            src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>
+        </li>
       </ul>
     </footer>
   );

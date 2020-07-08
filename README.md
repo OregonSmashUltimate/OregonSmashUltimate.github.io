@@ -1,3 +1,20 @@
+## License
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+Please see the file 'LICENSE' in this distribution for license terms.
+
+## Credit
+
+Frameworks used:
+* [React](https://reactjs.org/)
+* [React-Bootstrap](https://react-bootstrap.netlify.app/)
+* [Netlify CMF](https://www.netlifycms.org/)
+* [GitHub Pages](https://pages.github.com/)
+
+Reference guides/materials:
+* [React Getting Started](https://reactjs.org/docs/getting-started.html)
+* [React-Bootstrap Components](https://react-bootstrap.netlify.app/components/alerts/)
+
 # OregonSmashUltimate.github.io
 Website containing everything Oregon Smash
 
