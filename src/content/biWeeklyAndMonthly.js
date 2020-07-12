@@ -5,8 +5,6 @@ import Event from '../class/Event.js';
 export default function BiWeeklyAndMonthly(){
   return(
     <div>
-      <hr/>
-
       <Event
         uid="6"
         name="Unity Station by Unity Smash"

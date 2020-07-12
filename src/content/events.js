@@ -4,10 +4,23 @@ import EventFilter from '../class/EventFilter.js';
 import Collapsible from '../class/Collapsible.js';
 import Aos from 'aos';
 
+import {viewIsInclude} from '../script/initEvents.js';
 import Weekly from './weekly.js'
 import BiWeeklyAndMonthly from './biWeeklyAndMonthly.js'
 
 export default function Events(){
+  if(!viewIsInclude){
+    return(
+      <div id="events-div">
+        <EventFilter/>
+        <div style={{marginBottom: '2em'}}/>
+        <Weekly/>
+        <BiWeeklyAndMonthly/>
+      </div>
+    );
+  }
+
+  //else
   Aos.init({
     duration: 1000,
   });
@@ -15,7 +28,12 @@ export default function Events(){
     <div id="events-div">
       <div data-aos="fade-up">
         <EventFilter/>
-        <div style={{marginBottom: '2em'}}/>
+      </div>
+      <div data-aos="fade-up">
+        <div style={{marginBottom: '1em'}}/>
+      </div>
+      <div data-aos="fade-up"
+        data-aos-delay="50">
         <Collapsible title="Weeklies">
           <Weekly/>
         </Collapsible>

@@ -5,8 +5,6 @@ import Event from '../class/Event.js';
 export default function Weekly(){
   return(
     <div>
-      <hr/>
-
       <Event
         uid="1"
         name="Dropzone"
