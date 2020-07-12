@@ -1,7 +1,7 @@
 import React from 'react';
 import Collapsible from './Collapsible.js';
 import EventPin from './EventPin.js';
-import thisEventDisplays from '../script/decideEventDisplay.js';
+import {uidPinIndex, viewIsInclude, viewIsExclude, viewIsOnly} from '../script/initEvents.js';
 
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
@@ -13,10 +13,14 @@ function Event(props){
 
   //<h2>{props.name}</h2>
   
-  if(!thisEventDisplays(props.uid)) return null;
+  var isPinned = !(uidPinIndex(props.uid) === -1);
+
+  //if the view is not include we need to think more
+  if(viewIsOnly && !isPinned) return null;
+  else if(viewIsExclude && isPinned) return null;
 
   return(
-    <Collapsible title={props.name} pin={<EventPin uid={props.uid}/>}>
+    <Collapsible title={props.name} pin={<EventPin uid={props.uid} isPinned={isPinned}/>}>
       <div style={close}>
         <p style={close}>
 
