@@ -10,12 +10,17 @@ class EventFilter extends React.Component{
 		super(props);
 
     this.state = {pinnedEvents: localStorage.getItem('pinnedEvents')};
+
     this.handlePinnedEvents = this.handlePinnedEvents.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
   handlePinnedEvents(event){
     this.setState({pinnedEvents: event.target.value});
-    localStorage.setItem('pinnedEvents', event.target.value);
+  }
+
+  handleSubmit(){
+    localStorage.setItem('pinnedEvents', this.state.pinnedEvents);
   }
 
   //will be more form groups later
@@ -27,7 +32,7 @@ class EventFilter extends React.Component{
 
 		return(
       <Collapsible title={"Filter"}>
-        <Form>
+        <Form onSubmit={this.handleSubmit}>
 
           <Form.Row>
             <Form.Group as={Col}>
