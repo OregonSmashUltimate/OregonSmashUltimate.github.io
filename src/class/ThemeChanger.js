@@ -3,7 +3,8 @@ import React from 'react';
 class ThemeChanger extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {theme: Number(localStorage.getItem('theme'))};
+    //add offset because changeTheme() does += 1
+		this.state = {theme: Number(localStorage.getItem('theme') - 1)};
 		this.changeTheme = this.changeTheme.bind(this);
     this.changeTheme();
 	}
