@@ -9,13 +9,20 @@ import weekly from './weekly.js'
 import biWeeklyAndMonthly from './biWeeklyAndMonthly.js'
 
 export default function Events(){
+  const sortFunc = {
+    none:{fn: (a,b) => null},
+    name:{fn: (a,b) => a.props.name.localeCompare(b.props.name)},
+    distance:{fn: (a,b) => null},
+  }
+
   if(!viewIsInclude){
+    var allEvents = weekly.concat(biWeeklyAndMonthly);
+    allEvents = allEvents.sort(sortFunc[localStorage.getItem("sortBy")].fn)
     return(
       <div id="events-div">
         <EventFilter/>
         <div style={{marginBottom: '2em'}}/>
-        {weekly}
-        {biWeeklyAndMonthly}
+        {allEvents}
       </div>
     );
   }

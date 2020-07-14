@@ -2,7 +2,7 @@ import React from 'react';
 
 import Event from '../class/Event.js';
 
-const weekly = [
+var weekly = [
 <Event
   uid="1"
   name="Dropzone"
@@ -78,5 +78,8 @@ const weekly = [
   schedule="Singles @ 1:30pm, Doubles @ 4:30pm"
   notes="Free brackets for fighting games, such as BlazBlue Cross-Tag Battle, Tekken 7, and Guilty Gear Xrd -Rev2-"/>
 ];
+
+//weekly = weekly.sort(weekly.sort(sortFunc['name'].fn))
+//weekly = weekly.sort((a,b) => a.props.name.localeCompare(b.props.name));
 
 export default weekly;
