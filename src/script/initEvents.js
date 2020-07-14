@@ -5,8 +5,8 @@ pinnedUIDs.splice(pinnedUIDs.length - 1, 1);
 //-1 means it is not pinned
 export function uidPinIndex(searchUid){
   //if all pinned UIDs have already been excluded, short-circuit
-  if(pinnedUIDs.length == 0){
-    return false;
+  if(pinnedUIDs.length === 0){
+    return -1;
   }
 
   //initialize
