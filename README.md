@@ -14,6 +14,7 @@ Frameworks used:
 Reference guides/materials:
 * [React Getting Started](https://reactjs.org/docs/getting-started.html)
 * [React-Bootstrap Components](https://react-bootstrap.netlify.app/components/alerts/)
+* [Florin Pop](https://www.florin-pop.com/blog/2019/07/sort-table-data-with-react/)
 
 # OregonSmashUltimate.github.io
 Website containing everything Oregon Smash
