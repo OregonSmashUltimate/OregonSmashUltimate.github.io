@@ -65,8 +65,9 @@ function Event(props){
           
           <br/>
 
-          Fees: {props.venueFee === "" ? "Venue: Free" : "Venue: $" + props.venueFee}
-                {props.entryFee === "" ? " | Entry: Free" : " | Entry: $" + props.entryFee}
+          Fees: 
+          venue ${props.venueFee},
+          entry ${props.entryFee}
     
           <br/>
 

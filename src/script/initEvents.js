@@ -31,6 +31,7 @@ export function uidPinIndex(searchUid){
 }
 
 const view = localStorage.getItem('pinnedEvents');
-export const viewIsExclude = (view === 'exclude');
-export const viewIsOnly    = (view === 'only');
-export const viewIsInclude = (viewIsExclude === false && viewIsOnly === false);
+export const viewIsExclude  = (view === 'exclude');
+export const viewIsOnly     = (view === 'only');
+
+export const viewIsFiltered = (viewIsExclude === false && viewIsOnly === false && (localStorage.getItem("sortBy") === 'none'));

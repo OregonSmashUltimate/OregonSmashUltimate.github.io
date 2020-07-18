@@ -17,6 +17,7 @@ class EventFilter extends React.Component{
     this.handleSortByOrder = this.handleSortByOrder.bind(this);
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleReset = this.handleReset.bind(this);
 	}
 
   handlePinnedEvents(event){
@@ -35,6 +36,12 @@ class EventFilter extends React.Component{
     localStorage.setItem('pinnedEvents', this.state.pinnedEvents);
     localStorage.setItem('sortBy', this.state.sortBy);
     localStorage.setItem('sortByOrder', this.state.sortByOrder);
+  }
+
+  handleReset(){
+    this.setState({pinnedEvents: "include",
+      sortBy: "none",
+      sortByOrder: "descending"});
   }
 
   //will be more form groups later
@@ -57,8 +64,8 @@ class EventFilter extends React.Component{
               <Form.Control as="select"
                 value={this.state.pinnedEvents}
                 onChange={this.handlePinnedEvents}>
-                <option value="only">Only</option>
                 <option value="include">Include</option>
+                <option value="only">Only</option>
                 <option value="exclude">Exclude</option>
               </Form.Control> 
             </Form.Group>
@@ -72,22 +79,31 @@ class EventFilter extends React.Component{
                 onChange={this.handleSortBy}>
                 <option value="none"></option>
                 <option value="name">Name</option>
-                <option value="distance">Distance</option>
+                <option value="venueFee">Venue Fee</option>
+                <option value="entryFee">Entry Fee</option>
               </Form.Control> 
-              {this.state.sortBy !== "none" &&
 
+              {this.state.sortBy !== "none" &&
               <Form.Control as="select"
                 value={this.state.sortByOrder}
                 onChange={this.handleSortByOrder}>
-                <option value="ascending">Ascending</option>
                 <option value="descending">Descending</option>
+                <option value="ascending">Ascending</option>
               </Form.Control>}
             </Form.Group>
           </Form.Row>
 
-          <Button type="submit">
-            Submit
-          </Button>
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Button variant="secondary"
+                type="reset"
+                onClick={this.handleReset}>Reset</Button>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Button variant="primary"
+                type="submit">Sumbit</Button>
+            </Form.Group>
+          </Form.Row>
 
         </Form>
       </Collapsible>
