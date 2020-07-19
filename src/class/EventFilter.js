@@ -3,6 +3,7 @@ import Collapsible from './Collapsible.js';
 import Form        from 'react-bootstrap/Form';
 import Button      from 'react-bootstrap/Button';
 import Col         from 'react-bootstrap/Col';
+import {getOptions, getNormalOrderText, getReverseOrderText} from '../script/sortBy.js';
 
 class EventFilter extends React.Component{
 	constructor(props){
@@ -41,7 +42,7 @@ class EventFilter extends React.Component{
   handleReset(){
     this.setState({pinnedEvents: "include",
       sortBy: "none",
-      sortByOrder: "descending"});
+      sortByOrder: "normal"});
   }
 
   //will be more form groups later
@@ -77,18 +78,15 @@ class EventFilter extends React.Component{
               <Form.Control as="select"
                 value={this.state.sortBy}
                 onChange={this.handleSortBy}>
-                <option value="none"></option>
-                <option value="name">Name</option>
-                <option value="venueFee">Venue Fee</option>
-                <option value="entryFee">Entry Fee</option>
+                {getOptions()}
               </Form.Control> 
 
               {this.state.sortBy !== "none" &&
               <Form.Control as="select"
                 value={this.state.sortByOrder}
                 onChange={this.handleSortByOrder}>
-                <option value="descending">Descending</option>
-                <option value="ascending">Ascending</option>
+                <option value="normal">{getNormalOrderText(this.state.sortBy)}</option>
+                <option value="reverse">{getReverseOrderText(this.state.sortBy)}</option>
               </Form.Control>}
             </Form.Group>
           </Form.Row>
