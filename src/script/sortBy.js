@@ -40,6 +40,19 @@ export const sortOptions = [
 
       return flip * (l - r);
     }),
+  new SortOption("Venue + Entry Fee", "entryPlusVenueFee", "Low to High", "High to Low",
+    function(a,b){
+      pattern.lastIndex = 0;
+      const ll = Number(pattern.exec(a.props.venueFee));
+      pattern.lastIndex = 0;
+      const lr = Number(pattern.exec(a.props.entryFee));
+      pattern.lastIndex = 0;
+      const rl = Number(pattern.exec(b.props.venueFee));
+      pattern.lastIndex = 0;
+      const rr = Number(pattern.exec(b.props.entryFee));
+
+      return flip * (ll + lr - rl - rr);
+    }),
 ];
 
 export function getOptions(){
