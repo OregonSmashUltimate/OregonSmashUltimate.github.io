@@ -3,6 +3,22 @@ import Collapsible from './Collapsible.js';
 import EventPin from './EventPin.js';
 import {uidPinIndex, viewIsExclude, viewIsOnly} from '../script/initEvents.js';
 
+/*
+Field     | Description                      | Format
+----------+----------------------------------+--------
+uid       | arbitrary number unique to event | integer
+name      | name of event                    | string
+time      | when the event occurs            | <day of week>s starting/from __:__am/pm-__:__am/pm
+mapURL    | link to where event occurs       | google map url
+location  | where the event occurs           | string
+*URL      | url of event's * page            | url or empty string
+venueFee  | cost of entering event location  | integer ...
+entryFee  | cost of entering event bracket   | integer ...
+scehdule  | times when brackets start        | string
+notes     | anything other information       | string
+*/
+
+
 //Event Class to encapsulate information for Smash tournaments and view on page
 //Collapsible used to be more compact with display of multiple events on webpage
 function Event(props){

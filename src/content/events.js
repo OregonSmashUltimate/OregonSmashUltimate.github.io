@@ -2,6 +2,7 @@ import React from 'react';
 
 import EventFilter from '../class/EventFilter.js';
 import Collapsible from '../class/Collapsible.js';
+import Alert from 'react-bootstrap/Alert';
 import Aos from 'aos';
 
 import {viewIsFiltered} from '../script/initEvents.js';
@@ -12,12 +13,26 @@ import {getSortFunction} from '../script/sortBy.js';
 
 export default function Events(){
   if(!viewIsFiltered){
-    var allEvents = weekly.concat(biWeeklyAndMonthly);
+    var allEvents = weekly;
+    var disclaimer;
+
+    if(localStorage.getItem("sortBy") === "nextOccurring")
+      disclaimer = 
+        <Alert variant="info" className="text-center">
+          <p>
+            Monthlies are not consistent enough to predict, so they are excluded from these results.
+          </p>
+        </Alert>;
+    else
+      allEvents = allEvents.concat(biWeeklyAndMonthly);
+
     allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy")));
+
     return(
       <div id="events-div">
         <EventFilter/>
         <div style={{marginBottom: '2em'}}/>
+        {disclaimer}
         {allEvents}
       </div>
     );

@@ -2,6 +2,8 @@ import React from 'react';
 
 import Event from '../class/Event.js';
 
+//see ../class/Event.js for expected formatting
+
 const biWeeklyAndMonthly = [
 <Event
   uid="6"
