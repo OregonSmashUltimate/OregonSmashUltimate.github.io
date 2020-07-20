@@ -1,7 +1,8 @@
 import React from 'react';
 
-const flip = (localStorage.getItem('sortByOrder') === "reverse") ? -1 : 1;
-const digitPattern = /^\d*/g;
+//
+// Class declarations
+//
 
 class SortOption{
   constructor(a1, a2, a3, a4, a5){
@@ -12,6 +13,33 @@ class SortOption{
     this.fn =           a5;
   }
 }
+
+class EventTime{
+  constructor(a1, a2, a3){
+    this.day    = a1;
+    this.hour   = a2; 
+    this.minute = a3;
+  }
+  total(){
+    return (this.day * 24 * 60) + (this.hour * 60) + this.minute;
+  }
+}
+
+//
+// Inititalization
+//
+
+var today;
+if(localStorage.getItem("sortBy") === "nextOccurring"){
+  const now = new Date();
+  today = new EventTime(now.getDay(), now.getHours(), now.getMinutes()).total();
+}
+const flip = (localStorage.getItem('sortByOrder') === "reverse") ? -1 : 1;
+const digitPattern = /^\d*/g;
+
+//
+// All sort options
+//
 
 export const sortOptions = [
   new SortOption("", "none", "", "",
@@ -47,12 +75,9 @@ export const sortOptions = [
     }),
   new SortOption("Next Occurring", "nextOccurring", "Sooner to Later", "Later to Sooner",
     function(a,b){
-      //display warning about only weeklies being predictable and to make sure as the time pappraches by using socail media
-      const today = new Date().getTime();
-      //https://www.tutorialspoint.com/How-to-calculate-the-difference-between-two-dates-in-JavaScript
       return flip * (
-        (today - toDate(a.props.time).getTime()) -
-        (today - toDate(b.props.time).getTime())
+        (today - toEventTime(b.props.time).total()) -
+        (today - toEventTime(a.props.time).total())
       );
     }),
   /*new SortOption("Distance", "distance", "Closer to Further", "Further to Closer",
@@ -62,40 +87,43 @@ export const sortOptions = [
     }),*/
 ];
 
+//
+// Helper functions
+//
+
+function toEventTime(inputTime){
+  const time = find(/^\w* \w* \d{1,2}:\d{2}[ap]m/g, inputTime);
+
+  var day = find(/^\w*/g, time)[0];
+  switch(day){
+    case "Mondays":    day = 1; break;
+    case "Tuesdays":   day = 2; break;
+    case "Wednesdays": day = 3; break;
+    case "Thursdays":  day = 4; break;
+    case "Fridays":    day = 5; break;
+    case "Saturdays":  day = 6; break;
+    case "Sundays":    day = 7; break;
+    default:           day = 1; break;
+  }
+
+  var hour = Number(find(/\d{1,2}/g, time));
+  hour += hour !== 12 && find(/[ap]m$/g, time)[0] === 'pm';
+  
+  var minute = find(/:\d{2}/g, time)[0];
+  minute = Number(minute[1] + minute[2]);
+
+  //some absurdly ahead year
+  return new EventTime(day, hour, minute);
+}
+
 function find(pattern, expr){
   pattern.lastIndex = 0;
   return pattern.exec(expr);
 }
 
-function toDate(inputTime){
-  const time = find(/^\w* \w* \d{1,2}:\d{2}[ap]m/g, inputTime);
-
-  var day = find(/^\w*/g, time)[0];
-  switch(day){
-    case "Mondays":    day = "1"; break;
-    case "Tuesdays":   day = "2"; break;
-    case "Wednesdays": day = "3"; break;
-    case "Thursdays":  day = "4"; break;
-    case "Fridays":    day = "5"; break;
-    case "Saturdays":  day = "6"; break;
-    case "Sundays":    day = "7"; break;
-    default:           day = "1"; break;
-  }
-
-  const hourNum = Number(find(/\d{1,2}/g, time));
-  const plusPm = hourNum !== 12 && find(/[ap]m$/g, time)[0] === 'pm';
-  //I hate JS sometimes
-  const hour0 = String(((hourNum - (hourNum % 10))/ 10) + plusPm);
-  const hour1 = String((hourNum % 10) + (plusPm * 2));
-  const hour = hour0 + hour1;
-  
-  //I hate JS sometimes
-  var minute = find(/:\d{2}/g, time)[0];
-  minute = minute[1] + minute[2];
-
-  //some absurdly ahead year
-  return new Date(`3000-01-1${day}T${hour}:${minute}:00`);
-}
+//
+// External functions
+//
 
 export function getOptions(){
   var ret = [];
