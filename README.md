@@ -3,6 +3,10 @@
 This work is licensed under "[The MIT License](https://opensource.org/licenses/MIT)".
 Please see the file 'LICENSE' in this distribution for license terms.
 
+## Getting Started
+
+Consider checking out our [Getting Started Documemt](https://docs.google.com/document/d/1tUg5fdhiWD2hLqaw2gdaFSLN6RsbNy-cINlwFmwK1Cs/edit?usp=sharing) made for contributors just getting started.
+
 ## Credit
 
 Frameworks used:
