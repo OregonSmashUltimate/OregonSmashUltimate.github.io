@@ -13,7 +13,7 @@ export default function GettingStarted(){
         duration: 1000,
     });
     return(
-        <div id="getting-started-div">
+        <div class="outerDiv" id="getting-started-div">
             <div id="getting-started-item" className="text-center center">
                 <Jumbotron className="bg-dark text-light"
                     data-aos="fade-up"

@@ -8,7 +8,7 @@ export default function Home(){
     duration: 500,
   });
   return(
-    <div>
+    <div class="outerDiv">
       <Alert variant="danger" className="text-center">
         <h2>ATTENTION: Due to COVID-19 all events have been suspended and we recommend
           individuals do not host events until it is safe. Please feel free to join 

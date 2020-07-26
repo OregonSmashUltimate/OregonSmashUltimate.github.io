@@ -33,18 +33,18 @@ export default function NavBar(){
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
               <Nav.Link href="#">
-                <Link to="/">Home</Link>
+                <Link to="/" className="navLink">Home</Link>
               </Nav.Link>
               <Nav.Link href="getting-started">
-                <Link to="getting-started">Getting Started</Link>
+                <Link to="getting-started" className="navLink">Getting Started</Link>
               </Nav.Link>
               <Nav.Link href="events">
-                <Link to="events">Events</Link>
+                <Link to="events" className="navLink">Events</Link>
               </Nav.Link>
               <Nav.Link href="rankings">
-                <Link to="rankings">Rankings</Link>
+                <Link to="rankings" className="navLink">Rankings</Link>
               </Nav.Link>
-              <NavDropdown title="Social Media">
+              <NavDropdown title="Social Media" className="navLink">
                 <Facebook />
                 <Discord />
                 <Twitter />

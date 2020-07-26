@@ -8,6 +8,128 @@
   --pinnedColor: #323232;
 }
 
+/*==================
+  Bootstrap Imports
+===================*/
+
+.card{
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+}
+
+.bg-custom{
+  background-color: var(--fgColor);
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+.nav-link{
+  color: var(--textColor) !important;
+}
+.navLink{
+  color: var(--textColor);
+  text-decoration: none !important;
+}
+.nav-link:hover{color: var(--linkColor) !important;}
+.navLink:hover{color: var(--linkColor) !important;}
+
+.btn-outline-dark{
+  color: var(--textColor);
+  background-color: var(--textColor);
+}
+
+#jumbotron-home{
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+  
+.carousel{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	max-height: 600px;
+	height: 500px;
+	width: auto;
+	/* background-color: black; */
+}
+
+.carousel-caption{
+	margin-left: auto;
+	margin-right: auto;
+	width: inherit;
+	height: 50px;
+	background-color: black;
+}
+
+/*=======
+  Icons
+=======*/
+
+.icon{
+  display: inline-block;
+	background-color: var(--linkColor);
+	height: 1em;
+	width: 1em;
+	mask-size: 100% 100%;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+.icon:hover{
+	background-color: var(--textColor);
+}
+
+.dead{
+  display: none;
+}
+
+.eventPin{
+  mask-image: url(icon/pin.svg);
+  position: absolute;
+  left: 1em;
+  top: 2.25em;
+}
+
+.logo    {mask-image: url(icon/orsmash.svg); }
+.generic {mask-image: url(icon/www.svg);     }
+.twitch  {mask-image: url(icon/twitch.svg);  }
+.twitter {mask-image: url(icon/twitter.svg); }
+.github  {mask-image: url(icon/github.svg);  }
+.facebook{mask-image: url(icon/facebook.svg);}
+.discord {mask-image: url(icon/discord.svg); }
+.plus    {mask-image: url(icon/plus.svg);    }
+.minus   {mask-image: url(icon/minus.svg);   }
+.pin     {mask-image: url(icon/pin.svg);     }
+
+/*
+.home   {mask-image: url(icon/home.svg);}
+.palette{mask-image: url(icon/palette.svg);}
+.mobile{mask-image: url(icon/mobile.svg);}
+.desktop{mask-image: url(icon/desktop.svg);}
+*/
+
+/*=======
+  Other
+=======*/
+
+#video-con {
+	margin-top: 5%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+
+#video-con iframe, video-con object, .video-con embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 a{
 	color: var(--linkColor);
 	text-decoration: none;
@@ -23,6 +145,11 @@ body{
 	background-color: var(--bgColor);
 	/* font-family: 'Big Shoulders Text', cursive; */
 	/* font-size: 16pt; */
+}
+
+.outerDiv{
+  margin-top: 5em;
+
 }
 
 button{
@@ -92,73 +219,8 @@ ul{
 	text-align: center;
 }
 
-/* Bootstrap Navbar */
-.bg-custom{
-  background-color: var(--fgColor);
-  color: var(--textColor);
-  font-weight: bold;
-}
-
-.btn-outline-dark{
-  color: var(--textColor);
-  background-color: var(--textColor);
-}
-
-/* Bootstrap Jumbotron */
-#jumbotron-home{
-	margin-top: 5%;
-	margin-left: 25%;
-	margin-right: 25%;
-}
-  
-/* Bootstrap Carousel */
-.carousel{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 720px;
-	max-height: 600px;
-	height: 500px;
-	width: auto;
-	/* background-color: black; */
-}
-
-.carousel-caption{
-	margin-left: auto;
-	margin-right: auto;
-	width: inherit;
-	height: 50px;
-	background-color: black;
-}
-
 #rankingImg{
 	padding-top: auto;
-}
-
-.plus{
-	mask-image: url(icon/plus.svg);
-}
-
-.pin{
-  mask-image: url(icon/pin.svg);
-}
-
-.eventPin{
-  mask-image: url(icon/pin.svg);
-  position: absolute;
-  left: 1em;
-  top: 2.25em;
-}
-
-.minus{
-	mask-image: url(icon/minus.svg);
-}
-
-#mobile{
-	mask-image: url(icon/mobile.svg);
-}
-
-#desktop{
-	mask-image: url(icon/desktop.svg);
 }
 
 .SocialMedia{
@@ -176,26 +238,6 @@ ul{
 	width: 30%;
 }
 
-.icon{
-  display: inline-block;
-	background-color: var(--linkColor);
-	height: 1em;
-	width: 1em;
-	mask-size: 100% 100%;
-	margin-left: .25em;
-	margin-right: .25em;
-}
-
-.icon:hover{
-	background-color: var(--textColor);
-}
-
-/* Card imported from bootstrap */
-.card{
-	margin: 0 auto; /* Added */
-	float: none; /* Added */
-}
-
 #arrow-down{
 	max-width: 20%;
 	max-height: auto;
@@ -211,23 +253,11 @@ ul{
     height:auto;
 }
 
-.discord{
-	mask-image: url(icon/discord.svg);
-}
-
-/*#palette{
-	mask-image: url(icon/palette.svg);
-}*/
-
 #events-div{
 	background: rgba(242, 242, 242, 0.0);
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
-}
-
-.facebook{
-	mask-image: url(icon/facebook.svg);
 }
 
 #getting-started-item{
@@ -263,14 +293,6 @@ ul{
 	margin-bottom: 20%;
 }
 
-.github{
-	mask-image: url(icon/github.svg);
-}
-
-/*#home{
-	mask-image: url(icon/home.svg);
-}*/
-
 #header{
 	background-color: var(--fgColor);
 	border-bottom: 1px solid var(--textColor);
@@ -292,28 +314,6 @@ ul{
 	display: none;
 }
 
-.logo{
-	mask-image: url(icon/orsmash.svg);
-}
-
-#popup{
-	background-color: var(--fgColor);
-	border-radius: .5em;
-	color: var(--textColor);
-	left: 50%;
-	margin: auto;
-	max-height: calc(100% - 150px);
-	max-width: calc(100% - 40px);
-	min-width: 200px;
-	overflow: auto;
-	padding: 20px;
-	position: fixed;
-	top: 20px;
-	transform: translateX(-50%);
-	width: 500px;
-	z-index: 2;
-}
-
 #rankings-div{
 	margin-left: 20%;
 	margin-right: 20%;
@@ -323,37 +323,4 @@ ul{
 #tall{
 	height: 100%;
 	top: 0%;
-}
-
-.twitter{
-	mask-image: url(icon/twitter.svg);
-}
-
-.dead{
-  display: none;
-}
-
-.generic{
-	mask-image: url(icon/www.svg);
-}
-
-.twitch{
-	mask-image: url(icon/twitch.svg);
-}
-
-#video-con {
-	margin-top: 5%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-}
-
-#video-con iframe, video-con object, .video-con embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }

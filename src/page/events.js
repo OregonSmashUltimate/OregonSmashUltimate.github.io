@@ -29,7 +29,7 @@ export default function Events(){
     allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy")));
 
     return(
-      <div id="events-div">
+      <div class="outerDiv" id="events-div">
         <EventFilter/>
         <div style={{marginBottom: '2em'}}/>
         {disclaimer}
@@ -43,7 +43,7 @@ export default function Events(){
     duration: 1000,
   });
   return(
-    <div id="events-div">
+    <div class="outerDiv" id="events-div">
       <div data-aos="fade-up">
         <EventFilter/>
       </div>
