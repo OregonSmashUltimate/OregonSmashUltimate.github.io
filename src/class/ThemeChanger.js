@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from 'react-bootstrap/Button';
+
 class ThemeChanger extends React.Component{
 	constructor(props){
 		super(props);
@@ -52,7 +54,10 @@ class ThemeChanger extends React.Component{
 	}
 	render(){
 		return (	
-      <li onClick={this.changeTheme}><button>Swap Palette</button></li>
+      <Button onClick={this.changeTheme}
+        variant="outline-dark">
+        Swap Palette
+      </Button>
       //<li onClick={this.changeTheme} class="icon" id="palette" alt="Icon kindly provided by fontawesome."></li>
 		);
 	}

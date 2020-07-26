@@ -40,29 +40,25 @@ function Event(props){
       <div style={close}>
         <p style={close}>
 
-          <a href={props.streamURL !== "" && props.streamURL}
-            class={props.streamURL === "" ? "dead" : "icon"}
-            id="twitch"
+          <a href={props.streamURL === "" ? "" : props.streamURL}
+            class={props.streamURL === "" ? "dead" : "icon twitch"}
             target="_blank"
             rel="noopener noreferrer"
             alt="Icon kindly provided by fontawesome.com"/>
 
-          <a href={props.websiteURL !== "" && props.websiteURL} 
-            class={props.websiteURL === "" ? "dead" : "icon"}
-            id="generic"
+          <a href={props.websiteURL === "" ? "" : props.websiteURL} 
+            class={props.websiteURL === "" ? "dead" : "icon generic"}
             target="_blank"
             rel="noopener noreferrer"
             alt="Icon kindly provided by fontawesome.com"/>
 
-          <a href={props.facebookURL !== "" && props.facebookURL}
-            class={props.facebookURL === "" ? "dead" : "icon"}
-            id="facebook"
+          <a href={props.facebookURL === "" ? "" : props.facebookURL}
+            class={props.facebookURL === "" ? "dead" : "icon facebook"}
             target="_blank"
             rel="noopener noreferrer"/>
 
-          <a href={props.twitterURL !== "" && props.twitterURL}
-            class={props.twitterURL === "" ? "dead" : "icon"}
-            id="twitter"
+          <a href={props.twitterURL === "" ? "" : props.twitterURL}
+            class={props.twitterURL === "" ? "dead" : "icon twitter"}
             target="_blank"
             rel="noopener noreferrer"/>
     
