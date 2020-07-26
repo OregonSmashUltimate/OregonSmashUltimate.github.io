@@ -34,8 +34,14 @@
 .navLink:hover{color: var(--linkColor) !important;}
 
 .btn-outline-dark{
-  color: var(--textColor);
-  background-color: var(--textColor);
+  color: var(--textColor) !important;
+  border-color: var(--textColor) !important;
+}
+.btn-outline-dark:hover{
+  font-weight: normal !important;
+  color: var(--linkColor) !important;
+  border-color: var(--linkColor) !important;
+  background-color: rgba(0,0,0,0) !important;
 }
 
 #jumbotron-home{
