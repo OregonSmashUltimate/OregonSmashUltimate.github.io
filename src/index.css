@@ -83,6 +83,29 @@
   border-color: var(--linkColor) !important;
 }
 
+.modal-content{
+  border: 1px solid var(--bgColor) !important;
+}
+.modal-header{
+  background-color: var(--fgColor);
+  border: 0 !important;
+}
+.modal-title{
+  color: var(--linkColor);
+}
+.modal-body{
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+.close{
+  color: var(--linkColor) !important;
+  text-shadow: 0 1px 0 var(--bgColor) !important;
+  transition: color .2s;
+}
+.close:hover{
+  color: var(--textColor) !important;
+}
+
 #jumbotron-home{
 	margin-top: 5%;
 	margin-left: 25%;
