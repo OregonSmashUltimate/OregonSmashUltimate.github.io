@@ -25,13 +25,33 @@
 
 .nav-link{
   color: var(--textColor) !important;
+  transition: color .2s;
 }
 .navLink{
   color: var(--textColor);
   text-decoration: none !important;
+  transition: color .2s;
 }
 .nav-link:hover{color: var(--linkColor) !important;}
 .navLink:hover{color: var(--linkColor) !important;}
+
+.navbar-toggler{
+  mask-image: url(icon/bars.svg);
+	mask-size: 100% 100%;
+  background-color: var(--linkColor) !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: background-color .2s;
+}
+.navbar-toggler:hover{
+  background-color: var(--textColor) !important;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar-toggler-icon{
+  background-image: none !important;
+}
 
 .btn-outline-dark{
   color: var(--textColor) !important;
@@ -80,6 +100,7 @@
 	mask-size: 100% 100%;
 	margin-left: .25em;
 	margin-right: .25em;
+  transition: background-color .2s;
 }
 
 .icon:hover{
@@ -139,6 +160,7 @@
 a{
 	color: var(--linkColor);
 	text-decoration: none;
+  transition: color .2s;
 }
 
 a:hover{

@@ -27,10 +27,10 @@ import{
 export default function NavBar(){
   return (
     <Router>
-      <Navbar fixed="top" expand="sm" bg="custom">
+      <Navbar fixed="top" expand="md" bg="custom">
         <Navbar.Brand href="#home"><li class="icon logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" alt="Icon kindly provided by Font Awesome">
           <Nav className="mr-auto">
               <Nav.Link href="#">
                 <Link to="/" className="navLink">Home</Link>
