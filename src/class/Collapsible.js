@@ -32,7 +32,7 @@ class Collapsible extends React.Component{
             <Card.Header>
               {this.props.pin}
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-              <div onClick={this.toggle} style={pointer} class="text-dark">
+              <div onClick={this.toggle} style={pointer}>
                 <li class={this.state.open ? "icon plus" : "icon minus"}
                     alt="Icon kindly provided by fontawesome.com"/>
                 <h2 style={inline}>{this.props.title}</h2>

@@ -3,7 +3,6 @@
 	--fgColor: #232d3c;
 	--linkColor: #b6b6b6;
 	--textColor: #f2f2f2;
-	--pageColor: #f2f2f2;
   --unpinnedColor: #929292;
   --pinnedColor: #323232;
 }
@@ -62,6 +61,26 @@
   color: var(--linkColor) !important;
   border-color: var(--linkColor) !important;
   background-color: rgba(0,0,0,0) !important;
+}
+
+.card{
+  background-color: var(--fgColor) !important;
+  color: var(--textColor) !important;
+  border-color: var(--textColor) !important;
+}
+.card-body{
+  background-color: var(--bgColor) !important;
+}
+.btn-link{
+  color: var(--linkColor) !important;
+}
+.btn-link:hover{
+  color: var(--textColor) !important;
+}
+.form-control{
+  color: var(--textColor) !important;
+  background-color: var(--bgColor) !important;
+  border-color: var(--linkColor) !important;
 }
 
 #jumbotron-home{
@@ -170,14 +189,14 @@ a:hover{
 body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-color: var(--bgColor);
+	background-color: var(--bgColor) !important;
 	/* font-family: 'Big Shoulders Text', cursive; */
 	/* font-size: 16pt; */
 }
 
 .outerDiv{
   margin-top: 5em;
-
+	background-color: var(--bgColor);
 }
 
 button{
