@@ -27,12 +27,19 @@
   transition: color .2s;
 }
 .navLink{
-  color: var(--textColor);
+  color: var(--textColor) !important;
   text-decoration: none !important;
   transition: color .2s;
 }
 .nav-link:hover{color: var(--linkColor) !important;}
 .navLink:hover{color: var(--linkColor) !important;}
+
+.dropdown-menu{
+  background-color: var(--bgColor) !important;
+}
+.dropdown-item:hover{
+  background-color: var(--bgColor) !important;
+}
 
 .navbar-toggler{
   mask-image: url(icon/bars.svg);
