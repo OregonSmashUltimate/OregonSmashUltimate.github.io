@@ -106,9 +106,12 @@
   color: var(--textColor) !important;
 }
 
-#jumbotron-home{
-  background-color: var(--fgColor);
+.jumbotron{
+  background-color: var(--fgColor) !important;
   color: var(--textColor);
+}
+
+#jumbotron-home{
 	margin-top: 5%;
 	margin-left: 25%;
 	margin-right: 25%;
