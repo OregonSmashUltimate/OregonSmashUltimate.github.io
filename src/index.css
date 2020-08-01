@@ -107,6 +107,8 @@
 }
 
 #jumbotron-home{
+  background-color: var(--fgColor);
+  color: var(--textColor);
 	margin-top: 5%;
 	margin-left: 25%;
 	margin-right: 25%;
@@ -200,13 +202,13 @@
 }
 
 a{
-	color: var(--linkColor);
+	color: var(--linkColor) !important;
 	text-decoration: none;
   transition: color .2s;
 }
 
 a:hover{
-	color: var(--textColor);
+	color: var(--textColor) !important;
 }
 
 body{
