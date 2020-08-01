@@ -48,7 +48,7 @@ class EventFilter extends React.Component{
   //will be more form groups later
 	render(){
     const pinned = {
-      backgroundColor: 'var(--pinnedColor)',
+      backgroundColor: 'var(--linkColor)',
       cursor: 'default'
     };
 

@@ -38,10 +38,10 @@ class EventPin extends React.Component{
 
 	render(){
     const unpinned = {
-      backgroundColor: 'var(--unpinnedColor)'
+      backgroundColor: 'var(--textColor)'
     };
     const pinned = {
-      backgroundColor: 'var(--pinnedColor)'
+      backgroundColor: 'var(--linkColor)'
     };
 
     return(

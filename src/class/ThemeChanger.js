@@ -8,20 +8,20 @@ export default function ThemeChanger(){
     var textColor, linkColor, fgColor, bgColor;
     switch(theme){
       case "dark":
-        textColor = "#f2f2f2"; linkColor = "#b6b6b6";
+        textColor = "#f2f2f2"; linkColor = "#92f292";
         fgColor   = "#232d3c"; bgColor   = "#131d2c";
         break;
       case "light":
-        textColor = "#1a1a1a"; linkColor = "#000000";
+        textColor = "#1a1a1a"; linkColor = "#0f0f6a";
         fgColor   = "#d9d9d9"; bgColor   = "#ffffff";
         break;
       case "halloween":
-        textColor = "#131313"; linkColor = "#000000";
-        fgColor   = "#ff3300"; bgColor   = "#737373";
+        textColor = "#f2f2f2"; linkColor = "#11cc11";
+        fgColor   = "#881200"; bgColor   = "#331100";
         break;
-      case "cake":
-        textColor = "#cc00ff"; linkColor = "#520066";
-        fgColor   = "#f5ccff"; bgColor   = "#ffffff";
+      case "rosey":
+        textColor = "#660088"; linkColor = "#420033";
+        fgColor   = "#ffffff"; bgColor   = "#e4aabb";
         break;
       case "hacker":
       default:
@@ -54,8 +54,8 @@ export default function ThemeChanger(){
       <NavDropdown.Item onClick={() => changeTheme("halloween")}>
         Halloween
       </NavDropdown.Item>
-      <NavDropdown.Item onClick={() => changeTheme("cake")}>
-        Cake
+      <NavDropdown.Item onClick={() => changeTheme("rosey")}>
+        Rosey
       </NavDropdown.Item>
       <NavDropdown.Item onClick={() => changeTheme("hacker")}>
         Hacker
