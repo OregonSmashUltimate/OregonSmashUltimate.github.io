@@ -71,6 +71,9 @@
 .card-body{
   background-color: var(--bgColor) !important;
 }
+.card-footer{
+  background-color: var(--bgColor) !important;
+}
 .btn-link{
   color: var(--linkColor) !important;
 }

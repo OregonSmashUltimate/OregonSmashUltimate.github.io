@@ -15,9 +15,7 @@ export default function GettingStarted(){
     return(
         <div class="outerDiv" id="getting-started-div">
             <div id="getting-started-item" className="text-center center">
-                <Jumbotron className="bg-dark text-light"
-                    data-aos="fade-up"
-                >
+                <Jumbotron data-aos="fade-up">
                     <h1>Welcome!</h1>
                     <p>
                         The Oregon Smash Community is open to everyone! To find out how to get involved, keep scrolling down 
@@ -29,11 +27,9 @@ export default function GettingStarted(){
             </div>
             
             <div id="getting-started-item1" className="text-center center">
-                <Jumbotron className="bg-dark text-light"
-                    data-aos="fade-down"
-                    data-aos-delay="400"
-                >
-                    <u><h1>Find & Enter Events!</h1></u>
+                <Jumbotron data-aos="fade-down"
+                    data-aos-delay="400">
+                    <h1>Find & Enter Events!</h1>
                     <hr></hr>
                     <p>If you're new to the scene, it's best to start off with a weekly. Weeklies tend to be smaller tournaments and are cheap in price! You can compete, spectate, or play friendlies with others there!</p>
                     <p>Check out the 'Events' tab to find events near you! If there's not one closeby listed, check our Discord or Facebook to find more events.</p>
@@ -59,7 +55,6 @@ export default function GettingStarted(){
                     <Card 
                         data-aos="fade-down"
                         data-aos-delay="1100"
-                        className="bg-dark text-light"
                         style={{marginLeft: "5%", marginRight: "5%"}}
                     >
                         <Card.Img variant="top" src={btbCom} />
@@ -107,30 +102,32 @@ export default function GettingStarted(){
                 data-aos-delay="300"
             >
                 <Jumbotron class="float-md-center">
-                    <u><h4>Rulesets</h4></u>
-                    <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
-                    <p>If you're looking to compete, understanding the rules are key. But don't worry if you're not familiar, players
-                        and Tournament Organizers are happy to help you when you're still learning!
-                    </p>
-                    <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
-                    <br></br>
-                    <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
+                  <h1>Rulesets</h1>
+                  <hr></hr>
+                  <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
+                  <p>If you're looking to compete, understanding the rules are key. But don't worry if you're not familiar, players
+                      and Tournament Organizers are happy to help you when you're still learning!
+                  </p>
+                  <a href="https://satellitesmash.com/#/news/VnLyiHYbOHf9XiTd7KpFz" target="_blank" rel="noopener noreferrer">Washington Ruleset</a>
+                  &nbsp;|&nbsp;
+                  <a href="https://twitter.com/battleofbc/status/1110291472035663872?s=21" target="_blank" rel="noopener noreferrer">British Columbia Ruleset</a>
                 </Jumbotron>
             </div>
 
-            <div id="getting-started-item3" className="text-center center">
-                <Card data-aos="fade-up"
-                    data-aos-delay="400"
-                >
-                    <u><h4>Improving!</h4></u>
-                    <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
-                        in the smash community!
-                    </p>
-                    <div id="video-con"
-                    >
-                        <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </Card>
+            <div id="getting-started-item3" 
+                 className="text-center center"
+                 data-aos="fade-up"
+                 data-aos-delay="400">
+                <Jumbotron class="float-md-center">
+                  <h1>Improving!</h1>
+                  <hr></hr>
+                  <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
+                      in the smash community!
+                  </p>
+                  <div id="video-con">
+                      <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </Jumbotron>
             </div>
         </div>
     );
