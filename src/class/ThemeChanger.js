@@ -13,7 +13,7 @@ export default function ThemeChanger(){
         break;
       case "light":
         textColor = "#1a1a1a"; linkColor = "#0f0f6a";
-        fgColor   = "#d9d9d9"; bgColor   = "#ffffff";
+        fgColor   = "#ffffff"; bgColor   = "#d9d9d9";
         break;
       case "halloween":
         textColor = "#f2f2f2"; linkColor = "#11cc11";
