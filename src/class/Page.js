@@ -6,7 +6,7 @@ import NavBar from './NavBar.js';
 if(localStorage.getItem('pinnedEventUIDs') === null)
   localStorage.setItem('pinnedEventUIDs', "");
 if(localStorage.getItem('theme') === null)
-  localStorage.setItem('theme', "0");
+  localStorage.setItem('theme', "light");
 if(localStorage.getItem('pinnedEvents') === null)
   localStorage.setItem('pinnedEvents', "include");
 if(localStorage.getItem('sortBy') === null)
