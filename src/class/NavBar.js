@@ -28,7 +28,11 @@ export default function NavBar(){
   return (
     <Router>
       <Navbar fixed="top" expand="md" bg="custom">
-        <Navbar.Brand href="#home"><li class="icon logo"/></Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <Link to="/" className="navLink">
+            <li class="icon logo"/>
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" alt="Icon kindly provided by Font Awesome">
           <Nav className="mr-auto">
