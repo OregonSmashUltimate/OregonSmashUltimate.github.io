@@ -1,7 +1,7 @@
 import React from 'react';
 import Collapsible from './Collapsible.js';
 import EventPin from './EventPin.js';
-import {uidPinIndex, viewIsExclude, viewIsOnly} from '../script/initEvents.js';
+import {uidPinIndex, viewIsExclude, viewIsOnly} from '../js/initEvents.js';
 
 /*
 Field     | Description                      | Format

@@ -3,7 +3,7 @@ import Collapsible from './Collapsible.js';
 import Form        from 'react-bootstrap/Form';
 import Button      from 'react-bootstrap/Button';
 import Col         from 'react-bootstrap/Col';
-import {getOptions, getNormalOrderText, getReverseOrderText} from '../script/sortBy.js';
+import {getOptions, getNormalOrderText, getReverseOrderText} from '../js/sortBy.js';
 
 class EventFilter extends React.Component{
 	constructor(props){

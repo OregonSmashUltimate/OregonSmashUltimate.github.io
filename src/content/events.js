@@ -5,11 +5,11 @@ import Collapsible from '../class/Collapsible.js';
 import Alert from 'react-bootstrap/Alert';
 import Aos from 'aos';
 
-import {viewIsFiltered} from '../script/initEvents.js';
+import {viewIsFiltered} from '../js/initEvents.js';
 import weekly from './weekly.js';
 import biWeeklyAndMonthly from './biWeeklyAndMonthly.js';
 
-import {getSortFunction} from '../script/sortBy.js';
+import {getSortFunction} from '../js/sortBy.js';
 
 export default function Events(){
   if(!viewIsFiltered){
