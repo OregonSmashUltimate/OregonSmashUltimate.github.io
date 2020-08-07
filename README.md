@@ -21,7 +21,7 @@ Reference guides/materials:
 * [Florin Pop](https://www.florin-pop.com/blog/2019/07/sort-table-data-with-react/)
 
 # OregonSmashUltimate.github.io
-Website containing everything Oregon Smash
+Website containing everything Oregon Smash Ultimate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
