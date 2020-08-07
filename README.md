@@ -1,3 +1,25 @@
+## License
+
+This work is licensed under "[The MIT License](https://opensource.org/licenses/MIT)".
+Please see the file 'LICENSE' in this distribution for license terms.
+
+## Getting Started
+
+Consider checking out our [Getting Started Documemt](https://docs.google.com/document/d/1tUg5fdhiWD2hLqaw2gdaFSLN6RsbNy-cINlwFmwK1Cs/edit?usp=sharing) made for contributors just getting started.
+
+## Credit
+
+Frameworks used:
+* [React](https://reactjs.org/)
+* [React-Bootstrap](https://react-bootstrap.netlify.app/)
+* [Netlify CMF](https://www.netlifycms.org/)
+* [GitHub Pages](https://pages.github.com/)
+
+Reference guides/materials:
+* [React Getting Started](https://reactjs.org/docs/getting-started.html)
+* [React-Bootstrap Components](https://react-bootstrap.netlify.app/components/alerts/)
+* [Florin Pop](https://www.florin-pop.com/blog/2019/07/sort-table-data-with-react/)
+
 # OregonSmashUltimate.github.io
 Website containing everything Oregon Smash
 
