@@ -27,7 +27,8 @@ class TextSizeChanger extends React.Component{
   render(){
     return(
       <li class="icon"
-          id={this.state.mobile ? "mobile" : "desktop"}
+          id={(!this.state.mobile && "desktop") ||
+               (this.state.mobile && "mobile")}
           onClick={this.changeTextSize}
           alt="Icon kindly provided by fontawesome.com"/>
     );
