@@ -26,7 +26,7 @@ export default function Events(){
     else
       allEvents = allEvents.concat(biWeeklyAndMonthly);
 
-    allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy")));
+    allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy") || "none"));
 
     return(
       <div class="outerDiv" id="events-div">

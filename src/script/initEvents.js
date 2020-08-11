@@ -1,4 +1,5 @@
-var pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(',');
+var pinnedUIDs = localStorage.getItem('pinnedEventUIDs') || "";
+pinnedUIDs = pinnedUIDs.split(',');
 //get rid of trailing empty entry
 pinnedUIDs.splice(pinnedUIDs.length - 1, 1);
 

@@ -9,7 +9,8 @@ class EventPin extends React.Component{
 
   toggle(){
     //initialize
-    const pinnedUIDs = localStorage.getItem('pinnedEventUIDs').split(',');
+    var pinnedUIDs = localStorage.getItem('pinnedEventUIDs') || "";
+    pinnedUIDs = pinnedUIDs.split(',');
     var pinnedUIDsConcatenated = "";
 
     //tweak pinnedUIDs to reflect new pin status

@@ -9,9 +9,9 @@ class EventFilter extends React.Component{
 	constructor(props){
 		super(props);
 
-    this.state = {pinnedEvents: localStorage.getItem('pinnedEvents'),
-      sortBy: localStorage.getItem('sortBy'),
-      sortByOrder: localStorage.getItem('sortByOrder')};
+    this.state = {pinnedEvents: localStorage.getItem('pinnedEvents') || "",
+      sortBy: localStorage.getItem('sortBy') || "none",
+      sortByOrder: localStorage.getItem('sortByOrder') || "normal"};
 
     this.handlePinnedEvents = this.handlePinnedEvents.bind(this);
     this.handleSortBy = this.handleSortBy.bind(this);

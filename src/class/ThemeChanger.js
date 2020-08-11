@@ -36,11 +36,9 @@ export default function ThemeChanger(){
     cssRoot.style.setProperty('--fgColor', fgColor);
     cssRoot.style.setProperty('--bgColor', bgColor);
     localStorage.setItem('theme', theme);
-    //console.log(String(this.state.theme));
-    //console.log(localStorage.getItem("theme"));
   }
 
-  changeTheme(localStorage.getItem('theme'));
+  changeTheme(localStorage.getItem('theme') || "light");
 
   return (	
     <NavDropdown title="Themes"
