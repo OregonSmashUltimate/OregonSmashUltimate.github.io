@@ -99,7 +99,7 @@ class EventFilter extends React.Component{
             </Form.Group>
             <Form.Group as={Col}>
               <Button variant="primary"
-                type="submit">Sumbit</Button>
+                type="submit">Submit</Button>
             </Form.Group>
           </Form.Row>
 
