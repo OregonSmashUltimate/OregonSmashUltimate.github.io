@@ -6,6 +6,7 @@ import Event from '../class/Event.js';
 
 var weekly = [
 <Event
+  key={1}
   uid="1"
   name="Dropzone"
   time="Sundays from 12:00pm-6:00pm"
@@ -21,6 +22,7 @@ var weekly = [
   notes="Spectate and play friendlies for free!"/>,
 
 <Event
+  key={2}
   uid="2"
   name="Topdeck Tuesdays"
   time="Tuesdays from 5:30pm-9:00pm"
@@ -36,6 +38,7 @@ var weekly = [
   notes="Spectate and play friendlies for free!"/>,
 
 <Event
+  key={3}
   uid="3"
   name="Cascade"
   time="Wednesdays starting 6:00pm"
@@ -51,6 +54,7 @@ var weekly = [
   notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>,
 
 <Event
+  key={4}
   uid="4"
   name="Sacred Sanctuary"
   time="Fridays from 5:30pm-9:00pm"
@@ -66,6 +70,7 @@ var weekly = [
   notes="Spectate and play friendlies for free!"/>,
 
 <Event
+  key={5}
   uid="5"
   name="Salem Smashfest"
   time="Saturdays starting 11:30pm"
