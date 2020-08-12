@@ -1,13 +1,12 @@
 import React from 'react';
 
-import Nav from './NavBar.js';
-import Footer from './Footer.js';
+import NavBar from './NavBar.js';
+
 function Page(props){
 	return (
 		<div>
 			<div>
-				<Nav />
-				<Footer />
+				<NavBar />
 			</div>
 		</div>
 	);

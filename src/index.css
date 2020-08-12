@@ -3,27 +3,236 @@
 	--fgColor: #232d3c;
 	--linkColor: #b6b6b6;
 	--textColor: #f2f2f2;
-	--pageColor: #f2f2f2;
+}
+
+/*==================
+  Bootstrap Imports
+===================*/
+
+.card{
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+}
+
+.bg-custom{
+  background-color: var(--fgColor);
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+.nav-link{
+  color: var(--textColor) !important;
+  transition: color .2s;
+}
+.navLink{
+  color: var(--textColor) !important;
+  text-decoration: none !important;
+  transition: color .2s;
+}
+.nav-link:hover{color: var(--linkColor) !important;}
+.navLink:hover{color: var(--linkColor) !important;}
+
+.dropdown-menu{
+  background-color: var(--bgColor) !important;
+}
+.dropdown-item:hover{
+  background-color: var(--bgColor) !important;
+}
+
+.navbar-toggler{
+  mask-image: url(icon/bars.svg);
+	mask-size: 100% 100%;
+  background-color: var(--linkColor) !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: background-color .2s;
+}
+.navbar-toggler:hover{
+  background-color: var(--textColor) !important;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar-toggler-icon{
+  background-image: none !important;
+}
+
+.btn-outline-dark{
+  color: var(--textColor) !important;
+  border-color: var(--textColor) !important;
+}
+.btn-outline-dark:hover{
+  font-weight: normal !important;
+  color: var(--linkColor) !important;
+  border-color: var(--linkColor) !important;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.card{
+  background-color: var(--fgColor) !important;
+  color: var(--textColor) !important;
+  border-color: var(--textColor) !important;
+}
+.card-body{
+  background-color: var(--bgColor) !important;
+}
+.card-footer{
+  background-color: var(--bgColor) !important;
+}
+.btn-link{
+  color: var(--linkColor) !important;
+}
+.btn-link:hover{
+  color: var(--textColor) !important;
+}
+.form-control{
+  color: var(--textColor) !important;
+  background-color: var(--bgColor) !important;
+  border-color: var(--linkColor) !important;
+}
+
+.modal-content{
+  border: 1px solid var(--bgColor) !important;
+}
+.modal-header{
+  background-color: var(--fgColor);
+  border: 0 !important;
+}
+.modal-title{
+  color: var(--linkColor);
+}
+.modal-body{
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+.close{
+  color: var(--linkColor) !important;
+  text-shadow: 0 1px 0 var(--bgColor) !important;
+  transition: color .2s;
+}
+.close:hover{
+  color: var(--textColor) !important;
+}
+
+.jumbotron{
+  background-color: var(--fgColor) !important;
+  color: var(--textColor);
+}
+
+#jumbotron-home{
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+  
+.carousel{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	max-height: 600px;
+	height: 500px;
+	width: auto;
+	/* background-color: black; */
+}
+
+.carousel-caption{
+	margin-left: auto;
+	margin-right: auto;
+	width: inherit;
+	height: 50px;
+	background-color: black;
+}
+
+/*=======
+  Icons
+=======*/
+
+.icon{
+  display: inline-block;
+	background-color: var(--linkColor);
+	height: 1em;
+	width: 1em;
+	mask-size: 100% 100%;
+	margin-left: .25em;
+	margin-right: .25em;
+  transition: background-color .2s;
+}
+
+.icon:hover{
+	background-color: var(--textColor);
+}
+
+.dead{
+  display: none;
+}
+
+.eventPin{
+  mask-image: url(icon/pin.svg);
+  position: absolute;
+  left: 1em;
+  top: 2.25em;
+}
+
+.logo    {mask-image: url(icon/orsmash.svg); }
+.generic {mask-image: url(icon/www.svg);     }
+.twitch  {mask-image: url(icon/twitch.svg);  }
+.twitter {mask-image: url(icon/twitter.svg); }
+.github  {mask-image: url(icon/github.svg);  }
+.facebook{mask-image: url(icon/facebook.svg);}
+.discord {mask-image: url(icon/discord.svg); }
+.plus    {mask-image: url(icon/plus.svg);    }
+.minus   {mask-image: url(icon/minus.svg);   }
+.pin     {mask-image: url(icon/pin.svg);     }
+
+/*
+.home   {mask-image: url(icon/home.svg);}
+.palette{mask-image: url(icon/palette.svg);}
+.mobile{mask-image: url(icon/mobile.svg);}
+.desktop{mask-image: url(icon/desktop.svg);}
+*/
+
+/*=======
+  Other
+=======*/
+
+#video-con {
+	margin-top: 5%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+
+#video-con iframe, video-con object, .video-con embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 a{
-	color: var(--linkColor);
+	color: var(--linkColor) !important;
 	text-decoration: none;
+  transition: color .2s;
 }
 
 a:hover{
-	color: var(--textColor);
+	color: var(--textColor) !important;
 }
 
 body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-color: var(--textColor);
-	background-image: url(../src/icon/orsmash.svg);
-	background-attachment: fixed;
-  	background-size: 100% 100%;
+	background-color: var(--bgColor) !important;
 	/* font-family: 'Big Shoulders Text', cursive; */
 	/* font-size: 16pt; */
+}
+
+.outerDiv{
+  margin-top: 5em;
+	background-color: var(--bgColor);
 }
 
 button{
@@ -86,31 +295,6 @@ li:hover{
 	cursor: pointer;
 }
 
-nav{
-	color: var(--textColor);
-	left: 0;
-	opacity: .95;
-}
-
-nav ul{
-	background-color: var(--fgColor);
-	font-size: 1.5em;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
-	position: sticky;
-  	/* z-index: 1; */
-	top: 0;
-}
-
-/* Specifically for Nav Bar; If changed, make sure to change this for the nav bar specifically */
-ul li a{
-	color: var(--textColor);
-	/* font-family: 'Big Shoulders Text', cursive; */
-	font-size: 24pt;
-}
-
 ul{
 	display: block;
 	margin: 0;
@@ -118,49 +302,8 @@ ul{
 	text-align: center;
 }
 
-/* Bootstrap Jumbotron */
-#jumbotron-home{
-	margin-top: 5%;
-	margin-left: 25%;
-	margin-right: 25%;
-}
-  
-/* Bootstrap Carousel */
-.carousel{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 720px;
-	max-height: 600px;
-	height: 500px;
-	width: auto;
-	/* background-color: black; */
-}
-
-.carousel-caption{
-	margin-left: auto;
-	margin-right: auto;
-	width: inherit;
-	height: 50px;
-	background-color: black;
-}
-
 #rankingImg{
 	padding-top: auto;
-}
-.plus{
-	mask-image: url(icon/plus.svg);
-}
-
-.minus{
-	mask-image: url(icon/minus.svg);
-}
-
-#mobile{
-	mask-image: url(icon/mobile.svg);
-}
-
-#desktop{
-	mask-image: url(icon/desktop.svg);
 }
 
 .SocialMedia{
@@ -178,27 +321,6 @@ ul{
 	width: 30%;
 }
 
-.icon{
-	background-color: var(--linkColor);
-	height: 1em;
-	mask-size: 100% 100%;
-	width: 1em;
-	padding-left: .5em;
-	padding-right: .5em;
-	margin-left: .1em;
-	margin-right: .1em;
-}
-
-.icon:hover{
-	background-color: var(--textColor);
-}
-
-/* Card imported from bootstrap */
-.card{
-	margin: 0 auto; /* Added */
-	float: none; /* Added */
-}
-
 #arrow-down{
 	max-width: 20%;
 	max-height: auto;
@@ -214,33 +336,11 @@ ul{
     height:auto;
 }
 
-#discord{
-	mask-image: url(icon/discord.svg);
-}
-
-#discord-link-img{
-	max-width: 60px;
-	max-height: 60px;
-}
-
-/*#palette{
-	mask-image: url(icon/palette.svg);
-}*/
-
 #events-div{
 	background: rgba(242, 242, 242, 0.0);
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 20%;
-}
-
-#facebook{
-	mask-image: url(icon/facebook.svg);
-}
-
-#facebook-link-img{
-	width: 55px;
-	height: 55px;
 }
 
 #getting-started-item{
@@ -275,20 +375,6 @@ ul{
 	margin-right: 20%;
 	margin-bottom: 20%;
 }
-#github{
-	mask-image: url(icon/github.svg);
-}
-
-/*#home{
-	mask-image: url(icon/home.svg);
-}*/
-
-#home{
-  text-align: center;
-  background-color: var(--bgColor);
-  background-size: 0px;
-  opacity: .90;
-}
 
 #header{
 	background-color: var(--fgColor);
@@ -311,44 +397,6 @@ ul{
 	display: none;
 }
 
-#logo{
-	background-color: var(--textColor);
-	height: 100%;
-	left: 0;
-	background-image: url(./icon/orsmash.svg);
-	background-attachment: fixed;
-  	background-size: 100% 100%;
-	position: fixed;
-	opacity: .9;
-	top: 0;
-	width: 100%;
-	z-index: 0;
-}
-
-#logo-nav{
-	max-width: 80px;
-	opacity: 1.0;
-	padding-left: 0px;
-}
-
-#popup{
-	background-color: var(--fgColor);
-	border-radius: .5em;
-	color: var(--textColor);
-	left: 50%;
-	margin: auto;
-	max-height: calc(100% - 150px);
-	max-width: calc(100% - 40px);
-	min-width: 200px;
-	overflow: auto;
-	padding: 20px;
-	position: fixed;
-	top: 20px;
-	transform: translateX(-50%);
-	width: 500px;
-	z-index: 2;
-}
-
 #rankings-div{
 	margin-left: 20%;
 	margin-right: 20%;
@@ -358,37 +406,4 @@ ul{
 #tall{
 	height: 100%;
 	top: 0%;
-}
-
-#twitter{
-	mask-image: url(icon/twitter.svg);
-}
-
-.dead{
-  display: none;
-}
-
-#generic{
-	mask-image: url(icon/www.svg);
-}
-
-#twitch{
-	mask-image: url(icon/twitch.svg);
-}
-
-#video-con {
-	margin-top: 5%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-}
-
-#video-con iframe, video-con object, .video-con embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
