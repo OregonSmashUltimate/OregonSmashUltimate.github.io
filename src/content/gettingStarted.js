@@ -64,15 +64,17 @@ export default function GettingStarted(){
                     >
                         <Card.Img variant="top" src={btbCom} />
                         <Card.Body>
-                        <Card.Title>Events</Card.Title>
-                        <Card.Text>
-                            Wherever you're from, Oregon most likely has an event near you. Check
-                            out the Events section for more information!
+                            <Card.Title>Events</Card.Title>
+                            <Card.Text>
+                                Wherever you're from, Oregon most likely has an event near you. Check
+                                out the Events section for more information!
+                            </Card.Text>
                             <hr></hr>
-                            Don't see something nearby? Try going to our Discord and Facebook to see
-                            if there's anything not listed. You'll also find updates are Regionals, 
-                            which are larger events and tend to be worth the drive!
-                        </Card.Text>
+                            <Card.Text>
+                                Don't see something nearby? Try going to our Discord and Facebook to see
+                                if there's anything not listed. You'll also find updates are Regionals, 
+                                which are larger events and tend to be worth the drive!
+                            </Card.Text>
                         </Card.Body>
                         <Card.Footer>
                         <small className="text-muted">Photo Credit: @jaa_noble35</small>
@@ -87,7 +89,9 @@ export default function GettingStarted(){
                         <Card.Title>Competition</Card.Title>
                         <Card.Text>
                             Want to see how you stack up against others? We've got you!
-                            <hr></hr>
+                        </Card.Text>
+                        <hr></hr>
+                        <Card.Text>
                             Some of the best players reside in Oregon; you just gotta know where to go!
                             Test your skills and train with others. The community is all about improving 
                             so if you're here for competition, we've got you covered! Check out the
