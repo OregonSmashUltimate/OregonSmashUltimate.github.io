@@ -3,7 +3,7 @@ import React from 'react';
 import EventFilter from '../class/EventFilter.js';
 import Collapsible from '../class/Collapsible.js';
 import Alert from 'react-bootstrap/Alert';
-import Aos from 'aos';
+// import Aos from 'aos';
 
 import {viewIsFiltered} from '../script/initEvents.js';
 import weekly from '../content/weekly.js';
@@ -40,9 +40,9 @@ export default function Events(){
   }
 
   //else
-  Aos.init({
-    duration: 1000,
-  });
+  // Aos.init({
+  //   duration: 1000,
+  // });
   return(
     <div className="outerDiv" id="events-div">
       <div data-aos="fade-up">
