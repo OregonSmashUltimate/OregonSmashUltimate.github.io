@@ -183,6 +183,8 @@
 .plus    {mask-image: url(icon/plus.svg);    }
 .minus   {mask-image: url(icon/minus.svg);   }
 .pin     {mask-image: url(icon/pin.svg);     }
+.info    {mask-image: url(icon/info.svg);    }
+.bars    {mask-image: url(icon/bars.svg);    }
 
 /*
 .home   {mask-image: url(icon/home.svg);}

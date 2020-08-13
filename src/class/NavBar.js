@@ -9,6 +9,7 @@ import Facebook from '../content/facebook.js';
 import Discord  from '../content/discord.js';
 import Twitter  from '../content/twitter.js';
 import GitHub   from '../content/github.js';
+import Info     from '../content/info.js';
 
 import ThemeChanger from './ThemeChanger.js';
 
@@ -55,6 +56,7 @@ export default function NavBar(){
                 <GitHub />
               </NavDropdown>
               <NavItem><ThemeChanger /></NavItem>
+              <Info />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
