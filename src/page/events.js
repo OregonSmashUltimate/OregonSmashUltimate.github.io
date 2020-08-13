@@ -70,7 +70,6 @@ export default function Events(){
           </p>
         </Collapsible>
       </div>
-     
     </div>
   );
 }
