@@ -55,22 +55,6 @@ var weekly = [
 
 <Event
   key={4}
-  uid="4"
-  name="Sacred Sanctuary"
-  time="Fridays from 5:30pm-9:00pm"
-  mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
-  location="Room SS 121, PCC Sylvania Campus, Portland, OR"
-  streamURL="https://twitch.tv/UnitySmash"
-  websiteURL=""
-  facebookURL=""
-  twitterURL="https://twitter.com/TeziiMewtwo"
-  venueFee="5"
-  entryFee="5 per bracket"
-  schedule="Singles @ 6:00pm"
-  notes="Spectate and play friendlies for free!"/>,
-
-<Event
-  key={5}
   uid="5"
   name="Salem Smashfest"
   time="Saturdays starting 11:30pm"

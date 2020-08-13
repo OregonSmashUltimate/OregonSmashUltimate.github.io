@@ -16,16 +16,17 @@ export default function Events(){
     var allEvents = weekly;
     var disclaimer;
 
-    if(localStorage.getItem("sortBy") === "nextOccurring")
+    if(localStorage.getItem("sortBy") === "nextOccurring"){
       disclaimer = 
         <Alert variant="info" className="text-center">
           <p>
             Monthlies are not consistent enough to predict, so they are excluded from these results.
           </p>
         </Alert>;
-    else
+    }
+    else{
       allEvents = allEvents.concat(biWeeklyAndMonthly);
-
+    }
     allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy") || "none"));
 
     return(
