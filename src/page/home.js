@@ -8,7 +8,7 @@ export default function Home(){
     duration: 500,
   });
   return(
-    <div class="outerDiv">
+    <div className="outerDiv">
       <Alert variant="danger" className="text-center">
         <h2>ATTENTION: Due to COVID-19 all events have been suspended and we recommend
           individuals do not host events until it is safe. Please feel free to join 
@@ -22,11 +22,9 @@ export default function Home(){
             You've come to the right place!<br />
             Join us on our
             <br/>
-            <div style={{textAlign: "center"}}>
-              <a href="https://discord.gg/K8nv9pt" target="_blank" rel="noopener noreferrer"><li class="icon discord"/> Discord</a>
+              <a href="https://discord.gg/K8nv9pt" target="_blank" rel="noopener noreferrer"><li className="icon discord"/> Discord</a>
               &nbsp;|&nbsp;
-              <a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer"><li class="icon facebook"/> Facebook</a>
-            </div>
+              <a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer"><li className="icon facebook"/> Facebook</a>
             </p>
       </Jumbotron>
     </div>

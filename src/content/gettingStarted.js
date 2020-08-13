@@ -65,16 +65,16 @@ export default function GettingStarted(){
                         <Card.Img variant="top" src={btbCom} />
                         <Card.Body>
                             <Card.Title>Events</Card.Title>
-                            <Card.Text>
+                            <p className="card-text">
                                 Wherever you're from, Oregon most likely has an event near you. Check
                                 out the Events section for more information!
-                            </Card.Text>
+                            </p>
                             <hr></hr>
-                            <Card.Text>
+                            <p className="card-text">
                                 Don't see something nearby? Try going to our Discord and Facebook to see
                                 if there's anything not listed. You'll also find updates are Regionals, 
                                 which are larger events and tend to be worth the drive!
-                            </Card.Text>
+                            </p>
                         </Card.Body>
                         <Card.Footer>
                         <small className="text-muted">Photo Credit: @jaa_noble35</small>
