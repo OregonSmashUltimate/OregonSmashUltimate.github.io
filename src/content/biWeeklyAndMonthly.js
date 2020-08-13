@@ -6,6 +6,7 @@ import Event from '../class/Event.js';
 
 const biWeeklyAndMonthly = [
 <Event
+  key={1}
   uid="6"
   name="Unity Station by Unity Smash"
   time="Monthly Saturdays"
@@ -20,7 +21,8 @@ const biWeeklyAndMonthly = [
   schedule="Doubles: 12:30pm | Singles: 1:30pm"
   notes="CURRENTLY ON HIATUS"/>,
 
-<Event 
+<Event
+  key={2}
   uid="7"
   name="Rose City Unification by Epic Gaming"
   time="Saturday Monthly from 12:00pm-End"
@@ -36,6 +38,7 @@ const biWeeklyAndMonthly = [
   notes="Dates announced on Facebook and Discord"/>,
 
 <Event
+  key={3}
   uid="8"
   name="UO Smash Club"
   time="2nd and 4th Fridays starting 5:30pm"
@@ -51,6 +54,7 @@ const biWeeklyAndMonthly = [
   notes=""/>,
 
 <Event
+  key={4}
   uid="9"
   name="SmashVallis Saturdays"
   time="2nd and 4th Sundays starting 4:00pm"

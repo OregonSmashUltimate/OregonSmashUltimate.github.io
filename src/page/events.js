@@ -3,7 +3,7 @@ import React from 'react';
 import EventFilter from '../class/EventFilter.js';
 import Collapsible from '../class/Collapsible.js';
 import Alert from 'react-bootstrap/Alert';
-import Aos from 'aos';
+// import Aos from 'aos';
 
 import {viewIsFiltered} from '../script/initEvents.js';
 import weekly from '../content/weekly.js';
@@ -16,20 +16,21 @@ export default function Events(){
     var allEvents = weekly;
     var disclaimer;
 
-    if(localStorage.getItem("sortBy") === "nextOccurring")
+    if(localStorage.getItem("sortBy") === "nextOccurring"){
       disclaimer = 
         <Alert variant="info" className="text-center">
           <p>
             Monthlies are not consistent enough to predict, so they are excluded from these results.
           </p>
         </Alert>;
-    else
+    }
+    else{
       allEvents = allEvents.concat(biWeeklyAndMonthly);
-
+    }
     allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy") || "none"));
 
     return(
-      <div class="outerDiv" id="events-div">
+      <div className="outerDiv" id="events-div">
         <EventFilter/>
         <div style={{marginBottom: '2em'}}/>
         {disclaimer}
@@ -39,11 +40,11 @@ export default function Events(){
   }
 
   //else
-  Aos.init({
-    duration: 1000,
-  });
+  // Aos.init({
+  //   duration: 1000,
+  // });
   return(
-    <div class="outerDiv" id="events-div">
+    <div className="outerDiv" id="events-div">
       <div data-aos="fade-up">
         <EventFilter/>
       </div>
@@ -69,7 +70,6 @@ export default function Events(){
           </p>
         </Collapsible>
       </div>
-     
     </div>
   );
 }

@@ -127,8 +127,10 @@ function find(pattern, expr){
 
 export function getOptions(){
   var ret = [];
+  var count = 1;
   for(const option of sortOptions){
-    ret.push(<option value={option.value}>{option.name}</option>);
+    ret.push(<option key={count} value={option.value}>{option.name}</option>);
+    count++;
   }
 
   return ret;

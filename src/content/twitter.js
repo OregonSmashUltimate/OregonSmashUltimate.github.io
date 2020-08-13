@@ -13,7 +13,7 @@ function Twitter(){
   return(
   <>
     <NavDropdown.Item onClick={handleShow}>
-      <li class="icon twitter" /> Twitter
+      <li className="icon twitter" /> Twitter
     </NavDropdown.Item>
 
     <Modal show={show} onHide={handleClose}>

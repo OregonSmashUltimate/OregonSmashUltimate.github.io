@@ -2,7 +2,7 @@ import React from 'react';
 
 function SocialMedia(props){
 	return (
-		<div class="SocialMedia">
+		<div className="SocialMedia">
 			<img id="profileImg" src={props.profileImg} alt="Unable to load profile pic." />
       <p>
         {props.role}

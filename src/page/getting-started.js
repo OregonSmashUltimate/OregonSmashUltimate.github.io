@@ -13,7 +13,7 @@ export default function GettingStarted(){
         duration: 1000,
     });
     return(
-        <div class="outerDiv" id="getting-started-div">
+        <div className="outerDiv" id="getting-started-div">
             <div id="getting-started-item" className="text-center center">
                 <Jumbotron data-aos="fade-up">
                     <h1>Welcome!</h1>
@@ -63,7 +63,9 @@ export default function GettingStarted(){
                         <Card.Text>
                             Wherever you're from, Oregon most likely has an event near you. Check
                             out the Events section for more information!
+                        </Card.Text>
                             <hr></hr>
+                        <Card.Text>
                             Don't see something nearby? Try going to our Discord and Facebook to see
                             if there's anything not listed. You'll also find updates are Regionals, 
                             which are larger events and tend to be worth the drive!
@@ -82,7 +84,9 @@ export default function GettingStarted(){
                         <Card.Title>Competition</Card.Title>
                         <Card.Text>
                             Want to see how you stack up against others? We've got you!
+                        </Card.Text>
                             <hr></hr>
+                        <Card.Text>
                             Some of the best players reside in Oregon; you just gotta know where to go!
                             Test your skills and train with others. The community is all about improving 
                             so if you're here for competition, we've got you covered! Check out the
@@ -101,7 +105,7 @@ export default function GettingStarted(){
                 data-aos="fade-right"
                 data-aos-delay="300"
             >
-                <Jumbotron class="float-md-center">
+                <Jumbotron className="float-md-center">
                   <h1>Rulesets</h1>
                   <hr></hr>
                   <p>Most tournaments will use variations of similar rulesets. Examples of major PNW rulesets included below.</p>
@@ -118,14 +122,14 @@ export default function GettingStarted(){
                  className="text-center center"
                  data-aos="fade-up"
                  data-aos-delay="400">
-                <Jumbotron class="float-md-center">
+                <Jumbotron className="float-md-center">
                   <h1>Improving!</h1>
                   <hr></hr>
                   <p>Interested in improving at the game competitively? Watch the video below made by one of our community members on positively and effectively figuring out your goals
                       in the smash community!
                   </p>
                   <div id="video-con">
-                      <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe title="Improving" width="560" height="315" src="https://www.youtube.com/embed/PTdG2zClz44" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   </div>
                 </Jumbotron>
             </div>

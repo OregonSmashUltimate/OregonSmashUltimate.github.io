@@ -6,6 +6,7 @@ import Event from '../class/Event.js';
 
 var weekly = [
 <Event
+  key={1}
   uid="1"
   name="Dropzone"
   time="Sundays from 12:00pm-6:00pm"
@@ -21,6 +22,7 @@ var weekly = [
   notes="Spectate and play friendlies for free!"/>,
 
 <Event
+  key={2}
   uid="2"
   name="Topdeck Tuesdays"
   time="Tuesdays from 5:30pm-9:00pm"
@@ -36,6 +38,7 @@ var weekly = [
   notes="Spectate and play friendlies for free!"/>,
 
 <Event
+  key={3}
   uid="3"
   name="Cascade"
   time="Wednesdays starting 6:00pm"
@@ -51,21 +54,7 @@ var weekly = [
   notes="Side Brackets @ 5:00 PM, vote for the event on the linked Twitter; Spectate and play friendlies for free!"/>,
 
 <Event
-  uid="4"
-  name="Sacred Sanctuary"
-  time="Fridays from 5:30pm-9:00pm"
-  mapURL="https://goo.gl/maps/WjiKEBNZ2QRwLEbj7"
-  location="Room SS 121, PCC Sylvania Campus, Portland, OR"
-  streamURL="https://twitch.tv/UnitySmash"
-  websiteURL=""
-  facebookURL=""
-  twitterURL="https://twitter.com/TeziiMewtwo"
-  venueFee="5"
-  entryFee="5 per bracket"
-  schedule="Singles @ 6:00pm"
-  notes="Spectate and play friendlies for free!"/>,
-
-<Event
+  key={4}
   uid="5"
   name="Salem Smashfest"
   time="Saturdays starting 11:30pm"

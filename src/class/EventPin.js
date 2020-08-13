@@ -47,7 +47,7 @@ class EventPin extends React.Component{
 
     return(
     <li onClick={this.toggle}
-      class={"icon eventPin"}
+      className={"icon eventPin"}
       style={this.state.isPinned ? pinned : unpinned}
     />
     );

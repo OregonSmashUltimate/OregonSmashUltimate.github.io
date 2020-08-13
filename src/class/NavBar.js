@@ -28,25 +28,23 @@ export default function NavBar(){
   return (
     <Router>
       <Navbar fixed="top" expand="md" bg="custom">
-        <Navbar.Brand href="#home">
-          <Link to="/" className="navLink">
-            <li class="icon logo"/>
-          </Link>
+        <Navbar.Brand as={Link} to="/" href="#home">
+            <li className="icon logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" alt="Icon kindly provided by Font Awesome">
           <Nav className="mr-auto">
-              <Nav.Link href="#">
-                <Link to="/" className="navLink">Home</Link>
+              <Nav.Link as={Link} to="/" href="#">
+                Home
               </Nav.Link>
-              <Nav.Link href="getting-started">
-                <Link to="getting-started" className="navLink">Getting Started</Link>
+              <Nav.Link as={Link} to="getting-started" href="getting-started">
+                Getting Started
               </Nav.Link>
-              <Nav.Link href="events">
-                <Link to="events" className="navLink">Events</Link>
+              <Nav.Link as={Link} to="events" href="events">
+                Events
               </Nav.Link>
-              <Nav.Link href="rankings">
-                <Link to="rankings" className="navLink">Rankings</Link>
+              <Nav.Link as={Link} to="rankings" href="rankings">
+                Rankings
               </Nav.Link>
               <NavDropdown title="Social Media" className="navLink">
                 <Facebook />

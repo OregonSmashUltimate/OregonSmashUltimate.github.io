@@ -59,7 +59,7 @@ class EventFilter extends React.Component{
           <Form.Row>
             <Form.Group as={Col}>
               <Form.Label column>
-                <li class="icon pin" style={pinned}/>
+                <li className="icon pin" style={pinned}/>
                 Pinned Events
               </Form.Label>
               <Form.Control as="select"
