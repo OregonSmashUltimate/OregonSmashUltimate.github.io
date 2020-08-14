@@ -15,7 +15,7 @@ function Discord(){
   return(
   <>
     <NavDropdown.Item onClick={handleShow}>
-      <li class="icon discord" /> Discord
+      <li class="brand discord" /> Discord
     </NavDropdown.Item>
 
     <Modal show={show} onHide={handleClose}>

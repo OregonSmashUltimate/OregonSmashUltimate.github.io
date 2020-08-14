@@ -175,16 +175,33 @@
 
 .logo    {mask-image: url(icon/orsmash.svg); }
 .generic {mask-image: url(icon/www.svg);     }
-.twitch  {mask-image: url(icon/twitch.svg);  }
-.twitter {mask-image: url(icon/twitter.svg); }
-.github  {mask-image: url(icon/github.svg);  }
-.facebook{mask-image: url(icon/facebook.svg);}
-.discord {mask-image: url(icon/discord.svg); }
 .plus    {mask-image: url(icon/plus.svg);    }
 .minus   {mask-image: url(icon/minus.svg);   }
 .pin     {mask-image: url(icon/pin.svg);     }
 .info    {mask-image: url(icon/info.svg);    }
 .bars    {mask-image: url(icon/bars.svg);    }
+
+/*icon minus recoloring for legal reasons,
+coincidentally they all have white logos so
+we can use a black background for now*/
+.brand{
+  display: inline-block;
+	height: 1em;
+	width: 1em;
+  background-size: 100% 100%;
+  background-repeat: none;
+  background-color: black;
+  border: 1px black solid;
+  border-radius: 3px;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+.twitter {background-image: url(icon/twitter.svg); }
+.twitch  {background-image: url(icon/twitch.svg);  }
+.facebook{background-image: url(icon/facebook.svg);}
+.github  {background-image: url(icon/github.svg);  }
+.discord {background-image: url(icon/discord.svg); }
 
 /*
 .home   {mask-image: url(icon/home.svg);}

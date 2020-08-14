@@ -41,7 +41,7 @@ function Event(props){
         <p style={close}>
 
           <a href={props.streamURL === "" ? "" : props.streamURL}
-            class={props.streamURL === "" ? "dead" : "icon twitch"}
+            class={props.streamURL === "" ? "dead" : "brand twitch"}
             target="_blank"
             rel="noopener noreferrer"
             alt="Icon kindly provided by fontawesome.com"> </a>
@@ -53,12 +53,12 @@ function Event(props){
             alt="Icon kindly provided by fontawesome.com"> </a>
 
           <a href={props.facebookURL === "" ? "" : props.facebookURL}
-            class={props.facebookURL === "" ? "dead" : "icon facebook"}
+            class={props.facebookURL === "" ? "dead" : "brand facebook"}
             target="_blank"
             rel="noopener noreferrer"> </a>
 
           <a href={props.twitterURL === "" ? "" : props.twitterURL}
-            class={props.twitterURL === "" ? "dead" : "icon twitter"}
+            class={props.twitterURL === "" ? "dead" : "brand twitter"}
             target="_blank"
             rel="noopener noreferrer"> </a>
     

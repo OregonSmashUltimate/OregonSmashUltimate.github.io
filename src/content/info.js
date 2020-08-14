@@ -34,24 +34,24 @@ function Info(){
         </p>
 
         <p>
-        <h1>Logos</h1>
-        These logo icons do not imply endorsement, and are only used to symbolize links to the domains themselves.
+        <h1>Brand Trademarks</h1>
+        The inclusion of these trademarks do not imply endorsement of the trademark owner(s), and are only used to symbolize links to the domains themselves. Many specifically mention in their usage rights to <i>not</i> recolor or reshape their assets, so we exclude them from being recolored by themes or being rounded into circles.
         <br/>
         <a href="https://en.facebookbrand.com/facebookapp/"
           rel="noopener noreferrer"
-          target="_blank"><li class="icon facebook" /></a>
+          target="_blank"><li class="brand facebook" /></a>
         <a href="https://discord.com/new/branding"
           rel="noopener noreferrer"
-          target="_blank"><li class="icon discord" /></a>
+          target="_blank"><li class="brand discord" /></a>
         <a href="https://about.twitter.com/en_us/company/brand-resources.html"
           rel="noopener noreferrer"
-          target="_blank"><li class="icon twitter" /></a>
+          target="_blank"><li class="brand twitter" /></a>
         <a href="https://github.com/logos"
           rel="noopener noreferrer"
-          target="_blank"><li class="icon github" /></a>
+          target="_blank"><li class="brand github" /></a>
         <a href="https://brand.twitch.tv/"
           rel="noopener noreferrer"
-          target="_blank"><li class="icon twitch" /></a>
+          target="_blank"><li class="brand twitch" /></a>
         </p>
 
         <p>

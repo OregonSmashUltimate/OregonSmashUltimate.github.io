@@ -13,7 +13,7 @@ function Facebook(){
   return(
   <>
     <NavDropdown.Item onClick={handleShow}>
-      <li class="icon facebook" /> Facebook
+      <li class="brand facebook" /> Facebook
     </NavDropdown.Item>
 
     <Modal show={show} onHide={handleClose}>
