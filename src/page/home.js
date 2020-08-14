@@ -23,9 +23,13 @@ export default function Home(){
             Join us on our
             <br/>
             <div style={{textAlign: "center"}}>
-              <a href="https://discord.gg/K8nv9pt" target="_blank" rel="noopener noreferrer"><li class="icon discord"/> Discord</a>
+              <a href="https://discord.gg/K8nv9pt"
+                rel="noopener noreferrer"
+                target="_blank"><li class="brand discord"/> Discord</a>
               &nbsp;|&nbsp;
-              <a href="https://www.facebook.com/groups/499672353506994/" target="_blank" rel="noopener noreferrer"><li class="icon facebook"/> Facebook</a>
+              <a href="https://www.facebook.com/groups/499672353506994/"
+                rel="noopener noreferrer"
+                target="_blank"><li class="brand facebook"/> Facebook</a>
             </div>
             </p>
       </Jumbotron>

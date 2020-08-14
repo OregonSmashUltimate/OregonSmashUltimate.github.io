@@ -1,3 +1,7 @@
+## Contributors
+
+Niraj Everest, Cyril Vandyke, Jasmine Callon
+
 ## License
 
 This work is licensed under "[The MIT License](https://opensource.org/licenses/MIT)".
@@ -20,8 +24,8 @@ Reference guides/materials:
 * [React-Bootstrap Components](https://react-bootstrap.netlify.app/components/alerts/)
 * [Florin Pop](https://www.florin-pop.com/blog/2019/07/sort-table-data-with-react/)
 
-# OregonSmashUltimate.github.io
-Website containing everything Oregon Smash
+# Oregon Smash Ultimate
+A website by and for the competetive Oregon Super Smash Bros. community. Get acquainted, connected, and discover events! For now, we only list Smash Ultimate Oregon events, but that may change in the future.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

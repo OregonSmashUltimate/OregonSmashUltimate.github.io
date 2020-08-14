@@ -13,7 +13,7 @@ function GitHub(){
   return(
   <>
     <NavDropdown.Item onClick={handleShow}>
-      <li class="icon github" /> GitHub
+      <li class="brand github" /> GitHub
     </NavDropdown.Item>
 
     <Modal show={show} onHide={handleClose}>
