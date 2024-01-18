@@ -1,6 +1,6 @@
 ## Contributors
 
-Niraj Everest, Cyril Vandyke, Jasmine Callon
+Niraj Everest, Cyril Vandyke, Jasmine Callon 
 
 ## License
 
