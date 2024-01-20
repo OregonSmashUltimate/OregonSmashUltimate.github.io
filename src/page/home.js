@@ -12,7 +12,7 @@ export default function Home(){
       <Alert variant="danger" className="text-center">
         <h2>ATTENTION: Due to COVID-19 all events have been suspended and we recommend
           individuals do not host events until it is safe. Please feel free to join 
-          the online community!!
+          the online community!!!
         </h2>
       </Alert>
       <Jumbotron className="text-center" id="jumbotron-home" data-aos="fade-up">
