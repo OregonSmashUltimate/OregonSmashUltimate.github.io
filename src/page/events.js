@@ -1,76 +1,59 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from "axios"
 
-import EventFilter from '../class/EventFilter.js';
-import Collapsible from '../class/Collapsible.js';
-import Alert from 'react-bootstrap/Alert';
 import Aos from 'aos';
+import { Card } from 'react-bootstrap';
 
-import {viewIsFiltered} from '../script/initEvents.js';
-import weekly from '../content/weekly.js';
-import biWeeklyAndMonthly from '../content/biWeeklyAndMonthly.js';
+const api_endpoint = "https://api.start.gg/gql/alpha"
+const query = `
+query TournamentQuery() {
+  user(id: 166057){
+    id
+    tournaments(query:{
+      page: 1
+      perPage: 10
+    }){
+      pageInfo{
+        total
+      }
+      nodes{
+        id
+      }
+    }
+  }
+}
+`
+const headersReq = {
+  "Content-Type": "application/json",
+  "Authorization":"Bearer 98f4fbf4b221cb9f0f8ff24b34f3ccb5"
+}
 
-import {getSortFunction} from '../script/sortBy.js';
+const req = 
+{
+  "query": query,
+  "operationName": "TournamentQuery"
+}
 
 export default function Events(){
-  if(!viewIsFiltered){
-    var allEvents = weekly;
-    var disclaimer;
-
-    if(localStorage.getItem("sortBy") === "nextOccurring")
-      disclaimer = 
-        <Alert variant="info" className="text-center">
-          <p>
-            Monthlies are not consistent enough to predict, so they are excluded from these results.
-          </p>
-        </Alert>;
-    else
-      allEvents = allEvents.concat(biWeeklyAndMonthly);
-
-    allEvents = allEvents.sort(getSortFunction(localStorage.getItem("sortBy") || "none"));
-
-    return(
-      <div class="outerDiv" id="events-div">
-        <EventFilter/>
-        <div style={{marginBottom: '2em'}}/>
-        {disclaimer}
-        {allEvents}
-      </div>
-    );
-  }
-
-  //else
-  Aos.init({
-    duration: 1000,
-  });
+  console.log('Sending post req')
+  var resp
+  axios.post(api_endpoint, req,
+    {
+      headers : headersReq
+    }).then(res => {
+      console.log(res)
+      resp = res
+    })
   return(
-    <div class="outerDiv" id="events-div">
-      <div data-aos="fade-up">
-        <EventFilter/>
-      </div>
-      <div data-aos="fade-up">
-        <div style={{marginBottom: '1em'}}/>
-      </div>
-      <div data-aos="fade-up"
-        data-aos-delay="50">
-        <Collapsible title="Weeklies">
-          {weekly}
-        </Collapsible>
-      </div>
-      <div data-aos="fade-up"
-        data-aos-delay="50">
-        <Collapsible title="Bi-Weeklies & Monthlies">
-          {biWeeklyAndMonthly}
-        </Collapsible>
-      </div>
-      <div data-aos="fade-up"
-        data-aos-delay="100">
-        <Collapsible title="Regionals">
-          <p>Regionals are larger scale events that usually take place every other month or so. If you want to experience larger competition and play players from outside of your region, these are the events to go to! To stay updated on upcoming regionals, be sure to check our Discord and Facebook pages!
-          </p>
-        </Collapsible>
-      </div>
-     
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 //for embedded maps do to share in Google Maps
