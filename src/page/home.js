@@ -1,7 +1,7 @@
 import React from 'react';
 import Aos from "aos";
 import { Row, Col } from 'react-bootstrap';
-
+import backgroundImage from '../media/fox_illusion_update_v2.png'
 
 
 export default function Home(){ 
@@ -9,7 +9,7 @@ export default function Home(){
     duration: 500,
   });
   const backgroundImageStyle = {
-    backgroundImage: 'url(/static/media/fox_illusion_update_v2.2399851691b2c0679e0c.png)',
+    backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '100vh',
@@ -21,7 +21,7 @@ export default function Home(){
       <div style={backgroundImageStyle}>
         <div className="container text-white d-flex justify-content-center align-items-center">
           <a href="https://discord.gg/K8nv9pt" rel="noopener noreferrer" target="_blank">
-          <button class="button-36 noHover" role="button">
+          <button class="button-36 noHover">
             <Row>
               <Col md={10} className='pr-0'>Join Our Discord
               </Col>
@@ -29,7 +29,8 @@ export default function Home(){
             </Row>
             </button>
           </a>
-        <div class="card text-center  d-none d-md-block" style={{ position: 'fixed', top: '100px', right: '25px', width: "18%"}}>
+        {/* d-md-block Add this class below when feature is done */}
+        <div class="card text-center  d-none" style={{ position: 'fixed', top: '100px', right: '25px', width: "18%"}}> 
           <div class="card-header">
             <h3>Featured Events</h3>
           </div>
@@ -40,7 +41,6 @@ export default function Home(){
         </div>
         </div>
       </div>
-      <h2>About the Community</h2>
     </>
   );
 }

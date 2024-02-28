@@ -19,7 +19,9 @@
   color: var(--textColor);
   font-weight: bold;
 }
-
+.nav-item{
+	color: var(--textColor) !important;
+}
 .nav-link{
   color: var(--textColor) !important;
   transition: color .2s;
