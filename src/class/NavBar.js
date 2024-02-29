@@ -17,7 +17,7 @@ import{ Link } from "react-router-dom";
 
 export default function NavBar(){
   return (
-      <Navbar fixed="top" expand="md" bg="custom">
+      <Navbar fixed="top" expand="md" bg="custom" className='shadow'>
         <Navbar.Brand href="#home">
           <Link to="/" className="navLink">
             <li class="icon logo"/>

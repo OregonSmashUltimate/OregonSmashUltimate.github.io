@@ -7,6 +7,7 @@ import Home from './page/home.js'
 import GettingStarted from './page/getting-started.js';
 import Events from './page/events.js';
 import Rankings from './page/rankings.js';
+import Footer2 from './class/Footer2.js';
 import{
     BrowserRouter as Router,
     Switch,
@@ -28,6 +29,7 @@ function App() {
 					<Route exact path="/events"><Events /></Route>
 					<Route exact path="/rankings"><Rankings /></Route>
 				</Switch>
+        <Footer2 />
 			</Router>
     </div>
   );
