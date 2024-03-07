@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 import axios from "axios"
-
+import image1 from '../media/oregonlogo.webp'
 import Aos from 'aos';
-import { Card, CardGroup } from 'react-bootstrap';
+
+
 
 const api_endpoint = "https://api.start.gg/gql/alpha"
 const query = `
@@ -91,6 +93,7 @@ const req =
   "variables": { "id": "166057", "id2": "1015462"}
 }
 
+
 export default function Events(){
   const [users, setUsers] = useState([]);
   const [resp, setResp] = useState()
@@ -103,19 +106,19 @@ export default function Events(){
       }).then(res => {
         console.log(res)
         setResp(res.data);
-        if(cards.length == 1){
+        if(cards.length === 1){
           setCards([])
         }
       })
   }, []);
+  
 
   if(resp === undefined){
     console.log('Loading...');
-    cards.push(<Card style={{ width: '18rem' }}>
-      <Card.Body>
-      <Card.Title>Loading available tournaments...</Card.Title>
-    </Card.Body>
-  </Card>)
+    cards.push(    
+      <div className="d-flex justify-content-center align-items-center vh-100">
+       <h2>LOADING...</h2> 
+    </div>)
   }  else if(cards.length == 0) {
     for(var val in resp.data){
       console.log('user found');
@@ -128,21 +131,43 @@ export default function Events(){
     console.log(users)
     for (let idx = 0; idx < 8; idx++) {
       const element = users[idx];
-        cards.push(<Card>
-        <Card.Body>
-          <Card.Title>{element.name}</Card.Title>
-          <Card.Text>
-            {element.name}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      cards.push(
+        <div className="fade-in">
+          <a href={'https://start.gg/'+element.url} target='_blank'>
+          <Card style={{ width: '50rem' }} className='mt-3'>
+            <Card.Body>
+              <Row className='align-items-center'>
+                <Col>
+                  {element.images.length === 1 ? (
+                    <Card.Img src={element.images[0].url} style={{ width: '100px' }} />
+                  ) : (
+                    <Card.Img src={image1} style={{ width: '100px' }} />
+                  )}
+                </Col>
+                <Col>
+                  <Card.Title>{element.name}</Card.Title>
+                </Col>
+                <Col>
+                  <Card.Text>{element.startAt}</Card.Text>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+          </a>
+        </div>
       )
     }
   }
   return(
-    <CardGroup>
-      {cards}
-    </CardGroup>
+    <>
+      <Container>
+        
+        <div className='mt-5 pt-1'>
+          <h1>Upcoming Events</h1>
+            {cards}
+        </div>
+      </Container>
+    </>
   );
 }
 //for embedded maps do to share in Google Maps
