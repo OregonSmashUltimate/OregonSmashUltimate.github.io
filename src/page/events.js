@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from 'react-bootstrap';
 import axios from "axios"
 import image1 from '../media/oregonlogo.webp'
 import Aos from 'aos';
-
+import date from '../script/dateconverter'
 
 
 const api_endpoint = "https://api.start.gg/gql/alpha"
@@ -27,6 +27,7 @@ query User($id:ID, $id2:ID){
       nodes{
         id
         name
+        venueAddress
         hasOfflineEvents
         startAt
         createdAt
@@ -62,6 +63,7 @@ query User($id:ID, $id2:ID){
       nodes{
         id
         name
+        venueAddress
         hasOfflineEvents
         startAt
         createdAt
@@ -134,21 +136,24 @@ export default function Events(){
       cards.push(
         <div className="fade-in">
           <a href={'https://start.gg/'+element.url} target='_blank'>
-          <Card style={{ width: '50rem' }} className='mt-3'>
+          <Card style={{ maxWidth: '750px' }} className='mt-3 custom-card'>
             <Card.Body>
-              <Row className='align-items-center'>
-                <Col>
+              <Row>
+                <Col xs={12} md={3} className="mb-3 mb-md-0">
                   {element.images.length === 1 ? (
-                    <Card.Img src={element.images[0].url} style={{ width: '100px' }} />
+                    <Card.Img src={element.images[0].url} className='img-fluid' alt='Card image' style={{ maxWidth: '250px' }} />
                   ) : (
-                    <Card.Img src={image1} style={{ width: '100px' }} />
+                    <Card.Img src={image1} className='img-fluid' alt='Card image' style={{ maxWidth: '250px' }} />
                   )}
                 </Col>
-                <Col>
-                  <Card.Title>{element.name}</Card.Title>
-                </Col>
-                <Col>
-                  <Card.Text>{element.startAt}</Card.Text>
+                <Col xs={12} md={9}>
+                  <div>
+                    <Card.Title className='d-md-flex'>{element.name}</Card.Title>
+                    <Card.Text className='d-md-flex'><li class="brand1 people"/>Host: {element.owner.player.gamerTag}</Card.Text>
+                    <Card.Text className='d-md-flex'><li class="brand1 location"/>{element.venueAddress}</Card.Text>
+                    <Card.Text className='d-md-flex'><li class="brand1 calendar"/>{date(element.startAt * 1000)}</Card.Text>
+                    
+                  </div>
                 </Col>
               </Row>
             </Card.Body>
@@ -162,12 +167,11 @@ export default function Events(){
     <>
       <Container>
         
-        <div className='mt-5 pt-1'>
-          <h1>Upcoming Events</h1>
+        <div className='mt-5 pt-1 mb-5'>
+          <h1 className='text-color mt-4'>Upcoming Events</h1>
             {cards}
         </div>
       </Container>
     </>
   );
 }
-//for embedded maps do to share in Google Maps

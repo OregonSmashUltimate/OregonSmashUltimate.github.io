@@ -53,6 +53,9 @@
   height: 1.5rem;
 }
 
+.text-color{
+  color: var(--textColor) !important;
+}
 .navbar-toggler-icon{
   background-image: none !important;
 }
@@ -73,9 +76,7 @@
   color: var(--textColor) !important;
   border-color: var(--textColor) !important;
 }
-.card-body{
-  background-color: var(--bgColor) !important;
-}
+
 .card-footer{
   background-color: var(--bgColor) !important;
 }
@@ -196,12 +197,19 @@ we can use a black background for now*/
 	margin-left: .25em;
 	margin-right: .25em;
 }
+.brand1{
+	background-size: 100% 100%;
+	margin-right: 4px;
+  }
 
 .twitter {background-image: url(icon/twitter.svg); }
 .twitch  {background-image: url(icon/twitch.svg);  }
 .facebook{background-image: url(icon/facebook.svg);}
 .github  {background-image: url(icon/github.svg);  }
 .discord {background-image: url(icon/discord.svg); }
+.calendar{background-image: url(icon/calendar.svg);}
+.people  {background-image: url(icon/people.svg);}
+.location{background-image: url(icon/location.svg);}
 
 /*
 .home   {mask-image: url(icon/home.svg);}
@@ -439,4 +447,13 @@ ul{
 	100% {
 	  opacity: 1;
 	}
+  }
+  .custom-card {
+	border: 2px solid white !important; /* Set border to white and increase border width */
+	transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+  }
+  
+  .custom-card:hover {
+	transform: scale(1.04); /* Scale up and add a subtle tilt on hover */
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow effect on hover */
   }
