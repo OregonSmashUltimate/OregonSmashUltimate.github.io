@@ -204,11 +204,17 @@ we can use a black background for now*/
 	margin-left: .25em;
 	margin-right: .25em;
 }
-.brand1{
+.discord-style{
+	display: inline-block;
+	  height: 1.5em;
+	  width: 1.5em;
 	background-size: 100% 100%;
 	margin-right: 4px;
+	background-repeat: none;
   }
-
+  .noHover{
+    pointer-events: none !important;
+}
 .twitter {background-image: url(icon/twitter.svg); }
 .twitch  {background-image: url(icon/twitch.svg);  }
 .facebook{background-image: url(icon/facebook.svg);}
@@ -217,6 +223,7 @@ we can use a black background for now*/
 .calendar{background-image: url(icon/calendar.svg);}
 .people  {background-image: url(icon/people.svg);}
 .location{background-image: url(icon/location.svg);}
+.discord {background-image: url(icon/discord-mark-white.svg); }
 
 /*
 .home   {mask-image: url(icon/home.svg);}
