@@ -131,7 +131,7 @@ const req =
 
 
 export default function Events() {
-  const [eventsByTO, setEventsByTO] = useState([]);
+  const [eventsByTO] = useState([]);
   const [resp, setResp] = useState()
   const [cards, setCards] = useState([])
 
@@ -145,7 +145,7 @@ export default function Events() {
           setCards([])
         }
       })
-  }, []);
+  });
 
 
   if (resp === undefined) {
@@ -153,7 +153,7 @@ export default function Events() {
       <div className="d-flex justify-content-center align-items-center vh-100">
         <h2>LOADING...</h2>
       </div>)
-  } else if (cards.length == 0) {
+  } else if (cards.length === 0) {
     for (var val in resp.data) {
       for (var elm in resp.data[val].tournaments.nodes) {
         eventsByTO.push(resp.data[val].tournaments.nodes[elm])
@@ -178,7 +178,7 @@ export default function Events() {
       if (element) {
         cards.push(
           <div className="fade-in">
-            <a href={'https://start.gg/' + (element && element.url)} target='_blank'>
+            <a href={'https://start.gg/' + (element && element.url)} target='_blank' rel="noreferrer">
               <Card style={{ maxWidth: '750px' }} className='mt-3 custom-card'>
                 <Card.Body>
                   <Row>
